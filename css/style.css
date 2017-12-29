@@ -1,0 +1,73 @@
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+	
+
+}
+
+body {
+	color:white;
+	font-family: helvetica, sans-serif;
+	font-style: italic;
+	font-weight: bolder;
+	background-color: #f00;
+}
+
+
+
+
+
+h1 {
+	font-size: 2.5em;
+	color: rgba(255,255,255,1);
+	padding:0;
+	text-align: center;
+	margin-top:2%;
+
+}
+
+
+
+
+
+.ticker-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.ticker {
+	text-align: center;
+	-webkit-animation-name: blink; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    margin:5% 5% 0 5%;
+    }
+
+
+
+/* Standard syntax */
+@keyframes blink {
+	0% {color: rgba(255,0,255,1);}
+	25% {color: rgba(255,255,255,0);}
+	90% {color: rgba(0,255,0,1);}
+	100% {color: rgba(255,255,255,1);}
+
+}
+
+
+
+
+.skell-wrap {
+	display: flex;
+	justify-content: center; 
+}
+
+.skell {
+	flex-grow: 1;
+	height: 700px;
+
+}
+
