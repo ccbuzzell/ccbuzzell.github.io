@@ -2,8 +2,6 @@
 	box-sizing: border-box;
 	margin:0;
 	padding: 0;
-	
-
 }
 
 body {
@@ -14,21 +12,13 @@ body {
 	background-color: #f00;
 }
 
-
-
-
-
 h1 {
 	font-size: 2.5em;
 	color: rgba(255,255,255,1);
 	padding:0;
 	text-align: center;
 	margin-top:2%;
-
 }
-
-
-
 
 
 .ticker-container {
@@ -46,18 +36,13 @@ h1 {
     margin:5% 5% 0 5%;
     }
 
-
-
 /* Standard syntax */
 @keyframes blink {
 	0% {color: rgba(255,0,255,1);}
 	25% {color: rgba(255,255,255,0);}
 	90% {color: rgba(0,255,0,1);}
 	100% {color: rgba(255,255,255,1);}
-
 }
-
-
 
 
 .skell-wrap {
@@ -68,6 +53,5 @@ h1 {
 .skell {
 	flex-grow: 1;
 	height: 700px;
-
 }
 
