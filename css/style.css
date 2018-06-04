@@ -24,10 +24,14 @@ h1 {
 
 p {
 	font-size: 1.5em;
-	padding-bottom: 1em;
+	padding-bottom: 2em;
 
 }
 
+
+.xtra-pad {
+	margin-top: 8em;
+}
 
 /* ----------head foot------------- */
 
@@ -44,16 +48,7 @@ footer {
 	justify-content: space-between;
 }
 
-.fixed {
-	position: fixed;
-	bottom:1em;
 
-}
-
-.bottom {
-	margin: 0 auto;
-	width:90%;
-}
 
 /* ----------nav------------- */
 nav {
@@ -145,10 +140,10 @@ body.red b {
 	}
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
 .item {
 	width: 91%;
-	padding: 0.8em 0.25em;
+	padding: 0.125em 0.25em;
 }
 
 h1 {
@@ -162,10 +157,16 @@ display: none;
 	
 }
 
-#CV {
-	font-weight: normal;
-	font-size: 1.5em;
+
+footer {
+	margin: 0 auto;
+	width:90%;
+	display: block;
+	text-align: center;
+	
 }
+
+
 
 }
 
