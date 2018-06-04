@@ -120,15 +120,8 @@ a #work {
 
 
 
-/* ----------white----------
-body.white, 
-body.white h1, 
-body.white a, 
-body.white .title, 
-body.white p, 
-body.white b { 
-	background-color: #fff; 
-	color:black; }
+/* ----------color---------- */
+
 
 body.red, 
 body.red h1, 
@@ -139,7 +132,7 @@ body.red b {
 	background-color: #f00; 
 	}
 
-*/
+
 @media screen and (max-width: 700px){
 .item {
 	width: 91%;
