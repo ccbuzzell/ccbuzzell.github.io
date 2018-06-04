@@ -13,45 +13,78 @@ body {
 	background-color:black;
 }
 
+
 h1 {
 	font-size: 1.5em;
-	margin-top: 1.25em;
-	letter-spacing: 0.01em;	
+	margin-top: 1.5em;
+	letter-spacing: 0.05em;	
+	font-weight: normal;
+
+}
+
+p {
+	font-size: 1.5em;
+	padding-bottom: 1em;
+
 }
 
 
-/* ----------head------------- */
+/* ----------head foot------------- */
 
-header { 
+header{ 
 	width:90%;
 	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	margin-top: 1em;
+	text-align: right;
 }
 
-#logo {
-	font-weight: bold;
-	letter-spacing: 0.05em;	
+footer {
+	margin: 0 auto;
+	width:90%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.fixed {
+	position: fixed;
+	bottom:1em;
+
+}
+
+.bottom {
+	margin: 0 auto;
+	width:90%;
 }
 
 /* ----------nav------------- */
 nav {
 	display: flex;
+	justify-content: space-between;
+	width: 100%;		
 }
 
-#work {
-	width: 24em;
-}
-#CV {
-	font-weight: normal;
-	font-size: 1.25em;
+
+a #work {
+	width: 20em;
+	margin: -3.5em 6em 0 0;
+	
 }
 
 /* ----------section------------- */
-.page-name {
-	margin-top: 3.5em;
+.item-info {
+	margin: 0 auto;
+	margin: 6em 0 2em 0;
 	text-align: center;
+}
+
+.page-name {
+	margin: 3.5em 0 1em 0;
+	letter-spacing: 0em;	
+
+}
+.page-descipt {
+	text-align: center;
+	width: 5em;
+	margin: 0 auto;
 }
 
 .container {
@@ -63,8 +96,8 @@ nav {
 }
 
 .item {
-	width: 40%;
-	padding: 1.5em 0.25em;
+	width: 47%;
+	padding: 0.125em 0.25em;
 }
 
 .item img,  .item video{
@@ -76,7 +109,6 @@ nav {
 .title {
 	text-align: center;
 	padding-top: 0.5em;
-	font-size: 0.9em;
 }
 
 
@@ -90,24 +122,44 @@ nav {
 
 
 
-/* ----------footer------------- */
 
+
+
+/* ----------white------------- */
+body.white, 
+body.white h1, 
+body.white a, 
+body.white .title, 
+body.white p, 
+body.white b { 
+	background-color: #fff; 
+	color:black; }
+/* ----------red------------- */
+body.red, 
+body.red h1, 
+body.red a, 
+body.red .title, 
+body.red p, 
+body.red b { 
+	background-color: #f00; 
+	}
 
 
 @media screen and (max-width: 600px){
-	.item {
-	width: 85%;
+.item {
+	width: 91%;
 	padding: 0.8em 0.25em;
 }
 
 h1 {
 	font-size: 1.5em;
 	margin-top: 1.25em;
-	letter-spacing: 0.01em;	
+	letter-spacing: 0.05em;	
 }
 
-	#work {
-	display:none;
+a #work {
+display: none;
+	
 }
 
 #CV {
