@@ -2,7 +2,7 @@
 	box-sizing: border-box;
 	margin:0;
 	font-family: sans-serif;
- 	color:white; 
+ 	color:white;
 	}
 
 a {
@@ -72,7 +72,7 @@ a #work {
 }
 
 .page-name {
-	margin: 3.5em 0 1em 0;
+	margin: 3.5em 0 1.5em 0;
 	letter-spacing: 0em;	
 
 }
@@ -120,9 +120,8 @@ a #work {
 
 
 
-/* ----------color---------- */
 
-
+/* ----------red------------- */
 body.red, 
 body.red h1, 
 body.red a, 
