@@ -122,13 +122,15 @@ a #work {
 
 
 /* ----------red------------- */
-body.red, 
-body.red h1, 
-body.red a, 
-body.red .title, 
-body.red p, 
-body.red b { 
+body.red
+{ 
 	background-color: #f00; 
+	}
+
+	/* ----------green------------- */
+body.green 
+{ 
+	background-color: #004e00; 
 	}
 
 
