@@ -95,7 +95,7 @@ a #work {
 	padding: 0.125em 0.25em;
 }
 
-.item img,  .item video{
+.item img,  .item video, .item embed{
 	width: 100%;
 }
 
@@ -130,7 +130,13 @@ body.red
 	/* ----------green------------- */
 body.green 
 { 
-	background-color: #004e00; 
+	background-color: #112511; 
+	}
+
+		/* ----------blue------------- */
+body.blue 
+{ 
+	background-color: #000452; 
 	}
 
 
