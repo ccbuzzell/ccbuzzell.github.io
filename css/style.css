@@ -95,6 +95,11 @@ a #work {
 	padding: 0.125em 0.25em;
 }
 
+.vid {
+	width: 100%;
+	padding: 0.125em 0.25em;
+}
+
 .item img,  .item video, .item embed{
 	width: 100%;
 }
