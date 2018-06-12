@@ -185,8 +185,12 @@ a #work {
 }
 
 
+}
 
-
-
+@media screen and (max-width: 380px){
+	a #work {
+	width: 8em;
+	
+}
 }
 
