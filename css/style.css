@@ -99,6 +99,10 @@ a #work {
 	padding: 0.125em 0.25em;
 }
 
+.player .vp-player-layout {
+	background-color: black;
+}
+
 .item img,  .item video, .item embed{
 	width: 100%;
 }
