@@ -157,6 +157,13 @@ header{
 	width:91%;
 }
 
+footer {
+	margin: 0 auto;
+	width:91%;
+	display: block;
+	text-align: center;
+}
+
 .item {
 	width: 98%;
 	padding: 0.125em 0.25em;
@@ -175,17 +182,9 @@ a #work {
 	width: 10em;
 	margin: -3.2em 0em 0 0;
 	
-	
 }
 
 
-footer {
-	margin: 0 auto;
-	width:90%;
-	display: block;
-	text-align: center;
-	
-}
 
 
 
