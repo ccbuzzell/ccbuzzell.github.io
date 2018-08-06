@@ -23,7 +23,7 @@ h1 {
 }
 
 p {
-	font-size: 1.6em;
+	font-size: 1.79em;
 	padding-bottom: 2em;
 }
 
@@ -73,12 +73,17 @@ a #work {
 .page-name {
 	margin: 3.5em 0 1.5em 0;
 	letter-spacing: 0em;	
-
 }
+
 .page-descipt {
 	text-align: center;
 	width: 5em;
 	margin: 0 auto;
+}
+
+.credit {
+	font-size: 0.8em;
+	margin: 1em 0 0 0;
 }
 
 .container {
@@ -147,6 +152,11 @@ body.blue
 	background-color: #000452; 
 	}
 
+/* ----------warm gray------------- */
+body.warm_gray
+{ 
+	background-color: #5d5248; 
+	}
 
 
 
