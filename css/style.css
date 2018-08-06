@@ -73,7 +73,7 @@ a #mail {
 /* ----------section-index------------- */
 .title {
 	text-align: center;
-	padding-top: 0.5em;
+	padding-top: 0.3em;
 }
 
 /* ----------section------------- */
@@ -203,6 +203,10 @@ a #work {
 a #mail {
 	width: 2.3em;
 	padding-top: 1em;
+}
+
+.title {
+	padding-top: 0.1em;
 }
 
 
