@@ -213,13 +213,13 @@ a #mail {
 
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 450px){
 	.logo {
 	font-size: 0.8em;
 	}
 
 	a #work {
-	width: 8em;
+	width: 8.5em;
 	}
 
 	a #mail {
