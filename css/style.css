@@ -219,7 +219,22 @@ a #mail {
 	}
 
 	a #work {
-	width: 8.5em;
+	width: 9em;
+	}
+
+	a #mail {
+	width: 1.7em;
+	padding-top: 0.6em;
+}
+}
+
+@media screen and (max-width: 360px){
+	.logo {
+	font-size: 0.8em;
+	}
+
+	a #work {
+	width: 8em;
 	}
 
 	a #mail {
