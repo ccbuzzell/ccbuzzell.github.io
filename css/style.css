@@ -22,6 +22,7 @@ h1 {
 
 }
 
+
 p {
 	font-size: 1.79em;
 	padding-bottom: 2em;
@@ -69,6 +70,42 @@ a #mail {
 	padding-top: 1.8em;
 }
 
+/* ------------ Social --------------- */
+.insta, .twitter   {
+	font-size: 0.7em;
+	letter-spacing: .2em;
+	transform: rotate(90deg);
+	transform-origin: left top 0 ;
+	position: fixed;
+	animation-name: slide;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+.insta {
+	margin-left: 0.5em;
+	top: 0vh;
+	left:2em;
+}
+.twitter {
+	margin-right: -0.5em;
+	top: 0vh;
+	right:-5.5em;
+}
+.insta a:hover, .twitter a:hover  {
+	border-bottom: 1px solid white;
+	animation-name: slideHov;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+@keyframes slide {
+	0% {top: -20vh;  }
+	100% {top:100vh ; }
+}
+@keyframes slideHov {
+	0% {border-bottom: 5px solid white;  }
+	100% {border-bottom: 1px solid white; }
+}
+
 
 /* ----------section-index------------- */
 .title {
@@ -94,6 +131,7 @@ a #mail {
 	text-align: center;
 	width: 5em;
 	margin: 0 auto;
+	letter-spacing: 0.01em;
 }
 
 .credit {
@@ -103,15 +141,22 @@ a #mail {
 
 .container {
 	margin: 0 auto;
-	margin:2em 1em 5em 1em;
+	margin:2em 2em 5em 2em;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
+
+
 .item {
 	width: 47%;
 	padding: 0.125em 0.25em;
+	max-width: 650px;
+}
+
+.three {
+	width: 31.25%;
 }
 
 .vid {
@@ -131,7 +176,24 @@ a #mail {
 
 
 
+.shop {
+background: linear-gradient(to left, springGreen, black, black, black, grey); 
+	animation-name: scan;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
 
+@keyframes scan {
+	0% {background: linear-gradient(to left, springGreen, black, black, grey); }
+	20% {background: linear-gradient(to left, black, black, grey, springGreen, grey); }
+	60% {background: linear-gradient(to left, black, springGreen, white, pink, white);}
+	80% {background: linear-gradient(to left, grey, white, springGreen, white, white);}
+	100% {background: linear-gradient(to left, springGreen, white); }
+}
+
+
+.burst {
+}
 
 
 
@@ -180,6 +242,13 @@ body.pink
 	background-color: #ff0068; 
 	}
 
+	/* ----------pink------------- */
+body.maroon
+{ 
+	background-color: #660000; 
+	}
+
+
 
 
 
@@ -198,8 +267,12 @@ footer {
 }
 
 .item {
-	width: 98%;
+	width: 97%;
 	padding: 0.125em 0.25em;
+}
+
+.three {
+	width: 49%;
 }
 
 h1 {
