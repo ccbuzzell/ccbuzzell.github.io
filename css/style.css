@@ -157,6 +157,7 @@ a #mail {
 
 .three {
 	width: 31.25%;
+	max-width: 500px;
 }
 
 .vid {
@@ -272,7 +273,8 @@ footer {
 }
 
 .three {
-	width: 49%;
+	width: 50%;
+	padding: 0.04em 0.125em;
 }
 
 h1 {
