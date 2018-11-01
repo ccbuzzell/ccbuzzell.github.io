@@ -229,7 +229,9 @@ background: linear-gradient(to left, springGreen, black, black, black, grey);
 }
 
 
-
+.cards {
+	max-height: 70px;
+}
 
 
 
@@ -341,6 +343,9 @@ a #mail {
 	padding-top: 0.1em;
 }
 
+.cards {
+	max-height: 40px;
+}
 
 
 }
@@ -357,6 +362,10 @@ a #mail {
 	a #mail {
 	width: 1.7em;
 	padding-top: 0.6em;
+}
+
+.cards {
+	max-height: 30px;
 }
 }
 
