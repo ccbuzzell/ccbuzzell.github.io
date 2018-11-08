@@ -9,75 +9,7 @@
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
     <script src="http://code.jquery.com/jquery-1.12.3.js"></script>
-
-<script>
-
-function BookLoad () {
-    var imgs=images(3),
-        last;
-    function images(count){
-        var images=[];
-        for ( var i = 1; i <= count; i++ ) {
-            images.push("imgs/books/books" + i + ".gif");
-        }
-        return images;
-    }
-    function randomImg_m() {
-        var imgNum_m= Math.floor(Math.random() * imgs.length);
-        while (last===imgNum_m) { // make sure the image is not the same as the last!
-            imgNum_m = Math.floor(Math.random() * imgs.length);
-        }
-        last = imgNum_m;
-        return imgs[imgNum_m];
-    }
-    function loop() {
-        var aRandomImage = randomImg_m();
-        $("<img>").hide().appendTo("#books").on("load", function(e) {
-            $("#books img:last").fadeIn(0);
-            $("#books img:first").fadeOut(0,function(){ $(this).remove()})
-        
-        }).attr("src",aRandomImage)
-    }
-     document.write("<img src='" + randomImg_m() + "'>");
-    //setInterval(loop, 5000) // every few seconds
-}
-
-function CatLoad () {
-    var imgs=images(3),
-        last;
-    function images(count){
-        var images=[];
-        for ( var i = 1; i <= count; i++ ) {
-            images.push("imgs/catalogs/cat" + i + ".jpg");
-        }
-        return images;
-    }
-    function randomImg_m() {
-        var imgNum_m= Math.floor(Math.random() * imgs.length);
-        while (last===imgNum_m) { // make sure the image is not the same as the last!
-            imgNum_m = Math.floor(Math.random() * imgs.length);
-        }
-        last = imgNum_m;
-        return imgs[imgNum_m];
-    }
-    function loop() {
-        var aRandomImage = randomImg_m();
-        $("<img>").hide().appendTo("#catalogs").on("load", function(e) {
-            $("#catalogs img:last").fadeIn(0);
-            $("#catalogs img:first").fadeOut(0,function(){ $(this).remove()})
-        
-        }).attr("src",aRandomImage)
-    }
-    document.write("<img src='" + randomImg_m() + "'>");
-    //setInterval(loop, 2500) // every few seconds
-}
-
-
-
-
-
-   </script> 
-
+    <script type='text/javascript' src='js/script.js'></script>
 </head>
 
 <body>
@@ -86,13 +18,23 @@ function CatLoad () {
                 <h1 id="logo"><a href="index.html">CARA BUZZELL</a></h1>
             </div>
             <nav>
-            <a href="index.html"><img id="work" src="imgs/work.svg"></a>
-            <a href="contact.html"><img id="mail" src="imgs/mail.svg"></a>
+                <a href="#"><img id="work" src="imgs/work.svg"></a>
+                <a href="contact.html"><img id="mail" src="imgs/mail.svg"></a>
             </nav>
-            
+                <ul id="nav-page" class="nav-off">
+                <a href="#"><div id="close">X</div></a>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="searchhistory.html">Loops</a></li>
+                <li><a href="motion.html">Motion</a></li>
+                <li><a href="catalogs.html">Exhibition + Catalogs</a></li>
+                <li><a href="haunt.html">Haunt</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="identity.html">Identity</a></li>
+                <li><a href="shop.html">Copy Shop</a></li>
+            </ul>
         </header>
         <section class="item-info">
-           <a href="index.html"> <h1 class="page-name page-name-index">Selected Work</h1></a>
+           <a href="index.html"> <h1 class="page-name page-name-index">Selected &#8635; Work</h1></a>
         </section>  
             
             <section class="container">
@@ -135,13 +77,6 @@ function CatLoad () {
                     <img src="imgs/TWIMC_all.gif">
                     <p class="title">Identity</p></a>
                 </article>
-
-                
-
-
-
-
-
 
                 <article class="item"> <a href="shop.html">
                     <div class="shop">

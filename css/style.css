@@ -83,11 +83,12 @@ a #mail {
 	height: 100vh;
 	width:  100vw;
 	text-align: center;
-	padding-top: 4.2em;
+	padding: 4.2em 0 0 0;
+	z-index: 500;
 }
 
 
-#nav-page li {
+#nav-page li, #close  {
 	font-size: 4em;
 	line-height: 1.5em;
 }
@@ -95,9 +96,12 @@ a #mail {
 #close {
 	position: fixed;
 	right:0.55em;
-	top:0.3em;
-	font-size:4em;
+	top:0em;
 
+}
+
+.nav-off {
+	display: none;
 }
 
 
@@ -146,10 +150,16 @@ a #mail {
 
 /* ----------section------------- */
 
-.page-name {
+.page-name, .page-name-cat {
 	margin: 3.5em 0 1.5em 0;
 	letter-spacing: 0em;	
 }
+
+.page-name-index, .page-name-cat{
+	font-size: 2.25em;
+
+}
+
 
 .item-info {
 	margin: 0 auto;
@@ -317,13 +327,11 @@ h1 {
 	letter-spacing: 0.05em;	
 }
 
-.page-name-index {
+.page-name-index, .page-name-cat {
 	font-size: 2.4em;
-	margin-top: 1.25em;
-	margin-bottom: 0;
-	letter-spacing: 0;	
 
 }
+
 
 
 p {
@@ -341,6 +349,10 @@ a #mail {
 
 .title {
 	padding-top: 0.1em;
+}
+
+#nav-page li, #close {
+	font-size: 3em;
 }
 
 .cards {
@@ -362,6 +374,10 @@ a #mail {
 	a #mail {
 	width: 1.7em;
 	padding-top: 0.6em;
+}
+
+#nav-page li, #close {
+	font-size: 2em;
 }
 
 .cards {
