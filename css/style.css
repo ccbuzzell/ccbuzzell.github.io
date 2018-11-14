@@ -146,6 +146,7 @@ a #mail {
 .title {
 	text-align: center;
 	padding-top: 0.3em;
+	width: 100%;
 }
 
 /* ----------section------------- */
@@ -203,9 +204,19 @@ a #mail {
 }
 
 .vid {
-	width: 900px;
-	max-width: 900px;
+	width: 1000px;
+	max-width: 1000px;
 	padding: 0.125em 0.25em;
+}
+
+.inset-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.inset {
+	
 }
 
 .bg-clr {
@@ -214,7 +225,7 @@ a #mail {
 
 
 
-.item img,  .item video, .item embed{
+.item img,  .item video, .item embed {
 	width: 100%;
 }
 
