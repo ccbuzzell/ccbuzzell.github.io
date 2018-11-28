@@ -15,16 +15,19 @@ body {
 
 
 h1 {
-	font-size: 1.9em;
+	font-size: 2em;
 	margin-top: 1.5em;
 	letter-spacing: 0.05em;	
 	font-weight: normal;
-
 }
 
 p {
-	font-size: 1.79em;
+	font-size: 2em;
 	padding-bottom: 2em;
+}
+
+li {
+	list-style-type: none;
 }
 
 
@@ -52,7 +55,7 @@ footer {
 
 /* ----------nav------------- */
 .logo {
-	width: 50%;		
+	width: 50%;	
 }
 
 nav {
@@ -70,18 +73,100 @@ a #mail {
 }
 
 
+#nav-page {
+	position: fixed;
+	left:0;
+	top:0;
+	background: red;
+	opacity: 0.98;
+	height: 100vh;
+	width:  100vw;
+	text-align: center;
+	padding: 4.2em 0 0 0;
+	z-index: 500;
+}
+
+
+#nav-page li, #close  {
+	font-size: 4em;
+	line-height: 1.5em;
+}
+
+#close {
+	position: fixed;
+	right:0.55em;
+	top:0em;
+
+}
+
+.nav-off {
+	display: none;
+}
+
+
+/* ------------ Social --------------- */
+.insta, .twitter   {
+	font-size: 0.7em;
+	letter-spacing: .2em;
+	transform: rotate(90deg);
+	transform-origin: left top 0 ;
+	position: fixed;
+	animation-name: slide;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+}
+.insta {
+	margin-left: 0.5em;
+	top: 0vh;
+	left:2em;
+}
+.twitter {
+	margin-right: -0.5em;
+	top: 0vh;
+	right:-5.5em;
+}
+.insta a:hover, .twitter a:hover{
+	border-bottom: 1px solid white;
+	animation-name: underlineHov;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+@keyframes slide {
+	0% {top: -20vh;  }
+	100% {top:100vh ; }
+}
+@keyframes underlineHov {
+	0% {border-bottom: 5px solid white;  }
+	100% {border-bottom: 1px solid white; }
+}
+
+
 /* ----------section-index------------- */
 .title {
 	text-align: center;
 	padding-top: 0.3em;
+	width: 100%;
 }
 
 /* ----------section------------- */
 
-.page-name {
+.page-name, .page-name-cat {
 	margin: 3.5em 0 1.5em 0;
 	letter-spacing: 0em;	
 }
+
+.page-name-index, .page-name-cat{
+	font-size: 2.75em;
+}
+
+.page-descipt {
+	font-size: 1.98em;
+	text-align: center;
+	width: 5em;
+	margin: 0 auto;
+	letter-spacing: 0.01em;
+}
+
 
 .item-info {
 	margin: 0 auto;
@@ -89,35 +174,68 @@ a #mail {
 	text-align: center;
 }
 
-
-.page-descipt {
-	text-align: center;
-	width: 5em;
-	margin: 0 auto;
-}
-
-.credit {
-	font-size: 0.8em;
-	margin: 1em 0 0 0;
-}
-
 .container {
 	margin: 0 auto;
-	margin:2em 1em 5em 1em;
+	margin:2em 2em 5em 2em;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
+.credit-container{
+	margin-bottom: 2em;
+}
+
+.credit  {
+	font-size: 0.8em;
+	width: 46%;
+	max-width: 645px;
+	margin: 0 0.3em;
+	padding: 0.25em 2em 1.5em 0em;
+	border-top: 1px solid rgba(255, 255, 255, .5);
+}
+.credit-title {
+	font-size: 0.8em;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	}
+
+.credit-wide  {
+	width: 46%;
+	max-width: 742px;
+}
+
 .item {
 	width: 47%;
 	padding: 0.125em 0.25em;
+	max-width: 650px;
+}
+
+.three {
+	width: 31.25%;
+	max-width: 500px;
 }
 
 .vid {
-	width: 850px;
-	padding: 0.125em 0.25em;
+	width: 1000px;
+	max-width: 1000px;
+	padding: 1em 0.25em;
 }
+
+.full {
+	width: 94%;
+	padding: 0.125em 0.25em;
+	max-width: 1300px;
+}
+
+.inset-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0.125em 0em;
+}
+
+
 
 .bg-clr {
 	background-color: black;
@@ -125,16 +243,35 @@ a #mail {
 
 
 
-.item img,  .item video, .item embed{
+.item img,  .item video, .item embed {
 	width: 100%;
 }
 
 
 
+.shop {
+background: linear-gradient(to left, grey, black, black, black, grey); 
+	animation-name: scan;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes scan {
+	0% {background: linear-gradient(to left, white, grey, black, grey); }
+	20% {background: linear-gradient(to left, grey, white, grey, black, grey); }
+	60% {background: linear-gradient(to left, black, grey, white, grey, black);}
+	80% {background: linear-gradient(to left, grey, black, black, white, white);}
+	100% {background: linear-gradient(to left, grey, white); }
+}
 
 
+.burst {
+}
 
 
+.cards {
+	max-height: 70px;
+}
 
 
 
@@ -177,9 +314,18 @@ body.yellow p, body.yellow a, body.blk-text h1 {
 /* ----------pink------------- */
 body.pink
 { 
-	background-color: #ff0068; 
+	background-color: #ef0164; 
 	}
 
+	/* ----------maroon------------- */
+body.maroon
+{ 
+	background-color: #660000; 
+	}
+
+
+
+	
 
 
 
@@ -198,28 +344,22 @@ footer {
 }
 
 .item {
-	width: 98%;
+	width: 97%;
 	padding: 0.125em 0.25em;
 }
 
-h1 {
+.three {
+	width: 97%;
+	padding: 0.125em 0.25em;
+}
+
+h1#logo {
 	font-size: 1.5em;
 	margin-top: 1.25em;
 	letter-spacing: 0.05em;	
 }
 
-.page-name-index {
-	font-size: 2.4em;
-	margin-top: 1.25em;
-	margin-bottom: 0;
-	letter-spacing: 0;	
 
-}
-
-
-p {
-	font-size: 1.4em;
-}
 
 a #work {
 	width: 10em;	
@@ -230,10 +370,34 @@ a #mail {
 	padding-top: 1em;
 }
 
+.page-name-index, .page-name-cat{
+	font-size: 2.4em;
+}
+
 .title {
 	padding-top: 0.1em;
 }
 
+#nav-page li, #close {
+	font-size: 3em;
+}
+
+.cards {
+	max-height: 50px;
+}
+
+.credit  {
+	width: 96%;
+}
+
+.credit-wide  {
+	width: 46%;
+	max-width: 742px;
+}
+
+footer p {
+	padding-bottom:1em;
+}
 
 
 }
@@ -250,6 +414,14 @@ a #mail {
 	a #mail {
 	width: 1.7em;
 	padding-top: 0.6em;
+}
+
+#nav-page li, #close {
+	font-size: 2em;
+}
+
+.cards {
+	max-height: 30px;
 }
 }
 
