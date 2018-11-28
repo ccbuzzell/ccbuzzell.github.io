@@ -19,15 +19,7 @@ h1 {
 	margin-top: 1.5em;
 	letter-spacing: 0.05em;	
 	font-weight: normal;
-<<<<<<< HEAD
-=======
 }
-
-li {
-	list-style-type: none;
->>>>>>> 5654c21209827bbffd435c192f0f40c28309086e
-}
-
 
 p {
 	font-size: 2em;
@@ -164,19 +156,7 @@ a #mail {
 }
 
 .page-name-index, .page-name-cat{
-<<<<<<< HEAD
 	font-size: 2.75em;
-=======
-	font-size: 2.25em;
-
-}
-
-
-.item-info {
-	margin: 0 auto;
-	margin: 6em 0 2em 0;
-	text-align: center;
->>>>>>> 5654c21209827bbffd435c192f0f40c28309086e
 }
 
 .page-descipt {
@@ -187,18 +167,11 @@ a #mail {
 	letter-spacing: 0.01em;
 }
 
-<<<<<<< HEAD
 
 .item-info {
 	margin: 0 auto;
 	margin: 6em 0 2em 0;
 	text-align: center;
-=======
-.credit {
-	font-size: 0.8em;
-	margin: 1em 0 0 0;
-	width: 100%;
->>>>>>> 5654c21209827bbffd435c192f0f40c28309086e
 }
 
 .container {
@@ -209,7 +182,6 @@ a #mail {
 	justify-content: center;
 }
 
-<<<<<<< HEAD
 .credit-container{
 	margin-bottom: 2em;
 }
@@ -232,9 +204,6 @@ a #mail {
 	width: 46%;
 	max-width: 742px;
 }
-=======
-
->>>>>>> 5654c21209827bbffd435c192f0f40c28309086e
 
 .item {
 	width: 47%;
@@ -250,14 +219,11 @@ a #mail {
 .vid {
 	width: 1000px;
 	max-width: 1000px;
-<<<<<<< HEAD
 	padding: 1em 0.25em;
 }
 
 .full {
 	width: 94%;
-=======
->>>>>>> 5654c21209827bbffd435c192f0f40c28309086e
 	padding: 0.125em 0.25em;
 	max-width: 1300px;
 }
@@ -269,19 +235,7 @@ a #mail {
 	padding: 0.125em 0em;
 }
 
-<<<<<<< HEAD
 
-=======
-.inset-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.inset {
-	
-}
->>>>>>> 5654c21209827bbffd435c192f0f40c28309086e
 
 .bg-clr {
 	background-color: black;
@@ -296,30 +250,18 @@ a #mail {
 
 
 .shop {
-<<<<<<< HEAD
 background: linear-gradient(to left, grey, black, black, black, grey); 
-=======
-background: linear-gradient(to left, springGreen, black, black, black, grey); 
->>>>>>> 5654c21209827bbffd435c192f0f40c28309086e
 	animation-name: scan;
 	animation-duration: 1s;
 	animation-iteration-count: infinite;
 }
 
 @keyframes scan {
-<<<<<<< HEAD
 	0% {background: linear-gradient(to left, white, grey, black, grey); }
 	20% {background: linear-gradient(to left, grey, white, grey, black, grey); }
 	60% {background: linear-gradient(to left, black, grey, white, grey, black);}
 	80% {background: linear-gradient(to left, grey, black, black, white, white);}
 	100% {background: linear-gradient(to left, grey, white); }
-=======
-	0% {background: linear-gradient(to left, springGreen, black, black, grey); }
-	20% {background: linear-gradient(to left, black, black, grey, springGreen, grey); }
-	60% {background: linear-gradient(to left, black, springGreen, white, pink, white);}
-	80% {background: linear-gradient(to left, grey, white, springGreen, white, white);}
-	100% {background: linear-gradient(to left, springGreen, white); }
->>>>>>> 5654c21209827bbffd435c192f0f40c28309086e
 }
 
 
@@ -381,13 +323,6 @@ body.maroon
 	background-color: #660000; 
 	}
 
-	/* ----------pink------------- */
-body.maroon
-{ 
-	background-color: #660000; 
-	}
-
-
 
 
 	
@@ -410,14 +345,6 @@ footer {
 
 .item {
 	width: 97%;
-<<<<<<< HEAD
-=======
-	padding: 0.125em 0.25em;
-}
-
-.three {
-	width: 97%;
->>>>>>> 5654c21209827bbffd435c192f0f40c28309086e
 	padding: 0.125em 0.25em;
 }
 
@@ -426,7 +353,6 @@ footer {
 	padding: 0.125em 0.25em;
 }
 
-<<<<<<< HEAD
 h1#logo {
 	font-size: 1.5em;
 	margin-top: 1.25em;
@@ -434,18 +360,6 @@ h1#logo {
 }
 
 
-=======
-.page-name-index, .page-name-cat {
-	font-size: 2.4em;
-
-}
-
-
-
-p {
-	font-size: 1.4em;
-}
->>>>>>> 5654c21209827bbffd435c192f0f40c28309086e
 
 a #work {
 	width: 10em;	
@@ -469,7 +383,6 @@ a #mail {
 }
 
 .cards {
-<<<<<<< HEAD
 	max-height: 50px;
 }
 
@@ -484,9 +397,6 @@ a #mail {
 
 footer p {
 	padding-bottom:1em;
-=======
-	max-height: 40px;
->>>>>>> 5654c21209827bbffd435c192f0f40c28309086e
 }
 
 
