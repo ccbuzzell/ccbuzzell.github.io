@@ -13,7 +13,10 @@ $(document).ready(function () {
     });
 
 
+<<<<<<< HEAD
     $( "#nav-page" ).append( "<li><a href='books.html'>Books</a></li><li><a href='searchhistory.html'>Loops</a></li><li><a href='motion.html'>Motion</a></li><li><a href='exhibition.html'>Exhibition</a></li><li><a href='haunt.html'>Haunt</a></li><li><a href='video.html'>Video</a></li><li><a href='identity.html'>Identity + Web</a></li><li><a href='shop.html'>Copy Shop</a></li>" );
+=======
+>>>>>>> 5654c21209827bbffd435c192f0f40c28309086e
 
 
 });
@@ -23,7 +26,11 @@ $(document).ready(function () {
 
 
 function BookLoad () {
+<<<<<<< HEAD
     var imgs=images(5),
+=======
+    var imgs=images(3),
+>>>>>>> 5654c21209827bbffd435c192f0f40c28309086e
         last;
     function images(count){
         var images=[];
@@ -56,13 +63,21 @@ function BookLoad () {
 
 
 
+<<<<<<< HEAD
 function IdLoad () {
+=======
+function CatLoad () {
+>>>>>>> 5654c21209827bbffd435c192f0f40c28309086e
     var imgs=images(3),
         last;
     function images(count){
         var images=[];
         for ( var i = 1; i <= count; i++ ) {
+<<<<<<< HEAD
             images.push("imgs/identity/id" + i + ".gif");
+=======
+            images.push("imgs/catalogs/cat" + i + ".jpg");
+>>>>>>> 5654c21209827bbffd435c192f0f40c28309086e
         }
         return images;
     }
@@ -86,6 +101,7 @@ function IdLoad () {
     //setInterval(loop, 2500) // every few seconds
 }
 
+<<<<<<< HEAD
 
 
 function VidLoad () {
@@ -120,3 +136,5 @@ function VidLoad () {
 
 
 
+=======
+>>>>>>> 5654c21209827bbffd435c192f0f40c28309086e
