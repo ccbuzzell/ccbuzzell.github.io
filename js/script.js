@@ -13,7 +13,7 @@ $(document).ready(function () {
     });
 
 
-    $( "#nav-page" ).append( "<li><a href='books.html'>Books</a></li><li><a href='searchhistory.html'>Loops</a></li><li><a href='motion.html'>Motion</a></li><li><a href='exhibition.html'>Exhibition</a></li><li><a href='haunt.html'>Haunt</a></li><li><a href='video.html'>Video</a></li><li><a href='identity.html'>Identity + Web</a></li><li><a href='shop.html'>Copy Shop</a></li>" );
+    $( "#nav-page" ).append( "<li><a href='books.html'>Books</a></li><li><a href='searchhistory.html'>Loops</a></li><li><a href='motion.html'>Motion + Video</a></li><li><a href='haunt.html'>Haunt</a></li><li><a href='identity.html'>Identity + Web</a></li><li><a href='shop.html'>Copy Shop</a></li>" );
 
 
 });
@@ -89,7 +89,7 @@ function IdLoad () {
 
 
 function VidLoad () {
-    var imgs=images(3),
+    var imgs=images(2),
         last;
     function images(count){
         var images=[];
