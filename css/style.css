@@ -104,6 +104,19 @@ a #mail {
 }
 
 
+
+#bottom-nav-books {
+	padding: 1em 1em 0em 1em;
+	font-size: 1.5em;
+	width: 100%;
+	text-transform: uppercase;
+	letter-spacing: .08em;
+	text-align: center;
+}
+
+
+
+
 /* ------------ Social --------------- */
 .insta, .twitter   {
 	font-size: 0.7em;
@@ -156,7 +169,7 @@ a #mail {
 }
 
 .page-name-index, .page-name-cat{
-	font-size: 2.75em;
+	font-size: 3em;
 }
 
 .page-descipt {
@@ -211,10 +224,16 @@ a #mail {
 	max-width: 650px;
 }
 
+.two-mobile {
+	width: 50%;
+	padding: 0.03em 0.1em;
+}
+
 .three {
 	width: 31.25%;
 	max-width: 500px;
 }
+
 
 .vid {
 	width: 1000px;
@@ -233,6 +252,7 @@ a #mail {
 	flex-wrap: wrap;
 	justify-content: center;
 	padding: 0.125em 0em;
+	width: 100%;
 }
 
 
@@ -353,12 +373,16 @@ footer {
 	padding: 0.125em 0.25em;
 }
 
+.two-mobile {
+	width: 50%;
+	padding: 0.03em 0.1em;
+}
+
 h1#logo {
 	font-size: 1.5em;
 	margin-top: 1.25em;
 	letter-spacing: 0.05em;	
 }
-
 
 
 a #work {
@@ -391,8 +415,7 @@ a #mail {
 }
 
 .credit-wide  {
-	width: 46%;
-	max-width: 742px;
+	width: 96%;
 }
 
 footer p {
