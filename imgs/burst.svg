@@ -7,15 +7,12 @@
 	 viewBox="0 0 100 100"  xml:space="preserve">
 		<style type="text/css">
 	.polly{
-	fill:red;stroke:#000000;stroke-width:0.9145;stroke-miterlimit:10;
+	fill:#FFF;stroke:#000000;stroke-width:0.9145;stroke-miterlimit:10;
 	}
 	.click{ animation-name: click;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
 	}
-
-	
-
 	@keyframes click {
 	0% { opacity: 0; }
 	25% { opacity: 0; }
@@ -24,6 +21,7 @@
 	71% { opacity: 0; }
 	100% { opacity: 0; }
 	}
+	rect {opacity:0}
 
 		</style>
 
