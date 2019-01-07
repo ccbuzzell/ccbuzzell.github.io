@@ -58,7 +58,7 @@ function BookLoad () {
 
 
 function IdLoad () {
-    var imgs=images(3),
+    var imgs=images(2),
         last;
     function images(count){
         var images=[];

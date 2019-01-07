@@ -72,8 +72,9 @@ a #mail {
 	padding-top: 1.8em;
 }
 
-
+/* ----------nav page------------- */
 #nav-page {
+
 	position: fixed;
 	left:0;
 	top:0;
@@ -87,23 +88,24 @@ a #mail {
 }
 
 
-#nav-page li, #close  {
+
+#nav-page li a, #close  {
 	font-size: 4em;
 	line-height: 1.5em;
+	
 }
 
 #close {
 	position: fixed;
 	right:0.55em;
 	top:0em;
-
 }
 
 .nav-off {
 	display: none;
 }
 
-
+/* ----------return to main catagory------------- */
 
 #bottom-nav-books {
 	padding: 1em 1em 0em 1em;
@@ -115,7 +117,58 @@ a #mail {
 }
 
 
+/*-------- email ----------*/
 
+
+.contact-wrap {
+	width:100vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 1.5em 0 8em 0;
+}
+.contact-wrap a { 
+	text-decoration: none; font-size: 2em;
+}
+
+.contact{
+	
+	text-decoration: none;
+	width: 6em;
+	height: 4em;
+	border: 3px solid white;
+	text-align: center;
+	background: black;
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+	animation-name: grow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transform:skew(0deg,0deg);
+    
+}
+
+@keyframes grow {
+    100% {
+    	transform:skew(40deg,40deg);
+    }
+}
+
+
+.contact:hover {
+	animation-name: grown;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    z-index: 100;
+    
+}
+
+@keyframes grown {
+    100% {
+    	transform:skew(120deg,120deg);
+    }
+}
 
 /* ------------ Social --------------- */
 .insta, .twitter   {
@@ -154,6 +207,10 @@ a #mail {
 }
 
 
+
+
+
+
 /* ----------section-index------------- */
 .title {
 	text-align: center;
@@ -175,11 +232,16 @@ a #mail {
 .page-descipt {
 	font-size: 1.98em;
 	text-align: center;
-	width: 5em;
+	max-width: 5em;
 	margin: 0 auto;
 	letter-spacing: 0.01em;
 }
 
+.page-descipt-wide {
+	
+	max-width: 15em;
+	
+}
 
 .item-info {
 	margin: 0 auto;
@@ -222,6 +284,7 @@ a #mail {
 	width: 47%;
 	padding: 0.125em 0.25em;
 	max-width: 650px;
+	position: relative;
 }
 
 .two-mobile {
@@ -270,7 +333,7 @@ a #mail {
 
 
 .shop {
-background: linear-gradient(to left, grey, black, black, black, grey); 
+	background: linear-gradient(to left, grey, black, black, black, grey); 
 	animation-name: scan;
 	animation-duration: 1s;
 	animation-iteration-count: infinite;
@@ -284,13 +347,52 @@ background: linear-gradient(to left, grey, black, black, black, grey);
 	100% {background: linear-gradient(to left, grey, white); }
 }
 
-
-.burst {
+.bai {
+	background: black; 
+	animation-name: rainbow;
+	animation-duration: 60s;
+	animation-iteration-count: infinite;
 }
+
+@keyframes rainbow {
+	  0%   {background: black;}
+      25%  {background: #ee282f;}
+      50%  {background: #fecd08;}
+      75%  {background: #42c2c7;}
+      100% {background: black;}
+}
+
+
+
 
 
 .cards {
 	max-height: 70px;
+}
+
+/* ----------bursts------------- */
+
+.burst-container {
+	position: absolute;
+	max-width: 30%;
+	top:-7%;
+	right:1%;
+	z-index: 1000;
+}
+
+.art {
+	animation-name: spin;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+
+@keyframes spin {
+	0% { transform: rotate(0deg); opacity: 0; }
+	30%	{ transform: rotate(0deg); opacity: 0; }
+	50% { transform: rotate(360deg); opacity: 1;}
+	71%	{ opacity: 0; }
+	100% { transform: rotate(360deg); opacity: 0;}
 }
 
 
