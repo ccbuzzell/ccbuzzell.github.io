@@ -226,7 +226,7 @@ a #mail {
 }
 
 .page-name-index, .page-name-cat{
-	font-size: 3em;
+	font-size: 3.5em;
 }
 
 .page-descipt {
@@ -378,7 +378,6 @@ a #mail {
 	top:-7%;
 	right:1%;
 	z-index: 1000;
-	
 }
 
 .art {
@@ -505,7 +504,7 @@ a #mail {
 	padding-top: 0.1em;
 }
 
-#nav-page li, #close {
+#nav-page li a, #close {
 	font-size: 3em;
 }
 
@@ -542,7 +541,7 @@ footer p {
 	padding-top: 0.6em;
 }
 
-#nav-page li, #close {
+#nav-page li a, #close {
 	font-size: 2em;
 }
 

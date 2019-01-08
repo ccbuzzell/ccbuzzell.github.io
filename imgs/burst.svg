@@ -4,21 +4,8 @@
 	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
-	.click{ animation-name: click;
-	animation-duration: 5s;
-	animation-iteration-count: infinite;
-	}
-
 	
-
-	@keyframes click {
-	0% { opacity: 0; }
-	25% { opacity: 0; }
-	60% { opactity: 1; }
-	70% { opacity: 1; }
-	71% { opacity: 0; }
-	100% { opacity: 0; }
-	}
+	
 </style>
 <g class="burst">
 	<g>
