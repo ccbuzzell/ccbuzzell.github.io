@@ -13,11 +13,12 @@ $(document).ready(function () {
     });
 
 
-    $( "#nav-page" ).append( "<li><a href='books.html'>Books</a></li><li><a href='searchhistory.html'>Loops</a></li><li><a href='motion.html'>Motion + Video</a></li><li><a href='haunt.html'>Haunt</a></li><li><a href='identity.html'>Identity + Web</a></li><li><a href='shop.html'>Copy Shop</a></li>" );
+    $( "#nav-page" ).append( "<li><a href='books.html'>Books</a></li><li><a href='searchhistory.html'>Search History</a></li><li><a href='motion.html'>Motion + Video</a></li><li><a href='haunt.html'>Haunt</a></li><li><a href='identity.html'>Identity + Web</a></li><li><a href='shop.html'>Copy Shop</a></li>" );
 
     $( "#bottom-nav-books" ).append( "<a href='books.html'><p>&#8592;&#8592;&#8592; back to books</p></a>" );
+    $( "#bottom-nav-identity" ).append( "<a href='identity.html'><p>&#8592;&#8592;&#8592; back to identity + web</p></a>" );
 
-});
+    });
 
 
 
@@ -86,7 +87,7 @@ function VidLoad () {
 
 
 function IdLoad () {
-    var imgs=images(2),
+    var imgs=images(3),
         last;
     function images(count){
         var images=[];

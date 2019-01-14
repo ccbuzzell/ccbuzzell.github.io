@@ -88,7 +88,6 @@ a #mail {
 }
 
 
-
 #nav-page li a, #close  {
 	font-size: 4em;
 	line-height: 1.5em;
@@ -107,7 +106,7 @@ a #mail {
 
 /* ----------return to main catagory------------- */
 
-#bottom-nav-books {
+#bottom-nav-books, #bottom-nav-identity {
 	padding: 1em 1em 0em 1em;
 	font-size: 1.5em;
 	width: 100%;
@@ -191,7 +190,7 @@ a #mail {
 	top: 0vh;
 	right:-5.5em;
 }
-.insta a:hover, .twitter a:hover{
+.insta a:hover, .twitter a:hover, .web a:hover{
 	border-bottom: 1px solid white;
 	animation-name: underlineHov;
 	animation-duration: 1s;
@@ -212,7 +211,7 @@ a #mail {
 
 
 /* ----------section-index------------- */
-.title {
+.title, .web {
 	text-align: center;
 	padding-top: 0.3em;
 	width: 100%;
@@ -220,7 +219,14 @@ a #mail {
 
 /* ----------section------------- */
 
-.page-name, .page-name-cat {
+.item-info {
+	margin: 0 auto;
+	margin: 6em 0 2em 0;
+	text-align: center;
+}
+
+
+.page-name, .page-name-cat{
 	margin: 3.5em 0 1.5em 0;
 	letter-spacing: 0em;	
 }
@@ -238,16 +244,10 @@ a #mail {
 }
 
 .page-descipt-wide {
-	
 	max-width: 15em;
-	
-}
+	}
 
-.item-info {
-	margin: 0 auto;
-	margin: 6em 0 2em 0;
-	text-align: center;
-}
+
 
 .container {
 	margin: 0 auto;
@@ -378,19 +378,20 @@ a #mail {
 	top:-7%;
 	right:1%;
 	z-index: 1000;
+	opacity:0;
 }
 
 .art {
 	animation-name: spin;
-	animation-duration: 5s;
-	animation-iteration-count: infinite;
+	animation-duration: 10s;
+	animation-iteration-count: 1;
 }
 
 
 @keyframes spin {
 	0% { transform: rotate(0deg); opacity: 0; }
-	30%	{ transform: rotate(0deg); opacity: 0; }
-	50% { transform: rotate(360deg); opacity: 1;}
+	45%	{ transform: rotate(0deg); opacity: 0; }
+	60% { transform: rotate(360deg); opacity: 1;}
 	71%	{ opacity: 0; }
 	100% { transform: rotate(360deg); opacity: 0;}
 }
@@ -421,6 +422,12 @@ body.blue
 body.warm_gray
 { 
 	background-color: #5d5248; 
+	}
+
+	/* ----------dark gray------------- */
+body.dark_gray
+{ 
+	background-color: #272727; 
 	}
 
 /* ----------yellow------------- */
