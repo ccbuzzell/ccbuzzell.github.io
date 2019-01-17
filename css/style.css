@@ -106,7 +106,7 @@ a #mail {
 
 /* ----------return to main catagory------------- */
 
-#bottom-nav-books, #bottom-nav-identity {
+#bottom-nav-books, #bottom-nav-identity, #bottom-nav-haunt, {
 	padding: 1em 1em 0em 1em;
 	font-size: 1.5em;
 	width: 100%;
@@ -278,6 +278,11 @@ a #mail {
 .credit-wide  {
 	width: 46%;
 	max-width: 742px;
+}
+
+.math {
+	text-align: center;
+	font-size: 5em;
 }
 
 .item {
