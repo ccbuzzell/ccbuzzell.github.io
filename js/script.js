@@ -17,7 +17,7 @@ $(document).ready(function () {
 
     $( "#bottom-nav-books" ).append( "<a href='books.html'><p>&#8592;&#8592;&#8592; back to books</p></a>" );
     $( "#bottom-nav-identity" ).append( "<a href='identity.html'><p>&#8592;&#8592;&#8592; back to identity + web</p></a>" );
-    $( "#bottom-nav-haunt" ).append( "<a href='haunt.html'><p>&#8592;&#8592;&#8592; back to H<i>a</>unt</p></a>" );
+    $( "#bottom-nav-haunt" ).append( "<a href='haunt.html'><p>&#8592;&#8592;&#8592; back to H<i>a</i>unt</p></a>" );
 
     });
 
