@@ -347,25 +347,26 @@ a #mail {
 @keyframes scan {
 	0% {background: linear-gradient(to left, white, grey, black, grey); }
 	20% {background: linear-gradient(to left, grey, white, grey, black, grey); }
-	60% {background: linear-gradient(to left, black, grey, white, grey, black);}
+	60% {background-image: url("imgs/KB_01.jpg");}
 	80% {background: linear-gradient(to left, grey, black, black, white, white);}
 	100% {background: linear-gradient(to left, grey, white); }
 }
 
-.bai {
-	background: black; 
-	animation-name: rainbow;
-	animation-duration: 60s;
+.shop img{ 
+	animation-name: clear;
+	opacity: 0;
+	animation-duration: 2s;
 	animation-iteration-count: infinite;
 }
 
-@keyframes rainbow {
-	  0%   {background: black;}
-      25%  {background: #ee282f;}
-      50%  {background: #fecd08;}
-      75%  {background: #42c2c7;}
-      100% {background: black;}
+@keyframes clear {
+	0% {opacity: 0; }
+	19% {opacity: 0; }
+	19.5% {opacity: 100; }
+	100% {opacity: 0;}
 }
+
+
 
 
 
