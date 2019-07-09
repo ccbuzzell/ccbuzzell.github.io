@@ -418,10 +418,16 @@ body.green
 	background-color: #112511; 
 	}
 
+	/* ----------green------------- */
+body.kelly 
+{ 
+	background-color: #14d38e; 
+	}
+
 /* ----------blue------------- */
 body.blue 
 { 
-	background-color: #000452; 
+	background-color: #3801d7; 
 	}
 
 /* ----------warm gray------------- */
@@ -450,6 +456,12 @@ body.yellow p, body.yellow a, body.blk-text h1 {
 body.pink
 { 
 	background-color: #ef0164; 
+	}
+
+	/* ----------pink------------- */
+body.peach
+{ 
+	background-color: #fde4dd; 
 	}
 
 	/* ----------maroon------------- */
