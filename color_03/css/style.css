@@ -32,7 +32,7 @@ body {
   	background-color: #FAA400;
 	overflow:hidden;
 	background-image: url(../img/o.jpg);
-	-webkit-animation: switcho 3s infinite; /* Chrome, Safari, Opera */ 
+	-webkit-animation: switcho 3s; 
     animation: switcho 3s; 
 	background-repeat: no-repeat;
   	background-position: right top;
@@ -40,6 +40,12 @@ body {
 }
 
 @-webkit-keyframes switcho {
+    0% {background-image: url(../img/blank.png);}
+    50% {background-image: url(../img/blank.png);}
+	100% {background-image: url(../img/o.jpg);}
+}
+
+@keyframes switcho {
     0% {background-image: url(../img/blank.png);}
     50% {background-image: url(../img/blank.png);}
 	100% {background-image: url(../img/o.jpg);}
@@ -61,7 +67,7 @@ body {
 	background-color: #F25A29;
  	overflow:hidden;
 	background-image: url(../img/r.jpg);
-	-webkit-animation: switchr 3s infinite; /* Chrome, Safari, Opera */ 
+	-webkit-animation: switchr 3s; 
     animation: switchr 3s; 
 	background-repeat: no-repeat;
   	background-position: right top;
@@ -69,6 +75,12 @@ body {
 }
 
 @-webkit-keyframes switchr {
+    0% {background-image: url(../img/blank.png);}
+    50% {background-image: url(../img/blank.png);}
+	100% {background-image: url(../img/r.jpg);}
+}
+
+@keyframes switchr {
     0% {background-image: url(../img/blank.png);}
     50% {background-image: url(../img/blank.png);}
 	100% {background-image: url(../img/r.jpg);}
