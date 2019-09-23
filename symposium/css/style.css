@@ -11,7 +11,11 @@ body {
   font-weight: 700;
 }
 
+
+
 a {color: black;}
+
+
 
 /*--head --*/
 
@@ -31,106 +35,102 @@ a {color: black;}
  }
 
 
-
-
  .container img {
-  height:14vw;
+  height:13vw;
   margin-bottom:-0.55vw;
  }
 
 
+ .container .ticker-move-4 img {
+  height:7vw;
+ }
+
+
+
 /*--ticker --*/
 
-  .ticker-wrap {
-    width: 100%;
-    padding-left: 100%;
-  }
-
-  @keyframes ticker_1 {
-    0% { transform: translate3d(0, 0, 0); }
-    100% { transform: translate3d(-270%, 0, 0); }
-  }
 
   .ticker-move-1 {
     display: inline-block;
-    padding-right: 100%;
-    animation-iteration-count: infinite;
+    position: relative;
+    white-space: nowrap;
+    right:-35vw;
+    animation-iteration-count: 3;
     animation-timing-function: linear;
     animation-name: ticker_1;
-    animation-duration: 11s;
-    white-space: nowrap;
+    animation-duration: 26s;
   }
 
-  @keyframes ticker_2 {
-    0% { transform: translate3d(0, 0, 0); }
-    100% { transform: translate3d(-210%, 0, 0); }
+   .ticker-stop-1 {
+    right:-35vw;
+    animation: none;
   }
+
 
    .ticker-move-2 {
     display: inline-block;
-    padding-right: 100%;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-name: ticker_2;
-    animation-duration: 15s;
+    position: relative;
     white-space: nowrap;
+    right:0vw;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+    animation-name: ticker_1;
+    animation-duration: 28s;
   }
 
-    @keyframes ticker_3 {
-    0% { transform: translate3d(0, 0, 0); }
-    100% { transform: translate3d(-200%, 0, 0); }
+  .ticker-stop-2 {
+    right:0vw;
+    animation: none;
   }
+
 
  .ticker-move-3 {
-    display: inline-block;
+  display: inline-block;
+    position: relative;
     white-space: nowrap;
-    padding-right: 100%;
-    animation-iteration-count: infinite;
+    right:-4.5vw;
+    animation-iteration-count: 3;
     animation-timing-function: linear;
-    animation-name: ticker_3;
-    animation-duration: 19s;
-    white-space: nowrap;
+    animation-name: ticker_1;
+    animation-duration: 30s;
   }
 
-  
 
-  @keyframes ticker_5 {
-    0% { transform: translate3d(0, 0, 0); }
-    100% { transform: translate3d(-220%, 0, 0); }
+.ticker-stop-3 {
+    right:-4.5vw;
+    animation: none;
   }
 
- .ticker-move-5 {
-    display: inline-block;
+
+ @keyframes ticker_1 {
+    0% { right:-100vw ;}
+    100% {right:100vw;}
+  }
+
+ 
+
+ .ticker-move-4 {
+  display: inline-block;
+    position: relative;
     white-space: nowrap;
-    padding-right: 100%;
-    animation-iteration-count: infinite;
+    right:-10vw;
+    animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-name: ticker_5;
-    animation-duration: 12s;
-    white-space: nowrap;
-  }
-
-  
-
+    animation-name: ticker_2;
+    animation-duration: 20s;
+    padding: 2.1em 0 2em;
   }
 
 
-
-  
-  .ticker-item{
-    display: inline-block;
+  .ticker-stop-4 {
+    right:-10vw;
+    animation: none;
   }
 
-
-
-
-
-
-
-
-
-
-
+   @keyframes ticker_2 {
+     0% { right:-100vw ;}
+    100% {right:-10vw;}
+  }
 
 
 
@@ -139,12 +139,10 @@ a {color: black;}
 
 
 .info-container {	
-	width: 60%;
+	width: 75%;
 	margin: 0 auto;
-	font-size: 1.05em;
-	line-height: 1.75em;
-}
-
+  font-size: 1em;
+	}
 
 
 .top-container { 
@@ -153,31 +151,52 @@ a {color: black;}
 
 .info-container p{ 
   padding: 0.8em 0;
+  font-size: 1.24em;
+  line-height: 1.9em;
 }
 
 .ticker-p {
   font-weight: 400;
-  font-size: 0.7em;
+  font-size: 0.85em;
   display: inline-block;
-
 
 }
 
 h2{ 
-  font-size: 1.4em;
+  font-size: 1.8em;
+  line-height: 1.4em;
   padding: 4em 0 0em;
-  color: #FF3900;
-  font-family: 'Syncopate', sans-serif;
+  color: #f82c00;
+
 }
 
 
 h3{ 
-  font-size: 0.6em;
+  font-size: 0.7em;
   letter-spacing: 0.08em;
   line-height: 2.6em;
-  padding-left:10%;
-  font-family: 'Syncopate', sans-serif;
+  padding-left:12.5%;
+
 }
+
+.title_01 {
+  background-color: white;
+  z-index: 1000;
+  display: inline-block;
+}
+
+
+
+
+/*--dharma section--*/
+
+.dp-info-container{
+  padding: 10em 0; 
+  margin: 0 auto;
+  text-align: center;
+
+}
+
 
 h4{ 
   font-size: 0.9em;
@@ -188,20 +207,17 @@ h4{
   text-transform: uppercase;
 }
 
-.title_01 {
-  background-color: white;
-  z-index: 1000;
-  display: inline-block;
+
+.dp-logo {
+  width: 60%;
 }
 
-.dp-info {
-  padding: 10em 0; 
-  margin: 0 auto;
-  text-align: center;
-}
 
-.dp {
-  width: 70%;
+h5{ 
+  float:right;
+  padding:1% 5%;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 
@@ -218,7 +234,7 @@ h4{
 }
 
 .sponsor-item {
-  margin:2% 2% 1%;
+  margin:2% 3% 0.5%;
 }
 
 .sponsor-item img{
@@ -228,23 +244,45 @@ h4{
 
 
 
+/*--small laptop thru ipad mini--*/
+
+@media only screen and (max-width: 1200px) { .container img { margin-bottom:-1vw;}
 
 
-@media only screen and (max-width: 1100px) {
+/*--all phone--*/
 
-.info-container { 
-  width: 80%;
-  font-size: 1.05em;
-  line-height: 1.75em;
-}
-
-.dp {
-  width: 60%;
-}
 
 @media only screen and (max-width: 700px){
+
+  .container img {margin-bottom:-2vw;}
+  .container .ticker-move-4 img {height:13vw;
+ }
+
+  .ticker-move-4 {right:-5.5vw;}
+
+   @keyframes ticker_4 {
+     0% { right:-100vw ;}
+    100% {right:-5.5vw;}
+  }
+  
+.info-container { width: 85%; font-size: 0.8em;}
+
+.ticker-p {font-size: 0.6em; display: block;text-align: center;}
+
+.title_01 { display: block; text-align: center; }
+
+h3{ font-size: 0.4em; text-align: center; padding-left:0%;}
+
+.dp-logo {width: 80%;}
+
+h4{ font-size: 0.7em; letter-spacing: 0.03em; padding: 1em;
+}
+
+
   .sponsor-container {flex-wrap: wrap;}
-  .sponsor-item {width:46%;padding: 0 5%;}
+  .sponsor-item {width:40%;padding: 0 4%;}
+
+
 
 }
 
