@@ -36,9 +36,11 @@ a {color: black;}
 
 
  .container img {
-  height:13vw;
+  height:14vw;
   margin-bottom:-0.55vw;
  }
+
+ 
 
 
  .container .ticker-move-4 img {
@@ -54,7 +56,7 @@ a {color: black;}
     display: inline-block;
     position: relative;
     white-space: nowrap;
-    right:-35vw;
+    right:-38vw;
     animation-iteration-count: 3;
     animation-timing-function: linear;
     animation-name: ticker_1;
@@ -62,7 +64,7 @@ a {color: black;}
   }
 
    .ticker-stop-1 {
-    right:-35vw;
+    right:-38vw;
     animation: none;
   }
 
@@ -88,7 +90,7 @@ a {color: black;}
   display: inline-block;
     position: relative;
     white-space: nowrap;
-    right:-4.5vw;
+    right:-5.3vw;
     animation-iteration-count: 3;
     animation-timing-function: linear;
     animation-name: ticker_1;
@@ -97,7 +99,7 @@ a {color: black;}
 
 
 .ticker-stop-3 {
-    right:-4.5vw;
+    right:-5.3vw;
     animation: none;
   }
 
@@ -151,8 +153,8 @@ a {color: black;}
 
 .info-container p{ 
   padding: 0.8em 0;
-  font-size: 1.24em;
-  line-height: 1.9em;
+  line-height: 1.8em;
+  font-size: 1.15em;
 }
 
 .ticker-p {
@@ -160,10 +162,11 @@ a {color: black;}
   font-size: 0.85em;
   display: inline-block;
 
+
 }
 
 h2{ 
-  font-size: 1.8em;
+  font-size: 1.6em;
   line-height: 1.4em;
   padding: 4em 0 0em;
   color: #f82c00;
@@ -246,7 +249,11 @@ h5{
 
 /*--small laptop thru ipad mini--*/
 
-@media only screen and (max-width: 1200px) { .container img { margin-bottom:-1vw;}
+@media only screen and (max-width: 1200px) { .container img { margin-bottom:-0.65vw;} .info-container p{   font-size: 1em;} h2{ font-size: 1.4em;}
+@media only screen and (max-width: 1000px) { .container img { margin-bottom:-0.85vw;}}
+@media only screen and (max-width: 800px) { .container img { margin-bottom:-0.95vw;}}
+
+
 
 
 /*--all phone--*/
@@ -255,9 +262,7 @@ h5{
 @media only screen and (max-width: 700px){
 
   .container img {margin-bottom:-2vw;}
-  .container .ticker-move-4 img {height:13vw;
- }
-
+  .container .ticker-move-4 img {height:12vw;}
   .ticker-move-4 {right:-5.5vw;}
 
    @keyframes ticker_4 {
@@ -266,12 +271,8 @@ h5{
   }
   
 .info-container { width: 85%; font-size: 0.8em;}
-.top-container { 
-  margin-top: 30vw;
-}
-
+.top-container { margin-top: 42vw;}
 .ticker-p {font-size: 0.7em; display: block;text-align: center;}
-
 .title_01 { display: block; text-align: center; }
 
 h3{ text-align: center; padding-left:0%;}
