@@ -58,7 +58,7 @@ a {color: black;}
     animation-iteration-count: 3;
     animation-timing-function: linear;
     animation-name: ticker_1;
-    animation-duration: 26s;
+    animation-duration: 36s;
   }
 
    .ticker-stop-1 {
@@ -75,7 +75,7 @@ a {color: black;}
     animation-iteration-count: 3;
     animation-timing-function: linear;
     animation-name: ticker_1;
-    animation-duration: 28s;
+    animation-duration: 40s;
   }
 
   .ticker-stop-2 {
@@ -92,7 +92,7 @@ a {color: black;}
     animation-iteration-count: 3;
     animation-timing-function: linear;
     animation-name: ticker_1;
-    animation-duration: 30s;
+    animation-duration: 44s;
   }
 
 
@@ -266,12 +266,17 @@ h5{
   }
   
 .info-container { width: 85%; font-size: 0.8em;}
+.top-container { 
+  margin-top: 30vw;
+}
 
-.ticker-p {font-size: 0.6em; display: block;text-align: center;}
+.ticker-p {font-size: 0.7em; display: block;text-align: center;}
 
 .title_01 { display: block; text-align: center; }
 
-h3{ font-size: 0.4em; text-align: center; padding-left:0%;}
+h3{ text-align: center; padding-left:0%;}
+
+.dp-info-container{padding: 7em 0; }
 
 .dp-logo {width: 80%;}
 
@@ -279,8 +284,9 @@ h4{ font-size: 0.7em; letter-spacing: 0.03em; padding: 1em;
 }
 
 
+
   .sponsor-container {flex-wrap: wrap;}
-  .sponsor-item {width:40%;padding: 0 4%;}
+  .sponsor-item {width:44%;padding: 0 2%;}
 
 
 
