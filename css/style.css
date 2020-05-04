@@ -219,13 +219,14 @@ a #mail {
 	width: 100%;
 }
 
-.download a{
+.download{
 	text-align: center;
 	padding-top: 0.1em;
 	width: 100%;
 	font-size:14px;
 	text-transform:Uppercase;
-	letter-spaces:0.02em;
+	letter-spacing:0.02em;
+	padding-bottome:2em;
 }
 
 /* ----------section------------- */
