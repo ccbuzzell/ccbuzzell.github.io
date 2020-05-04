@@ -220,13 +220,14 @@ a #mail {
 }
 
 .download{
-	text-align: center;
-	padding-top: 0.1em;
-	width: 100%;
-	font-size:14px;
-	text-transform:Uppercase;
-	letter-spacing:0.02em;
-	padding-bottome:2em;
+	ext-align: center;
+    margin-top: -40px;
+    width: 100%;
+    font-size: 14px;
+    text-transform: Uppercase;
+    letter-spacing: 0.02em;
+    padding-bottom: 10em;
+	
 }
 
 /* ----------section------------- */
