@@ -219,6 +219,15 @@ a #mail {
 	width: 100%;
 }
 
+.download {
+	text-align: center;
+	padding-top: 0.1em;
+	width: 100%;
+	font-size:14px;
+	text-transform:Uppercase;
+	letter-spaces:0.02em;
+}
+
 /* ----------section------------- */
 
 .item-info {
