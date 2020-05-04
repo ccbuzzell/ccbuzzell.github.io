@@ -220,7 +220,7 @@ a #mail {
 }
 
 .download{
-	ext-align: center;
+	text-align: center;
     margin-top: -40px;
     width: 100%;
     font-size: 14px;
