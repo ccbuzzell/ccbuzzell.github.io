@@ -322,6 +322,12 @@ a #mail {
 	padding: 1em 0.25em;
 }
 
+.vid-smfa.vid {
+	width: 1200px;
+	max-width: 1200px;
+	padding: 1em 0.25em;
+}
+
 .full {
 	width: 94%;
 	padding: 0.125em 0.25em;
