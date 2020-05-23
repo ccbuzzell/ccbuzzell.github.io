@@ -64,7 +64,9 @@
  width: 26.5vw;
   }
 
-
+  .lrg-slider {
+    height:57vw;
+  }
 
 .carousel-cell-big {
   width: 100vw; /* full width */
@@ -76,6 +78,7 @@
  img.big {
   width: 100vw;
   }
+
 
   .video-screen {
     width: 100%;
@@ -333,8 +336,6 @@ display: none;
 
 .item-page img{
   width: 100%;
-  margin-bottom: -0.4vw;
-
 }
 
 .img-container {
@@ -346,8 +347,8 @@ display: none;
   flex-wrap: wrap;
 }
 
-.item-page img.half{
-  width: 50%;
+.item-page .half{
+  max-width: 50%;
   padding:0 3vw 4vw 0;
 
 }
