@@ -309,12 +309,6 @@ nav a {
 }
 
 
-
-.no_scroll{
-display: none;
-}
-
-
 .pg-none {
   display: none;
 }
@@ -322,7 +316,6 @@ display: none;
    
 
 .item-page {
-  
   background-color: black;
   color:white;
   position: absolute;
@@ -367,9 +360,6 @@ display: none;
 }
 
 
-
-
-
 .img-container {
   padding-left: 6vw;
   padding-right: 3vw;
@@ -380,7 +370,7 @@ display: none;
 }
 
 
-.img-container img{
+.img-container .img-item{
   padding:0 3vw 4vw 0;
   width: 50%;
 }
