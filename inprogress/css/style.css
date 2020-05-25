@@ -68,7 +68,7 @@
 
 .carousel-cell-big {
   width: 100vw; /* full width */
-  height:57.1vw ; /* height of carousel */
+  height:; /* height of carousel */
   margin: 0%;
   counter-increment: carousel-cell;
 }
@@ -86,7 +86,7 @@
   }
 
   .lrg-slider {
-    max-height: 57.1vw ; /* height of carousel */
+    max-height: 56.8vw ; /* height of carousel */
     overflow: hidden;
   }
 
