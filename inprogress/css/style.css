@@ -32,7 +32,7 @@
  
 .carousel-cell-small {
   width: 30vw; /* full width */
-  height: ; /* height of carousel */
+  height:24vw ; /* height of carousel */
   margin: 4.6% 0.25% 1% ;
   counter-increment: carousel-cell;
 }
@@ -46,8 +46,8 @@
 
   .carousel-cell-medium {
   width: 50vw; /* full width */
-  height: ; /* height of carousel */
-  margin: 5% 2% 2% ;
+  height:36vw ; /* height of carousel */
+  margin: 6% 2% 2% ;
   counter-increment: carousel-cell;
 }
 
@@ -64,13 +64,11 @@
  width: 26.5vw;
   }
 
-  .lrg-slider {
-    height:57vw;
-  }
+
 
 .carousel-cell-big {
   width: 100vw; /* full width */
-  height: ; /* height of carousel */
+  height:57.1vw ; /* height of carousel */
   margin: 0%;
   counter-increment: carousel-cell;
 }
@@ -82,16 +80,26 @@
 
   .video-screen {
     width: 100%;
-    height: 23vw;
+    height: 24vw;
     position: absolute;
     top:0;
+  }
+
+  .lrg-slider {
+    max-height: 57.1vw ; /* height of carousel */
+    overflow: hidden;
+  }
+
+  .med-slider {
+    height:43vw ; /* height of carousel */
+    overflow: hidden;
   }
 
 /* carousel caption
    ========================================================================== */
    .caption {
 
-    font-size: 1.4vw;
+    font-size: 1.6vw;
    }
 
 
@@ -105,7 +113,7 @@
 
   .carousel-cell-big .caption {
   position: relative;
-  bottom:2.2em;
+  bottom:2.5em;
   left:1.5em;
   line-height: 0;
   padding-bottom: 0em;
@@ -299,81 +307,7 @@ nav a {
 
 
 
-/* Item/Nav Pages
-   ========================================================================== */
-.close{
-  font-size: 4vw;
-  position: absolute;
-  right:2.5vw;
-  top:1.5vw;
-}
 
-
-.pg-none {
-  display: none;
-}
-
-   
-
-.item-page {
-  background-color: black;
-  color:white;
-  position: absolute;
-  top:12.2vw;
-  margin-bottom: 10vw;
-  width: 100vw;
-  z-index: 1000;
-    }
-
-.margin-top{
-  margin-top: 4vw;
-}
-
-.item-container {
-  padding:1vw 6.5vw 2vw 7vw;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.nav-bottom {
-  justify-content: space-between;
-}
-
- .item-page p {
-    letter-spacing: 0em;
-    font-size: 2.5vw;
-    line-height: 3.5vw;
-    padding-bottom: 2vw;
-  }
-
-
-  .item-page h2 {
-    font-size: 4.25vw;
-    line-height: 5.9vw;
-    letter-spacing: 0em;
-    text-align: left;
-    width: 60%;
-  }
-
-.item-page img{
-  width: 100%;
-}
-
-
-.img-container {
-  padding-left: 6vw;
-  padding-right: 3vw;
-  margin: 1vw 0 2vw;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-
-.img-container .img-item{
-  padding:0 3vw 4vw 0;
-  width: 50%;
-}
 
 
 
@@ -422,6 +356,69 @@ nav a {
 
 
 
+/* Item/Nav Pages
+   ========================================================================== */
+
+ 
+
+.item-page {
+  background-color: black;
+  color:white;
+  margin-bottom: 10vw;
+  z-index: 1;
+  margin-top: -1.35vw;
+}
+
+.margin-top{
+  margin-top:5vw;
+}
+
+.item-container {
+  padding:1vw 6.5vw 2vw 7vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-bottom {
+  justify-content: space-between;
+}
+
+ .item-page p {
+    letter-spacing: 0em;
+    font-size: 2.5vw;
+    line-height: 3.5vw;
+    padding-bottom: 2vw;
+  }
+
+
+  .item-page h2 {
+    font-size: 4.25vw;
+    line-height: 5.9vw;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 60%;
+  }
+
+.item-page img{
+  width: 100%;
+}
+
+
+.img-container {
+  padding-left: 6vw;
+  padding-right: 3vw;
+  margin: 1vw 0 2vw;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.img-container .img-item{
+  padding:0 3vw 4vw 0;
+  width: 50%;
+}
+
 /* Footer
    ========================================================================== */
 
@@ -431,12 +428,13 @@ footer {
   padding: 1em;
   font-size: 1.4vw;
   background-color: white;
-  z-index: 800;
+ 
 }
 
 .foot-hold {
   position: fixed;
   bottom: 0;
+  z-index: -1;
 }
 
 footer h4 {
@@ -444,7 +442,7 @@ footer h4 {
 }
 
 footer img {
-  width: 10%;
+  width: 11%;
 }
 
 
