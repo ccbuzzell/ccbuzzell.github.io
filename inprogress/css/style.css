@@ -28,42 +28,60 @@
 /* Flickity
    ========================================================================== */
 
+.lrg-slider {
+    max-height: 56.1vw ; /* height of carousel */
+    overflow: hidden;
+  }
 
+.med-slider {
+    height:38vw ; /* height of carousel */
+    overflow: hidden;
+  }
+
+.small-slider {
+    height:25vw ; /* height of carousel */
+    overflow: hidden;
+  }
  
 .carousel-cell-small {
   width: 30vw; /* full width */
   height:24vw ; /* height of carousel */
-  margin: 4.6% 0.25% 1% ;
+  margin: 1vw 0.25vw 0 ;
   counter-increment: carousel-cell;
 }
 
  img.small {
   width: 30vw;
-  padding-top:1.1vw;
-
   }
 
 
-  .carousel-cell-medium {
+
+.carousel-cell-medium {
   width: 50vw; /* full width */
   height:36vw ; /* height of carousel */
-  margin: 6% 2% 2% ;
+  margin: 0.5% 2% 0% ;
   counter-increment: carousel-cell;
 }
 
  img.medium {
   width: 50vw;
-  padding-top:1vw;
   }
 
 .carousel-cell-medium.short { 
-  width: 27vw; 
+  width: 28vw; 
 }
 
 .carousel-cell-medium.short img{ 
- width: 26.5vw;
+ width: 28vw;
   }
 
+  .carousel-cell-medium.med-gif{ 
+ width: 52.5vw;
+  }
+
+  .carousel-cell-medium.med-gif img{ 
+ width: 52.5vw;
+  }
 
 
 .carousel-cell-big {
@@ -77,38 +95,30 @@
   width: 100vw;
   }
 
+ 
 
   .video-screen {
     width: 100%;
-    height: 24vw;
+    height: 23vw;
     position: absolute;
     top:0;
   }
 
-  .lrg-slider {
-    max-height: 56.8vw ; /* height of carousel */
-    overflow: hidden;
-  }
+ 
 
-  .med-slider {
-    height:43vw ; /* height of carousel */
-    overflow: hidden;
-  }
+ 
 
 /* carousel caption
    ========================================================================== */
    .caption {
-
-    font-size: 1.6vw;
+    font-size: 1.7vw;
    }
-
-
 
   .carousel-cell-medium .caption {
   color: white;
   width: 100%;
   text-align: center;
-  padding: 1em 0 0.5em;
+  padding: 1em 0 0em;
 }
 
   .carousel-cell-big .caption {
@@ -128,7 +138,6 @@
 .flickity-page-dots {
   display: none;
 }
-
 
 
 .flickity-button:focus {
@@ -159,81 +168,21 @@
 /* Ticker
    ========================================================================== */
 
-   @-webkit-keyframes ticker {
-    0% {
-    -webkit-transform: translateX(-100%);
-    transform: translate3d(0, 0, 0);
-    visibility: visible;
-    }
-    100% {
-    -webkit-transform: translateX(-50%);
-    transform: translate3d(-50%, 0, 0);
-    }
-    }
 
+.top-title{
+  text-align: center;
+  }
     
-    @keyframes ticker {
-    0% {
-    -webkit-transform: translateX(-100%);
-    transform: translate3d(0, 0, 0);
-    visibility: visible;
-    }
-    100% {
-    -webkit-transform: translateX(-50%);
-    transform: translate3d(-50%, 0, 0);
-    }
-    }
-
-
-    .ticker-wrap {
-    width: 100%;
-    overflow: hidden;
-    top: 3.2em;
-    margin-top: -3.4em;
+ .big-title {
     position: relative;
-    z-index: 300;
-    font-size: 1.75vw;
+    top:1vw;
+    margin-bottom: -5vw;
+    z-index: 888;
+  }
 
-
-    }
-
-    .ticker {
-    display: inline-block;
-    white-space: nowrap;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-name: ticker;
-    animation-name: ticker;
-    -webkit-animation-duration: 300s;
-    animation-duration: 300s;
-
-    }
-
-    /*.ticker-wrap:hover .ticker {
-    -webkit-animation-play-state: paused;
-    -moz-animation-play-state: paused;
-    -o-animation-play-state: paused;
-    animation-play-state: paused;
-    
-    }
-    */
-
-    .ticker_item {
-      display: inline-block;
-        
-    }
-
-
-
-
-  
-    
-
-
-
-
+ .med-title{
+  padding-top: 1.4vw;
+  }
 
 
 
@@ -284,8 +233,7 @@ nav a {
 
 .logo {
   text-align: center;
-  flex-grow: 6;
-  font-size: 5.5vw;
+  font-size: 9vw;
 }
 
 .nav-item {
@@ -315,9 +263,7 @@ nav a {
 /* Main
    ========================================================================== */
 
-  .container {
-    width: 100%;
-   }
+ 
 
  
  
@@ -339,7 +285,7 @@ nav a {
   }
 
   h3 {
-    font-size: 2em;
+    font-size: 3.3vw;
     letter-spacing: 0.01em;
     padding:0.15em 0;
   }
@@ -358,7 +304,9 @@ nav a {
 
 /* Item/Nav Pages
    ========================================================================== */
-
+ .container {
+    width: 100%;
+   }
  
 
 .item-page {
@@ -366,7 +314,6 @@ nav a {
   color:white;
   margin-bottom: 10vw;
   z-index: 1;
-  margin-top: -1.35vw;
 }
 
 .margin-top{
@@ -379,9 +326,28 @@ nav a {
   flex-wrap: wrap;
 }
 
+
+.nav-bottom .left,  .nav-bottom .right{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
 .nav-bottom {
   justify-content: space-between;
 }
+
+.nav-bottom a{
+  color:white;
+  border:none;
+}
+
+.nav-bottom .left img, .nav-bottom .right img{
+    height: 4.4vw;
+    width: 4vw;
+
+  }
+
 
  .item-page p {
     letter-spacing: 0em;
@@ -418,6 +384,8 @@ nav a {
   padding:0 3vw 4vw 0;
   width: 50%;
 }
+
+
 
 /* Footer
    ========================================================================== */
