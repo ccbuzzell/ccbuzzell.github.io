@@ -12,23 +12,13 @@ $(document).ready(function () {
 
 
 
- $("#pretend").click(function(){
-        $("#pretend-page").removeClass("pg-none");
-        $('.container').addClass("no_scroll");
-        $('footer').addClass("foot-hold");
+$(".img-item").click(function(){
+  $(this).toggleClass("img-item-big");
+});
 
- 
-    }); 
-
-    $("#body").click(function(){
-        $("#body-page").removeClass("pg-none");
-        $('.container').addClass("no_scroll");
-        $('footer').addClass("foot-hold");
-
- 
-    });    
-
-
+$(".click").click(function(){
+  $(this).toggleClass("img-item-big-gif");
+});
 
 
 
