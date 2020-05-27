@@ -189,29 +189,6 @@
 
 
 
-/* Backgrounds
-   ========================================================================== */
-
-.red {
-  background-color: red;
-}
-
-.black{
-  background-color: black;
-}
-
-.white{
- background-color: white;
-}
-
-.white-txt{
- color: white;
-}
-
-.white-txt a{
- color: white;
-}
-
 
 
 
@@ -302,6 +279,9 @@ nav a {
 
 
 
+
+
+
 /* Item/Nav Pages
    ========================================================================== */
  .container {
@@ -380,9 +360,62 @@ nav a {
 }
 
 
-.img-container .img-item{
+.img-item{
   padding:0 3vw 4vw 0;
   width: 50%;
+}
+
+.img-item-big{
+  padding:0 3vw 4vw 0;
+  width: 100% !important;
+}
+
+
+/* Gif Page
+   ========================================================================== */
+
+.gif-pg {
+  padding: 2vw 0.7vw 5vw 1vw;
+}
+
+.item-page .three-col {
+  width: 32.9%;
+  padding: 0.2vw 0vw 0 0vw;
+  flex-grow:1;
+}
+
+.item-page .click {
+}
+
+.img-item-big-gif{
+  position: fixed;
+  top:25%;
+  left:21%;
+  width:60% !important;
+  filter: drop-shadow(0 0 5vw rgba(255, 0, 0, 5));
+}
+
+/* Backgrounds
+   ========================================================================== */
+
+.red {
+  background-color: red;
+}
+
+.black{
+  background-color: black;
+}
+
+.white{
+ background-color: white;
+}
+
+.white-txt{
+ color: white;
+}
+
+.white-txt a{
+ color: white;
 }
 
 
