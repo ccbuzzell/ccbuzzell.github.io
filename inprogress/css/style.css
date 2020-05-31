@@ -188,12 +188,6 @@
 
 
 
-
-
-
-
-
-
 /* Header
    ========================================================================== */
 
@@ -202,15 +196,25 @@ nav {
   padding: 1vw 0;
   height:13vw;
   align-items: center;
+  width: 100%;
 }
 
 nav a {
   border: none;
 }
 
+nav.nav-page{
+  display:block;
+  padding-top: 1.3vw;
+  text-align: center;
+}
+
 .logo {
   text-align: center;
-  font-size: 9vw;
+}
+
+.logo a{
+  border: none;
 }
 
 .nav-item {
@@ -226,21 +230,39 @@ nav a {
 }
 
 
+#icon-arrow {
+  height: 15vw;
+  margin: 0 0 0em;
+
+}
+
+nav.nav-page ul {
+  padding:2vw 0 0;
+}
+
+
+nav.nav-page h4 {
+  text-align: left;
+  padding:0 6vw 2vw;
+}
 
 
 
 
+.contact {
+  background-color: black;
+  width:84vw;
+  height:40vw;
+  top:33vw;
+  left:8vw;
+  position: absolute;
 
-
-
-
+}
 
 
 
 /* Main
    ========================================================================== */
-
- 
 
  
  
@@ -249,8 +271,8 @@ nav a {
     
   }
 
-  h1 {
-    font-size: 3em;
+  h1{
+    font-size: 9vw;
     letter-spacing: 0.03em;
   }
 
@@ -268,7 +290,8 @@ nav a {
   }
 
   h4 {
-    font-size: 1.5em;
+    font-size: 2.5vw;
+    line-height: 3.5vw;
     letter-spacing: -0.01em;
   }
 
@@ -278,7 +301,10 @@ nav a {
   }
 
 
-
+li {
+   font-size: 5vw;
+   line-height: 9vw;
+}
 
 
 
@@ -370,6 +396,11 @@ nav a {
   width: 100% !important;
 }
 
+.img-item-bottom{
+  padding:0 3vw 3vw 0;
+  width: 100% !important;
+}
+
 
 /* Gif Page
    ========================================================================== */
@@ -379,7 +410,7 @@ nav a {
 }
 
 .item-page .three-col {
-  width: 32.9%;
+  width: 32.8%;
   padding: 0.2vw 0vw 0 0vw;
   flex-grow:1;
 }
