@@ -203,11 +203,7 @@ nav a {
   border: none;
 }
 
-nav.nav-page{
-  display:block;
-  padding-top: 1.3vw;
-  text-align: center;
-}
+
 
 .logo {
   text-align: center;
@@ -236,12 +232,17 @@ nav.nav-page{
 
 }
 
-nav.nav-page ul {
+.nav-page{
+
+  text-align: center;
+}
+
+.nav-page ul {
   padding:2vw 0 0;
 }
 
 
-nav.nav-page h4 {
+.nav-page h4 {
   text-align: left;
   padding:0 6vw 2vw;
 }
@@ -253,7 +254,7 @@ nav.nav-page h4 {
   background-color: black;
   width:84vw;
   height:40vw;
-  top:33vw;
+  top:35vw;
   left:8vw;
   position: absolute;
 
