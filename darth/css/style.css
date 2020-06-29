@@ -614,7 +614,7 @@ img.event-logo{
 
 /* on home */
 .boxed-text {
-	width: 100%;
+	width: 98.5%;
 	background-color: white;
 	border: solid 1px black;
 	box-shadow: 10px 10px black;
@@ -774,10 +774,10 @@ border:1px solid var(--blue);
 
 /* Media Q ------------------------------------------------------------------------------ */
 
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 1000px){
 
 	.container {
-		max-width: 90%;
+		width: 95%;
 	}
 
 	nav.desktop {
@@ -795,12 +795,11 @@ border:1px solid var(--blue);
 
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) and (min-width: 481px){
 
 	/* Body Width + Image ------------------------------------------------------------------------------ */
 	
 	.container {
-		max-width: 95%;
 	}
 
 	/* Footer ------------------------------------------------------------------------------ */
