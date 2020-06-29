@@ -1,0 +1,880 @@
+/* Darth css
+---------------------------------------------- */
+
+
+
+
+/* UNIVERSAL STYLES ------------------------------------------------------------------------------ */
+
+* {
+	box-sizing: border-box;
+	font-family: 'Work Sans', sans-serif;
+	padding:0;
+	margin:0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+ul, li {
+	list-style-type: none;
+}
+
+
+body {
+	font-feature-settings: "liga", "kern";
+}
+
+@font-face {
+  font-family: 'Canela Web';
+  src: url('Canela-Thin-Web.woff2') format('woff2'),
+       url('Canela-Thin-Web.woff') format('woff');
+  font-weight:  100;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+
+/* Body Width + Image ------------------------------------------------------------------------------ */
+
+body.pixels {
+	background-image: url('img/header_background.jpg');
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-position: top;
+  	background-size: auto;
+}
+
+.container, .footer-container {
+	max-width: 1000px;
+	margin: 0 auto;
+	width: 90%;
+}
+
+
+/* Color Variables------------------------------------------------------------------------------ */
+
+
+:root {
+  --crimson: #9A1034;
+  --blue: #164098;
+  --green: #00A25D;
+  --darkgrey: #7F9B9E;
+  --lightgrey: #D5DADB;
+}
+
+
+
+
+/* Main Type Styles ------------------------------------------------------------------------------ */
+
+h1, h2, h4 {
+	font-family: 'Canela Web';
+	font-weight:  100;
+  	font-style:   normal;
+  	font-stretch: normal;
+}
+
+h1 {
+	font-size: 3.4em;
+	padding: 1em 0 0.6em 0;
+}
+
+h2 {
+	font-size: 2.5em;
+	line-height: 1.1em;
+	padding:0.1em 0 0.25em;
+}
+
+h3 {
+	font-size: 1.2em;
+	padding:0 0 0.4em;
+}
+
+h4 {
+	font-size: 2em;
+	line-height: 1.1em;
+	padding:0.1em 0 0.25em;
+}
+
+p {
+	font-size: 1.2em;
+	line-height: 1.4em;
+	padding:0 0 0.7em;
+}
+
+.small {
+	font-size: 1em;
+	line-height: 1.4em;
+}
+
+.data-head {
+	font-size: 0.9em;
+	line-height: 1.4em;
+	text-transform: uppercase;
+	font-family: 'Source Code Pro', monospace;
+}
+
+
+/* Header ------------------------------------------------------------------------------ */
+
+header { 
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: nowrap ;
+	align-items: center;
+	padding: 5px 0 60px;
+}
+
+header .logo {
+	max-width: 27%;
+}
+
+header .logo img{
+	width: 120%;
+	margin: 0.1em 0 0 -3.6em;
+}
+
+.animate { 
+	display: none;
+}
+
+.stop { 
+	display: block;
+}
+
+.logo:hover .animate{ 
+	display: block;
+}
+
+.logo:hover .stop{ 
+	display: none;
+}
+
+
+header .search {
+	width: 47px;
+	margin: 7px 0 0 0;
+}
+
+
+
+
+/* Desktop Navigation ------------------------------------------------------------------------------ */
+
+nav.mobile {
+	display: none;
+}
+
+nav {
+	font-weight: 500;
+}
+
+
+
+nav a:hover {
+	border-bottom: 3px solid var(--crimson);
+}
+
+nav ul {
+	padding:0 1em; 
+	border: solid black 1px;
+	background-color: white;
+}
+
+.horizontal-nav {
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+nav ul li{
+	display: inline-block;
+	padding:0.8em 0.5em; 
+}
+
+.dropdown{
+  position: relative;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+ul.dropdown-content {
+  text-transform:capitalize;
+  letter-spacing: 0em;
+  display: none;
+  position: absolute;
+  width:206.5%;
+  padding:0.5em 0.5em 1em; 
+  left:-0.5em;
+  top:2.8em;
+}
+
+ul.dropdown-content li{
+	padding:0.5em 0.5em 0.5em 0.8em; 
+}
+
+/* Footer ------------------------------------------------------------------------------ */
+
+footer {
+	padding: 8em 0 2em 0;
+	min-height: 20em;
+	text-align: center;
+	background-image: url('img/footer_background.jpg');
+  	background-repeat: no-repeat;
+  	background-position: bottom;
+  	background-size: auto;
+}
+
+.footer-shield {
+	width: 9%;
+	position: relative;
+	top:-2em;
+	margin-bottom: -16px;
+}
+
+/* Footer width styled with container above -*/
+.footer-nav ul{
+	border: none;
+	background: transparent;
+	margin-bottom: 2em;
+}
+
+.footer-nav  ul li{
+	padding:0.8em 1.4em; 
+}
+
+.footer-icon-block{
+	display: flex;
+	justify-content: center;
+}
+
+.footer-icon-block img{
+	width: 60px;
+	padding:0.5em;
+}
+
+
+
+/* alignments ------------------------------------------------------------------------------ */
+.center {
+	text-align: center
+}
+
+.flex-left {
+	justify-content: flex-end;
+}
+
+.pad-top {
+	padding-top: 1em ;
+}
+
+
+/* Titles + links ------------------------------------------------------------------------------ */
+
+.section-title {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+}
+
+.see-all {
+	margin: 1.3em 0 ;
+}
+
+.see-all a:hover{
+	border-bottom: 3px solid var(--crimson);
+}
+
+
+/* Thumbnail Containers------------------------------------------------------------------------------ */
+
+
+.thumb-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.thumb-container img{
+	width: 100%;
+}
+
+/* Event Thumb Styles ------------------------------------------ */
+
+.featured-event-block{
+	display: flex;
+	width: 50%;
+	padding: 0 1.1em 1.8em 1em;
+	margin:1em -1px 1em 0;
+	border-left: solid 1px black;
+	border-right: solid 1px black;
+}
+
+.event-text-block{
+	width: 84%;
+	padding: 0 1em ;
+}
+
+.event-date{
+	font-weight: 700;
+}
+
+.event-icon-block{
+	width: 16%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+img.event-icon{
+	width: 100%;
+	align-self: flex-start;
+	padding: 0 0 1em 0;
+}
+
+img.event-logo{
+	width: 160%;
+	align-self: flex-end;
+}
+
+
+/* Project Styles Thumb------Past Event Thumb--------------------------------- */
+
+.featured-project-block, .past-event-thumb-block{
+	padding: 0 1em 1.2em 1em;
+	margin:1em -1px 1em 0;
+	border-left: solid 1px black;
+	border-right: solid 1px black;
+	height: 100%;
+	width: 25%;
+}
+
+.project-title-block, .past-event-thumb-img-block, .project-icon-block{
+	position: relative;
+}
+
+.project-thumb, .project-thumb-bitmap, .past-event-thumb, .past-event-thumb-bitmap{
+	padding-top:100%;
+	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: cover;
+}
+
+.connected-info-block .project-thumb, .connected-info-block .project-thumb-bitmap{
+	filter: drop-shadow(0.35em 0.35em 0px var(--blue));
+}
+
+.project-title-container, .project-icon-container{
+	position: absolute;
+	top:18%;
+	left:18%;
+	width: 64%;
+	height: 64%;
+	background-color: white;
+	border: 1px black solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.project-icon-container{
+	border: none;
+	}
+
+.project-title{
+	padding: 0.5em;
+}
+
+.project-description-block, .past-event-thumb-description-block{
+	padding: 0.8em 0 0 0;
+}
+
+.past-event-type{
+	font-size: 0.9em;
+	text-transform: uppercase;
+	font-family: 'Source Code Pro', monospace;
+}
+
+.past-event-thumb-description-block{
+	font-size: 0.8em;
+}
+
+.past-event-thumb-title{
+	font-weight: bold;
+	line-height: 1.2em;
+	padding:0 0 0.2em 0;
+}
+
+
+
+
+/* News Thumb Styles ----------------------------------------- */
+
+.featured-news-block{
+	padding: 0 1.2em 0 1.2em;
+	margin:1em -1px 2em 0;
+	border-left: solid 1px black;
+	border-right: solid 1px black;
+	height: 100%;
+	width: 33.3%;
+}
+
+.news-thumb-block{
+	position: relative;	
+}
+
+.news-thumb, .news-thumb-bitmap{
+	padding-top:65%;
+	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: cover;
+}
+
+.news-icon{
+	position: absolute;
+	top:8px;
+	right:8px;
+}
+
+.news-thumb-block .news-icon{
+	width: 25%;
+}
+
+.featured-news-title-block{
+	text-align: center;
+}
+
+.news-data{
+	display:flex;
+	justify-content: center;
+	margin: 0.5em 0;
+}
+
+.single-side-block .news-data{
+	padding-top: 1em;
+	justify-content: left;
+
+}
+
+.news-data p{
+	padding: 0 0.2em;
+	font-size: 0.75em;
+	text-transform: uppercase;
+	font-family: 'Source Code Pro', monospace;
+}
+
+
+
+
+/* Single Pages ------------------------------------------------------------------------------ */
+
+.single-pg-container{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 0 3em 0;
+}
+
+.single-pg-container img{
+	width: 100%
+}
+
+
+.sidebar-column {
+	width:33.33%;
+	padding: 2em 1.1em 1.8em 1em;
+}
+
+.single-side-block{
+	display: flex;
+}
+
+.single-text-block{
+	width: 75%;
+	margin: 0 0 1em 0;
+}
+
+.single-icon-block{
+	width: 25%;
+}
+
+.wide-column {
+	width:66.33%;
+	border-left: solid 1px black;
+	padding: 1.2em 0 2em 2em;
+}
+
+.wide-column-title-block{
+	padding: 0 0 2em 0;
+}
+
+.wide-column a {
+	border-bottom: 3px solid var(--crimson);
+}
+
+
+.connected-info-sidebar {
+	width:33.33%;
+}
+
+.connected-info-wide {
+	width:66.33%;
+}
+
+.connected-info-sidebar h3, .connected-info-wide h3{
+	padding: 1em 0em 1em 1em;
+}
+
+.connected-info-block{
+	border-left: solid 1px black;
+	border-right: solid 1px black;
+	padding: 0em 1em 0em 1em;
+	margin:0 0 0.25em -1px;
+}
+
+.connected-list-container{
+	width: 100%;
+	display: flex;
+}
+.connected-list-block{
+	width:50%;
+	padding: 0em 1em 0em 1em;
+	border-right: solid 1px black;
+}
+
+.connected-info-wide .data-head{
+	font-size:0.8em;
+	font-weight: 700;
+}
+
+.connected-info-sidebar .small, .connected-info-wide .small{
+	font-size:0.9em;
+}
+
+.connected-info-sidebar p a, .connected-info-wide p a{
+	border-bottom: 1px solid black;
+}
+
+.connected-info-sidebar p a:hover, .connected-info-wide p a:hover{
+	border-bottom: 1px solid var(--crimson);
+	color: var(--crimson);
+}
+
+/* Hover Styles ------------------------------------------------------------------------------ */
+
+
+.project-thumb-bitmap, .news-thumb-bitmap, .past-event-thumb-bitmap{
+	display: none;
+}
+
+.featured-project-block a:hover .project-thumb-bitmap,
+.featured-project-block a:hover .project-thumb-colorblock, 
+.featured-news-block a:hover .news-thumb-bitmap,
+.featured-news-block a:hover .news-thumb-colorblock, 
+.past-event-thumb-block a:hover .past-event-thumb-bitmap,
+.past-event-thumb-block a:hover .past-event-thumb-colorblock,
+.connected-info-block:hover .project-thumb-bitmap,
+.connected-info-block:hover .project-thumb-colorblock
+{
+	display: block;
+}
+
+.featured-project-block a:hover .project-thumb,
+.featured-news-block a:hover .news-thumb,
+.past-event-thumb-block a:hover .past-event-thumb,
+.past-event-thumb-block a:hover .past-event-thumb-multiply,
+.connected-info-block:hover .project-thumb
+{
+	display: none;
+}
+
+.project-thumb-colorblock, .news-thumb-colorblock, .past-event-thumb-colorblock, .past-event-thumb-multiply{
+	display: none;
+	position: absolute;
+	top:0;
+	width: 100%;
+	height:100%;
+	mix-blend-mode: color;
+}
+
+.past-event-thumb-multiply {
+	display: block;
+	mix-blend-mode: color;
+}
+
+
+
+
+
+/* Special Text Styles ------------------------------------------------------------------------------ */
+
+/* on home */
+.boxed-text {
+	width: 100%;
+	background-color: white;
+	border: solid 1px black;
+	box-shadow: 10px 10px black;
+	margin: 0 0 2.5em;	
+}
+
+.boxed-text p{
+ 	font-family: 'Canela Web';
+	padding:1.4em 2em 1.6em;
+	font-size: 2em;
+	line-height: 1.5em;
+}
+
+
+
+/* Sorting Boxes ------------------------------------------------------------------------------ */
+
+.sorting-box-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	margin: 2em 0 2em 0;
+}
+.sorting-box-block{
+	display: flex;
+	width: 50%;
+	margin:0 0 2em 0;
+}
+.sorting-title{
+	padding:0.1em 1em 0 0;
+}
+
+.sorting-box {
+	background-color: white;
+	border: 1px solid black;
+	width: 60%;
+	margin: 0 1em 0 0 ;
+}
+
+.sorting-dropdown{
+	display: inline-block;
+	padding:0.3em 1.2em; 
+	position: relative;
+}
+
+.sorting-dropdown:hover .sorting-dropdown-content{
+	display: block;
+}
+
+ul.sorting-dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: white;
+	border: 1px solid black;
+  	padding:0.5em 0.5em 1em; 
+  	left:-0.1em;
+  	top:1.75em;
+}
+
+ul.sorting-dropdown-content li{
+	padding:0.5em 0.5em 0.5em 0.8em; 
+}
+
+
+/* Buttons ------------------------------------------------------------------------------ */
+
+.sorting-button{
+	width: 10%;
+	border: none;
+	background-color: var(--lightgrey);
+}
+
+.external-link-button{
+	width: 15em;
+	padding: 0.6em;
+	margin: 2em 0;
+	border: none;
+	color:white;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+
+
+/* Category Text Colors ------------------------ */
+
+.workshop .event-date,
+.workshop .event-time, 
+.workshop a:hover,
+.featured-project-block a:hover,
+.connected-info-block a:hover,
+.blog a:hover{
+	color: var(--blue);
+}
+
+.symposium .event-date,
+.symposium .event-time,  
+.symposium a:hover,
+.award a:hover{
+	color: var(--crimson);
+}
+
+.event .event-date, 
+.event .event-time, 
+.event a:hover,
+.grant a:hover
+{
+	color: var(--green);
+}
+
+.lecture .event-date, 
+.lecture .event-time,
+.lecture a:hover{
+	color: var(--darkgrey);
+}
+
+/* Category Background Colors------------------------ */
+
+.workshop .past-event-thumb-colorblock, 
+.workshop .past-event-thumb-multiply,
+.blue .project-thumb-colorblock,
+.blog .news-thumb-colorblock{
+	background-color: var(--blue);
+}
+
+.event .past-event-thumb-colorblock, 
+.event .past-event-thumb-multiply,
+.grant .news-thumb-colorblock{
+	background-color: var(--green);
+}
+
+.lecture .past-event-thumb-colorblock, .lecture .past-event-thumb-multiply{
+	background-color: var(--darkgrey);
+}
+
+.symposium .past-event-thumb-colorblock, 
+.symposium .past-event-thumb-multiply,
+.award .news-thumb-colorblock,
+.symposium .external-link-button{
+	background-color: var(--crimson);
+}
+
+
+/* Category Border Color------------------------ */
+
+.featured-project-block:hover .project-title-container{
+border:1px solid var(--blue);
+}
+
+
+
+
+
+
+/* Media Q ------------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 992px){
+
+	.container {
+		max-width: 90%;
+	}
+
+	nav.desktop {
+	display: none;
+	}
+
+	nav.mobile {
+		display: block
+	}
+
+	header .search {
+	display: none;
+}
+
+
+}
+
+@media only screen and (max-width: 768px){
+
+	/* Body Width + Image ------------------------------------------------------------------------------ */
+	
+	.container {
+		max-width: 95%;
+	}
+
+	/* Footer ------------------------------------------------------------------------------ */
+	
+	.footer-nav ul li{
+	display: block;
+	padding:0.8em 0.6em; 
+	}
+
+	/* Event Thumb Styles ------------------------------------------ */
+
+	.featured-event-block{
+	width: 100%;
+	}
+
+	/* Project Thumb Styles --------------------------------------- */
+
+	.featured-project-block, .past-event-thumb-block{
+	width: 50%;
+	}
+
+	/* News Thumb Styles --------------------------------------- */
+
+	.featured-news-block{
+	width: 100%;
+	}
+
+	/* Sorting Boxes ---------------------------------------*/
+	.sorting-box-block{
+	width: 100%;
+	justify-content: center;
+	}
+
+	.sorting-title{
+	width: 20%;
+	}
+
+	/* alignments ------------*/
+
+	.flex-left {
+	justify-content: center;
+	}
+
+	/* Single Pages ---------------------------------------*/
+	.sidebar-column, .wide-column, .connected-info-sidebar, .connected-info-wide {
+	width:100%;
+	}
+
+	.wide-column {
+	border-left: none;
+	border-top: solid 1px black;
+	}
+
+
+	.connected-info-block{
+	border-left: none;
+	border-right: none;
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+	padding-top:1em;
+	}
+
+	.connected-list-block{
+		border-left: solid 1px black;
+		margin-left:-1px;
+	}
+}
+
+@media only screen and (max-width: 480px){
+
+
+
+}
+
+
+
+
