@@ -19,7 +19,7 @@
 
 
 <body class="pixels">
-	<div class="container">
+	
 	
 	<!--header----------------------------------------------->	
 	<header>
@@ -28,13 +28,15 @@
 			<a href="index.html"><img class="animate" src="img/logo_animate.gif"/></a>
 		</div>
 
-		<nav class="desktop">
-			<ul class="horizontal-nav">
+		<nav>
+    		<input type="checkbox" id="button">
+    		<label for="button" onclick></label>
+			<ul class="">
 				<li><a href="events.html">Events</a></li>
 				<li><a href="news.html">News</a></li>
 				<li><a href="projects.html">Projects</a></li>
 				<li><a href="about.html">About</a></li>
-				<li class="dropdown"><a href="#">Resources</a>
+				<li class="dropdown">Resources
 					<ul class="dropdown-content">
 						<li><a href="tutorials.html">Tutorials + Workshops</a></li>
 						<li><a href="digital_tools.html">Digital Tools + Methods</a></li>
@@ -43,18 +45,18 @@
 					</ul>
 				</li>
 				<li><a href="contact.html">Contact</a></li>
-			</ul>
+				<li class="mobile mobile-search">search</li>
+			</ul>	
 		</nav>
 
 		<div class="search">
 			<a href="#"><img src="img/icons/search_icon.svg"/></a>			
 		</div>
-
-		<nav class="mobile">
-			X
-		</nav>
+		
 		
 	</header>
+
+	<main>
 
 	<!--intro section----------------------------------------------->	
 
@@ -235,7 +237,8 @@
 	<h3 class="see-all center"><a href="news.html">see all news</a></h3>
 
 	<!--container---------------------->
-	</div>
+	</main>
+
 
 	<!--footer----------------------------------------------->	
 	<footer>
@@ -261,6 +264,7 @@
 		</div>
 
 	</footer>
+
 
 
 </body>
