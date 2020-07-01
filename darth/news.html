@@ -31,26 +31,19 @@
 
 	<!--sorting menus----------------------------------------------->	
 	<section class="sorting-box-container">
-		
-		<div class="sorting-box-block flex-left">
-    		<p class="sorting-title">News Type:</p>
-    		
-    		<ul class="sorting-box">
-    			<li class="sorting-dropdown">All
-					<ul class="sorting-dropdown-content">
-						<li><a href="#">All</a></li>
-						<li><a href="#">Career</a></li>
-						<li><a href="#">Grants</a></li>
-						<li><a href="#">Awards</a></li>
-						<li><a href="#">Blog</a></li>
-					</ul>
-				</li>
-			</ul>
-			
-			<button class="sorting-button" type="button">Sort</button>
-		
+		<div class="sorting-box-block single-flex-left">
+    		<form action="">
+  				<label for="news-method">Methods:</label>
+  				<select id="news-method" name="news-method">
+  					<option value="all">All</option>	
+    				<option value="awards">Awards</option>
+    				<option value="grants">Grants</option>
+    				<option value="blog">Blog</option>
+    				<option value="career">Career</option>
+  				</select>
+  				<input type="submit">
+			</form>
 		</div>
-	
 	</section>
 
 

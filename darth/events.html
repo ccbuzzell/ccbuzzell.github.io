@@ -33,43 +33,31 @@
 	<section class="sorting-box-container">
 		
 		<div class="sorting-box-block">
-    		<p class="sorting-title">Type:</p>
-    		<input type="text" class="" placeholder="ALL">
-    		<ul class="sorting-box">
-    			<li class="sorting-dropdown selected-item">All
-					<ul class="sorting-dropdown-content">
-						<li><a href="#">All</a></li>
-						<li><a href="#">Workshops</a></li>
-						<li><a href="#">Lectures</a></li>
-						<li><a href="#">Symposia</a></li>
-						<li><a href="#">Lectures</a></li>
-					</ul>
-				</li>
-			</ul>
-			
-			<button class="sorting-button" type="button">Sort</button>
-		
+    		<form action="">
+  				<label for="event-type">Type:</label>
+  				<select id="event-type" name="event-type">
+  					<option value="all">All</option>	
+    				<option value="workshop">Workshops</option>
+    				<option value="symposium">Symposiums</option>
+    				<option value="lecture">Lectures</option>
+    				<option value="event">Event</option>
+  				</select>
+  				<input type="submit">
+			</form>
 		</div>
-
 		<div class="sorting-box-block flex-left">
-    		<p class="sorting-title">Methods:</p>
-    		
-    		<ul class="sorting-box">
-    			<li class="sorting-dropdown">All
-					<ul class="sorting-dropdown-content">
-						<li><a href="#">All</a></li>
-						<li><a href="#">Workshops</a></li>
-						<li><a href="#">Lectures</a></li>
-						<li><a href="#">Symposia</a></li>
-						<li><a href="#">Lectures</a></li>
-					</ul>
-				</li>
-			</ul>
-			
-			<button class="sorting-button" type="button">Sort</button>
-		
+    		<form action="">
+  				<label for="event-method">Methods:</label>
+  				<select id="event-method" name="event-method">
+  					<option value="all">All</option>	
+    				<option value="workshop">Workshops</option>
+    				<option value="symposium">Symposiums</option>
+    				<option value="lecture">Lectures</option>
+    				<option value="event">Event</option>
+  				</select>
+  				<input type="submit">
+			</form>
 		</div>
-	
 	</section>
 
 
@@ -140,43 +128,31 @@
 	<section class="sorting-box-container">
 		
 		<div class="sorting-box-block">
-    		<p class="sorting-title">Type:</p>
-    		
-    		<ul class="sorting-box">
-    			<li class="sorting-dropdown selected-item">All
-					<ul class="sorting-dropdown-content">
-						<li><a href="#">All</a></li>
-						<li><a href="#">Workshops</a></li>
-						<li><a href="#">Lectures</a></li>
-						<li><a href="#">Symposia</a></li>
-						<li><a href="#">Lectures</a></li>
-					</ul>
-				</li>
-			</ul>
-			
-			<button class="sorting-button" type="button">Sort</button>
-		
+    		<form action="">
+  				<label for="past-event-type">Type:</label>
+  				<select id="past-event-type" name="past-event-type">
+  					<option value="all">All</option>	
+    				<option value="workshop">Workshops</option>
+    				<option value="symposium">Symposiums</option>
+    				<option value="lecture">Lectures</option>
+    				<option value="event">Event</option>
+  				</select>
+  				<input type="submit">
+			</form>
 		</div>
-
 		<div class="sorting-box-block flex-left">
-    		<p class="sorting-title">Methods:</p>
-    		
-    		<ul class="sorting-box">
-    			<li class="sorting-dropdown">All
-					<ul class="sorting-dropdown-content">
-						<li><a href="#">All</a></li>
-						<li><a href="#">Workshops</a></li>
-						<li><a href="#">Lectures</a></li>
-						<li><a href="#">Symposia</a></li>
-						<li><a href="#">Lectures</a></li>
-					</ul>
-				</li>
-			</ul>
-			
-			<button class="sorting-button" type="button">Sort</button>
-		
+    		<form action="">
+  				<label for="past-event-method">Methods:</label>
+  				<select id="past-event-method" name="past-event-method">
+  					<option value="all">All</option>	
+    				<option value="workshop">Workshops</option>
+    				<option value="symposium">Symposiums</option>
+    				<option value="lecture">Lectures</option>
+    				<option value="event">Event</option>
+  				</select>
+  				<input type="submit">
+			</form>
 		</div>
-	
 	</section>
 
 	<!--past events----------------------------------------------->	

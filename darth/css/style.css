@@ -57,7 +57,6 @@ header, main, .footer-container {
 
 /* Color Variables------------------------------------------------------------------------------ */
 
-
 :root {
   --crimson: #9A1034;
   --blue: #164098;
@@ -163,7 +162,7 @@ header .search {
 
 
 
-/* Desktop Navigation ------------------------------------------------------------------------------ */
+/* Navigation ------------------------------------------------------------------------------ */
 
 .mobile {
 	display: none;
@@ -172,7 +171,6 @@ header .search {
 nav {
 	font-weight: 500;
 }
-
 
 nav a:hover {
 	border-bottom: 3px solid var(--crimson);
@@ -185,7 +183,6 @@ nav ul {
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 }
-
 
 nav ul li{
 	display: inline-block;
@@ -215,13 +212,13 @@ nav ul li{
 	padding:0.5em 0.5em 0.5em 0.8em; 
 }
 
-label {
+header label {
 	display:none;
 	cursor: pointer;
 	user-select:none;
 }
 
-input[type=checkbox] {
+header input[type=checkbox] {
   position: absolute;
   top: -9999px;
   left: -9999px;
@@ -276,6 +273,11 @@ footer {
 	text-align: center
 }
 
+.single-flex-left {
+	justify-content: flex-end;
+	width: 100% !important;
+}
+
 .flex-left {
 	justify-content: flex-end;
 }
@@ -303,7 +305,6 @@ footer {
 
 
 /* Thumbnail Containers------------------------------------------------------------------------------ */
-
 
 .thumb-container {
 	display: flex;
@@ -422,8 +423,6 @@ img.event-logo{
 }
 
 
-
-
 /* News Thumb Styles ----------------------------------------- */
 
 .featured-news-block{
@@ -478,8 +477,6 @@ img.event-logo{
 	text-transform: uppercase;
 	font-family: 'Source Code Pro', monospace;
 }
-
-
 
 
 /* Single Pages ------------------------------------------------------------------------------ */
@@ -646,60 +643,35 @@ img.event-logo{
 .sorting-box-container{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	font-size: 0.7em;
-	text-transform: uppercase;
-	letter-spacing: 0.02em;
+	justify-content: space-between;	
 	margin: 2em 0 2em 0;
+	width: 100%;
 }
+
 .sorting-box-block{
 	display: flex;
 	width: 50%;
-	margin:0 0 2em 0;
-}
-.sorting-title{
-	padding:0.1em 1em 0 0;
 }
 
-.sorting-box {
-	background-color: white;
-	border: 1px solid black;
-	width: 60%;
-	margin: 0 1em 0 0 ;
+.sorting-box-container label, .sorting-box-container input{
+	border: none;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	padding: 0 1em 0 0;
 }
 
-.sorting-dropdown{
-	display: inline-block;
-	padding:0.3em 1.2em; 
-	position: relative;
+.sorting-box-container input{
+	background-color: var(--lightgrey);
+	padding: 0.4em 0.8em;
 }
 
-.sorting-dropdown:hover .sorting-dropdown-content{
-	display: block;
-}
-
-ul.sorting-dropdown-content{
-	display: none;
-	position: absolute;
-	background-color: white;
-	border: 1px solid black;
-  	padding:0.5em 0.5em 1em; 
-  	left:-0.1em;
-  	top:1.75em;
-}
-
-ul.sorting-dropdown-content li{
-	padding:0.5em 0.5em 0.5em 0.8em; 
+.sorting-box-container select{
+	padding: 0.35em 0.8em;
+	border-radius: 0;
 }
 
 
 /* Buttons ------------------------------------------------------------------------------ */
-
-.sorting-button{
-	width: 10%;
-	border: none;
-	background-color: var(--lightgrey);
-}
 
 .external-link-button{
 	width: 15em;
@@ -864,7 +836,7 @@ border:1px solid var(--blue);
 		display: none;
 	}
 
-	label {
+	header label {
       position:absolute;
       top: 0;
       right: 0;
@@ -873,17 +845,17 @@ border:1px solid var(--blue);
       height:3em;
     }
     
-    label:after {
+    header label:after {
       position: absolute;
       content:"\+";
       font-size:3em;
     }
 
-    input[type=checkbox]:checked ~ label:after {
+    header input[type=checkbox]:checked ~ label:after {
     	content:"\x";
     }
 
-    input[type=checkbox]:checked ~ ul {
+    header input[type=checkbox]:checked ~ ul {
       display:block;
   }
 
@@ -937,9 +909,6 @@ border:1px solid var(--blue);
 	justify-content: center;
 	}
 
-	.sorting-title{
-	width: 20%;
-	}
 
 	/* alignments ------------*/
 
