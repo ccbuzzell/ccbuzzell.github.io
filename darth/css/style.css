@@ -105,17 +105,22 @@ p {
 	padding:0 0 0.7em;
 }
 
+.data-head {
+	line-height: 1.4em;
+	padding:0 0 0.5em;
+	text-transform: uppercase;
+	font-family: 'Source Code Pro', monospace;
+	font-size:0.8em;
+	font-weight: 700;
+}
+
 .small {
 	font-size: 1em;
 	line-height: 1.4em;
+	text-transform: capitalize;
+	font-weight:  100;
 }
 
-.data-head {
-	font-size: 0.9em;
-	line-height: 1.4em;
-	text-transform: uppercase;
-	font-family: 'Source Code Pro', monospace;
-}
 
 
 /* Header ------------------------------------------------------------------------------ */
@@ -267,24 +272,6 @@ footer {
 }
 
 
-
-/* alignments ------------------------------------------------------------------------------ */
-.center {
-	text-align: center
-}
-
-.single-flex-left {
-	justify-content: flex-end;
-	width: 100% !important;
-}
-
-.flex-left {
-	justify-content: flex-end;
-}
-
-.pad-top {
-	padding-top: 1em ;
-}
 
 
 /* Titles + links ------------------------------------------------------------------------------ */
@@ -488,7 +475,7 @@ img.event-logo{
 }
 
 .single-pg-container img{
-	width: 100%
+	width: 100%;
 }
 
 
@@ -524,6 +511,13 @@ img.event-logo{
 	border-bottom: 3px solid var(--crimson);
 }
 
+.wide-column p {
+	line-height: 1.75em;
+}
+
+
+
+/* Single Pages - connected info--------*/
 
 .connected-info-sidebar {
 	width:33.33%;
@@ -548,29 +542,70 @@ img.event-logo{
 	width: 100%;
 	display: flex;
 }
+
 .connected-list-block{
 	width:50%;
 	padding: 0em 1em 0em 1em;
 	border-right: solid 1px black;
 }
 
-.connected-info-wide .data-head{
-	font-size:0.8em;
-	font-weight: 700;
+.connected-list-container ul li, .connected-project-data ul li{
+	font-size: 1.25em;
+	line-height: 1.4em;
+	padding: 0.2em 0;
 }
 
-.connected-info-sidebar .small, .connected-info-wide .small{
-	font-size:0.9em;
-}
-
-.connected-info-sidebar p a, .connected-info-wide p a{
+.connected-info-sidebar p a, .connected-info-wide li a, .connected-project-data li a{
 	border-bottom: 1px solid black;
 }
 
-.connected-info-sidebar p a:hover, .connected-info-wide p a:hover{
+.connected-info-sidebar p a:hover, .connected-info-wide li a:hover, .connected-project-data li a:hover{
 	border-bottom: 1px solid var(--crimson);
 	color: var(--crimson);
 }
+
+
+
+
+/* Single Project --------------------*/
+.project-header {
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: auto;
+  	background-position: top center;
+  	position: absolute;
+  	z-index: -1;
+  	height: 24em;
+  	width: 100%;
+}
+
+.blue-colorblock {
+	height: 100%;
+	width: 100%;
+	background-color: var(--blue);
+	mix-blend-mode: color;
+}
+
+.project-pg-container{
+	padding-top: 12em;
+}
+
+.project-wide-column {
+	border-left: none;
+	border-right: solid 1px black;
+	padding: 0em 2em 2em 0em;
+}
+
+.project-sidebar-column {
+	padding: 0.6em 0em 1.8em 2em;
+}
+
+.connected-project-data{
+	margin: 2em 0 0;
+}
+
+
+
 
 /* Hover Styles ------------------------------------------------------------------------------ */
 
@@ -673,16 +708,25 @@ img.event-logo{
 
 /* Buttons ------------------------------------------------------------------------------ */
 
-.external-link-button{
-	width: 15em;
-	padding: 0.6em;
-	margin: 2em 0;
-	border: none;
-	color:white;
+.external-link-box a{
+	background-color: var(--crimson);
+	text-align: center;
+	margin: 1em 0 0;
+	width: 10em;
+	color: white;
 	text-transform: uppercase;
-	letter-spacing: 0.05em;
+	padding: 0.6em 3em;
+	border: none;
 }
 
+.external-link-box{
+	margin: 1em 0 0.5em;
+}
+
+.external-link-box a:hover{
+	border: none;
+	background-color: var(--lightgrey);
+}
 
 
 /* Category Text Colors ------------------------ */
@@ -738,8 +782,7 @@ img.event-logo{
 
 .symposium .past-event-thumb-colorblock, 
 .symposium .past-event-thumb-multiply,
-.award .news-thumb-colorblock,
-.symposium .external-link-button{
+.award .news-thumb-colorblock{
 	background-color: var(--crimson);
 }
 
@@ -751,6 +794,28 @@ border:1px solid var(--blue);
 }
 
 
+
+/* alignments ------------------------------------------------------------------------------ */
+.center {
+	text-align: center
+}
+
+.single-flex-left {
+	justify-content: flex-end;
+	width: 100% !important;
+}
+
+.flex-left {
+	justify-content: flex-end;
+}
+
+.pad-top {
+	padding-top: 1em ;
+}
+
+.no-margin {
+	margin-top: 0em ;
+}
 
 
 
