@@ -10,8 +10,9 @@
 
   <link rel="stylesheet" href="css/style.css" media="screen">
   <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,355;0;500;0,700;1,355;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,340;0,450;0,570;0,700;1,340;1,450;1,570;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 
 
 
@@ -21,69 +22,16 @@
 <body class="pixels">
 	
 	
-	<!--header----------------------------------------------->	
-	<header>
-		<div class="logo">
-			<a href="index.html"><img class="stop" src="img/logo_main.png"/></a>
-			<a href="index.html"><img class="animate" src="img/logo_animate.gif"/></a>
-		</div>
-
-		<nav>
-    		<input type="checkbox" id="button">
-    		<label for="button" onclick></label>
-			<ul class="">
-				<li><a href="events.html">Events</a></li>
-				<li><a href="news.html">News</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li><a href="about.html">About</a></li>
-				<li class="dropdown"><a href="#">Resources</a>
-					<ul class="dropdown-content">
-						<li><a href="tutorials.html">Tutorials + Workshops</a></li>
-						<li><a href="digital_tools.html">Digital Tools + Methods</a></li>
-						<li><a href="funding.html">Funding + Grants</a></li>
-						<li><a href="groups.html">Groups</a></li>
-					</ul>
-				</li>
-				<li><a href="contact.html">Contact</a></li>
-				<li class="mobile mobile-search">search</li>
-			</ul>	
-		</nav>
-
-		<div class="search">
-			<a href="#"><img src="img/icons/search_icon.svg"/></a>			
-		</div>
-		
-		
-	</header>
-
-	<main>
-		<!--title----------------------------------------------->	
-		<h1 class="section-title">Projects</h1>
+	<!--header---------------------------------------------------------->	
 	
+	<!--main section---------------------------------------------------->
+	<main>
+		<!--Section-title----------------------------------------------->	
+		<h1 class="section-title">Projects</h1>
 
-		<!--sorting menus----------------------------------------------->	
-		<section class="sorting-box-container">
-
-			<div class="checkbox-box-block ">	
-
-				
-
-				<div class="dropdown-filter">
-    				<label for="topic">Toggle</label>
-    				<input type="checkbox" id="topic" class="visually-hidden">
-    				<div class="control-me dropdown-filter-content">
-    					<label for="topic-one">topic one</label>
-  							<input type="checkbox" name="topic-one" value="topic-one">
-  							<label for="topic-one">topic one</label>
-  							<input type="checkbox" name="topic-one" value="topic-one">
-    					
-    				</div>
-				</div>
-
-
-			</div>	
-
-			<div class="radio-box-block flex-left"> 
+		<!--sorting menus------------------------------------------->	
+		<section class="sorting-box-container single-flex-left">
+			<div class="radio-box-block"> 
 				<h5>SORT BY:</h5>
     		
 				<label class="radio-title">START DATE
@@ -99,180 +47,145 @@
   					<span class="checkmark">TITLE</span>
 				</label>
 			</div>
-	
 		</section>	
 
-	<!--featured projects----------------------------------------------->	
-	<article class="thumb-container">
-	<section class="project-pg-thumb-container blue">
-		<a href="project_single.html">
-		<div class="featured-project-block project-pg-project-block">
-			<div class="project-title-block blue">
-				<div class="project-thumb" style="background-image:url('img/projects/project_bg_beyondwords.jpg');"></div>
-				<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_bg_beyondwords.gif');"></div>
-				<div class="project-title-container">
-					<h3 class="project-title">Beyond Words</h3>	
+		
+		<!--main container---------------------------------------------->		
+		<article class="single-pg-container single-flex-left">	
+
+			<!--sorting menus-SIDEBAR----------------------------------------------->	
+			<section class="project-sidebar-left">
+				<!--checkbox block-->
+				<div class="checkbox-box-block">
+					<!--dropdown filter block-->	
+					<div class="dropdown-filter">
+						
+						<label class="filter-title" for="topic">Topics:</label>
+						<input type="checkbox" id="topic" class="filter-imput">
+    					<!--dropdown filter-content-->
+    					<div class="dropdown-filter-content filter-topics">
+    						<div>
+    							<label for="topic-one">topic one</label>
+  								<input type="checkbox" name="topic-one" value="topic-one">
+  							</div>
+  							<div>
+    							<label for="topic-one">topic one</label>
+  								<input type="checkbox" name="topic-one" value="topic-one">
+  							</div>
+    					</div>
+    					
+    					<label class="filter-title" for="method">Methods:</label>
+    					<input type="checkbox" id="method" class="filter-imput">
+    					<!--dropdown filter-content-->
+    					<div class="dropdown-filter-content filter-methods">
+    						<div>
+    							<label for="topic-one">topic one</label>
+  								<input type="checkbox" name="topic-one" value="topic-one">
+  							</div>
+  							<div>
+    							<label for="topic-one">topic one</label>
+  								<input type="checkbox" name="topic-one" value="topic-one">
+  							</div>
+    					</div>
+    				
+    					<label class="filter-title" for="group">Groups:</label>
+    					<input type="checkbox" id="group" class="filter-imput">
+    					<!--dropdown filter-content-->
+    					<div class="dropdown-filter-content filter-groups">
+    						<div>
+    							<label for="topic-one">topic one</label>
+  								<input type="checkbox" name="topic-one" value="topic-one">
+  							</div>
+  							<div>
+    							<label for="topic-one">topic one</label>
+  								<input type="checkbox" name="topic-one" value="topic-one">
+  							</div>
+    					</div>
+					<!--dropdown filter block-->
+					</div>
+				<!--checkbox block-->	
+				</div>	
+			</section>
+
+
+			<!--Project block------------------------------------------->	
+			<section class="project-wide-column-right project-pg-thumb-container blue">
+			<a href="project_single.html">
+				<div class="featured-project-block project-pg-project-block">
+					<div class="project-title-block blue">
+						<div class="project-thumb" style="background-image:url('img/projects/project_bg_beyondwords.jpg');"></div>
+						<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_bg_beyondwords.gif');"></div>
+						<div class="project-title-container">
+							<h3 class="project-title">Beyond Words</h3>	
+						</div>
+						<div class="project-thumb-colorblock"></div>
+					<!--project-title-block-->
+					</div>
+				<!--featured project block-->
 				</div>
-				<div class="project-thumb-colorblock"></div>
-			</div>
-		</div>
 
-		<div class="project-pg-description-block">
-			<h5 class="data-head">Timeline</h5>
-			<p class="small">2017–Present</p>
-			<h5 class="data-head">Description</h5>
-			<p class="small">The Exploring Medieval Mary Magdalene project is an online collection of digital editions containing the legend of Mary Magdalene’s conversion.</p>
-		</div>
-		<div class="connected-project-data project-pg-description-block desktop">
-			<ul class="data-head">Grants/Funding
-				<li class="small">Harvard: Barajas Dean’s Innovation Fund for Digital Arts and Humanities</li>
-				<li class="small">Harvard: Digital Teaching Fellow Program</li>
-			</ul>
-			<ul class="data-head">Methods
-				<li class="small key">Keyword</li>
-				<li class="small key">Keyword</li>
-				<li class="small key">Keyword</li>
-				<li class="small key">Keyword</li>
-			</ul>
-		</div>
-	</a>
-	</section>
-	
-	<section class="project-pg-thumb-container blue">
-		<a href="">
-		<div class="featured-project-block project-pg-project-block">
-			<div class="project-title-block blue">
-				<div class="project-thumb" style="background-image:url('img/projects/project_nophoto.jpg');"></div>
-				<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_nophoto.gif');"></div>
-				<div class="project-title-container">
-					<h3 class="project-title">Beyond Words</h3>	
+				<div class="project-pg-description-block">
+					<p class="small">The Exploring Medieval Mary Magdalene project is an online collection of digital editions containing the legend of Mary Magdalene’s conversion.</p>
+					<ul class="data-head">Timeline
+						<li class="key">2017–Present</li>
+					</ul>
+					<ul class="data-head">Grants/Funding
+						<li>Harvard: Barajas Dean’s Innovation Fund for Digital Arts and Humanities</li>
+						<li>Harvard: Digital Teaching Fellow Program</li>
+					</ul>
+					<ul class="data-head">Methods
+						<li class="key">Keyword</li>
+						<li class="key">Keyword</li>
+						<li class="key">Keyword</li>
+						<li class="key">Keyword</li>
+					</ul>
 				</div>
-				<div class="project-thumb-colorblock"></div>
-			</div>
-		</div>
+			</a>
+			</section>
 
-		<div class="project-pg-description-block">
-			<h5 class="data-head">Timeline</h5>
-			<p class="small">2017–Present</p>
-			<h5 class="data-head">Description</h5>
-			<p class="small">The Exploring Medieval Mary Magdalene project is an online collection of digital editions containing the legend of Mary Magdalene’s conversion.</p>
-		</div>
-		<div class="connected-project-data project-pg-description-block desktop">
-			<ul class="data-head">Grants/Funding
-				<li class="small">Harvard: Barajas Dean’s Innovation Fund for Digital Arts and Humanities</li>
-				<li class="small">Harvard: Digital Teaching Fellow Program</li>
-			</ul>
-			<ul class="data-head">Methods
-				<li class="small key">Keyword</li>
-				<li class="small key">Keyword</li>
-				<li class="small key">Keyword</li>
-				<li class="small key">Keyword</li>
-			</ul>
-		</div>
-	</a>
-	</section>
-
-	<section class="project-pg-thumb-container blue">
-		<a href="">
-		<div class="featured-project-block project-pg-project-block">
-			<div class="project-title-block blue">
-				<div class="project-thumb" style="background-image:url('img/projects/project_bg_beyondwords.jpg');"></div>
-				<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_bg_beyondwords.gif');"></div>
-				<div class="project-title-container">
-					<h3 class="project-title">Beyond Words</h3>	
+			<!--Project block------------------------------------------->	
+			<section class="project-wide-column-right project-pg-thumb-container blue">
+			<a href="project_single.html">
+				<div class="featured-project-block project-pg-project-block">
+					<div class="project-title-block blue">
+						<div class="project-thumb" style="background-image:url('img/projects/project_bg_beyondwords.jpg');"></div>
+						<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_bg_beyondwords.gif');"></div>
+						<div class="project-title-container">
+							<h3 class="project-title">Beyond Words</h3>	
+						</div>
+						<div class="project-thumb-colorblock"></div>
+					<!--project-title-block-->
+					</div>
+				<!--featured project block-->
 				</div>
-				<div class="project-thumb-colorblock"></div>
-			</div>
-		</div>
 
-		<div class="project-pg-description-block">
-			<h5 class="data-head">Timeline</h5>
-			<p class="small">2017–Present</p>
-			<h5 class="data-head">Description</h5>
-			<p class="small">The Exploring Medieval Mary Magdalene project is an online collection of digital editions containing the legend of Mary Magdalene’s conversion.</p>
-		</div>
-		<div class="connected-project-data project-pg-description-block desktop">
-			<ul class="data-head">Grants/Funding
-				<li class="small">Harvard: Barajas Dean’s Innovation Fund for Digital Arts and Humanities</li>
-				<li class="small">Harvard: Digital Teaching Fellow Program</li>
-			</ul>
-			<ul class="data-head">Methods
-				<li class="small key">Keyword</li>
-				<li class="small key">Keyword</li>
-				<li class="small key">Keyword</li>
-				<li class="small key">Keyword</li>
-			</ul>
-		</div>
-	</a>
-	</section>
-	
-	<section class="project-pg-thumb-container blue">
-		<a href="">
-		<div class="featured-project-block project-pg-project-block">
-			<div class="project-title-block blue">
-				<div class="project-thumb" style="background-image:url('img/projects/project_nophoto.jpg');"></div>
-				<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_nophoto.gif');"></div>
-				<div class="project-title-container">
-					<h3 class="project-title">Beyond Words</h3>	
+				<div class="project-pg-description-block">
+					<p class="small">The Exploring Medieval Mary Magdalene project is an online collection of digital editions containing the legend of Mary Magdalene’s conversion.</p>
+					<ul class="data-head">Timeline
+						<li class="key">2017–Present</li>
+					</ul>
+					<ul class="data-head">Grants/Funding
+						<li>Harvard: Barajas Dean’s Innovation Fund for Digital Arts and Humanities</li>
+						<li>Harvard: Digital Teaching Fellow Program</li>
+					</ul>
+					<ul class="data-head">Methods
+						<li class="key">Keyword</li>
+						<li class="key">Keyword</li>
+						<li class="key">Keyword</li>
+						<li class="key">Keyword</li>
+					</ul>
 				</div>
-				<div class="project-thumb-colorblock"></div>
-			</div>
-		</div>
+			</a>
+			</section>
 
-		<div class="project-pg-description-block">
-			<h5 class="data-head">Timeline</h5>
-			<p class="small">2017–Present</p>
-			<h5 class="data-head">Description</h5>
-			<p class="small">The Exploring Medieval Mary Magdalene project is an online collection of digital editions containing the legend of Mary Magdalene’s conversion.</p>
-		</div>
-		<div class="connected-project-data project-pg-description-block desktop">
-			<ul class="data-head">Grants/Funding
-				<li class="small">Harvard: Barajas Dean’s Innovation Fund for Digital Arts and Humanities</li>
-				<li class="small">Harvard: Digital Teaching Fellow Program</li>
-			</ul>
-			<ul class="data-head">Methods
-				<li class="small key">Keyword</li>
-				<li class="small key">Keyword</li>
-				<li class="small key">Keyword</li>
-				<li class="small key">Keyword</li>
-			</ul>
-		</div>
-	</a>
-	</section>
+	<!--single-pg-container--->
 	</article>	
 
-
-	
-
-	<!--container---------------------->
+	<!--container------>
 	</main>
 
 
-	<!--footer----------------------------------------------->	
-	<footer>
-		<div class="footer-container">
-			
-			<hr>
-			<img class="footer-shield" src="img/harvard_shield.png">
-			<nav class="footer-nav">
-				
-				<ul class="horizontal-nav">
-					<li><a href="events.html">Events</a></li>
-					<li><a href="news.html">News</a></li>
-					<li><a href="projects.html">Projects</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="resources.html">Resources</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-			<div class="footer-icon-block">
-				<img src="img/icons/twitter_icon.svg">	
-				<img src="img/icons/git_icon.svg">
-			</div>	
-		</div>
-
-	</footer>
-
+	
 
 
 </body>

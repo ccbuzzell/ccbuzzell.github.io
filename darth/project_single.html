@@ -10,36 +10,45 @@
 
   <link rel="stylesheet" href="css/style.css" media="screen">
   <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,355;0,700;1,355;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,340;0,450;0,570;0,700;1,340;1,450;1,570;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
-
-
+  <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 
 </head>
 
 
 <body> 
-
+	<!--Project specific header----------------------------------------------->	
 	<div class="project-header" style="background-image:url('img/projects/project_head_mary.gif');">
 		<div class="blue-colorblock"></div>
 	</div>	
 	
-<!--header----------------------------------------------->	
-<header>
-		<div class="logo">
-			<a href="index.html"><img class="stop" src="img/logo_main.png"/></a>
-			<a href="index.html"><img class="animate" src="img/logo_animate.gif"/></a>
-		</div>
+	
+	<!--header------------------------------------------------>	
+	<header>
+		<!--logo----------------------------------------------->	
+		<div class="logo"><a href="index.html">
+			<div alt="Darth home" id="animate-logo" style="background-image:url('img/logo_open.gif');"></div>
+		</a></div>
+		<!--logo-animation------------------------------------->
+		<script>
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+  			if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+    		document.getElementById("animate-logo").style.backgroundImage = "url('img/logo_close.gif')";
+  			}
+		}
+		</script>
 
 		<nav>
-    		<input type="checkbox" id="button">
-    		<label for="button" onclick></label>
-			<ul class="">
-				<li><a href="events.html">Events</a></li>
+    		<input class="x-input" type="checkbox" id="nav-button">
+    		<label class="x-label" for="nav-button" onclick></label>
+			<ul id="main-nav">
+				<li class="active"><a href="events.html">Events</a></li>
 				<li><a href="news.html">News</a></li>
 				<li><a href="projects.html">Projects</a></li>
 				<li><a href="about.html">About</a></li>
-				<li class="dropdown"><a href="#">Resources</a>
+				<li class="dropdown"><a href="resources.html">Resources</a>
 					<ul class="dropdown-content">
 						<li><a href="tutorials.html">Tutorials + Workshops</a></li>
 						<li><a href="digital_tools.html">Digital Tools + Methods</a></li>
@@ -53,12 +62,10 @@
 		</nav>
 
 		<div class="search">
-			<a href="#"><img src="img/icons/search_icon.svg"/></a>			
+			<a href="search_modal.html"><img src="img/icons/search_icon.svg"/></a>	
 		</div>
 		
-		
-</header>
-
+	</header>
 
 
 
@@ -66,11 +73,11 @@
 	<!--single-pg-container----------------------------------------------->	
 	<article class="single-pg-container project-pg-container">
 	
-		<!--Centered Head----------------------------------------------->	
+		<!--Centered Head-With padding for projects----------------------------------->	
 		<h1 class="section-title project-pg-title">Exploring Medieval Mary Magdalene</h1>
-		<!--Main column----------------------------------------------->	
-
-		<section class="project-wide-column">
+		
+		<!--Wide column----------------------------------------------->	
+		<section class="wide-column wide-column-left">
 			
 			<p>The Exploring Medieval Mary Magdalene project is an online collection of digital editions containing the legend of Mary Magdalene’s conversion. The project began as the focus of a year-long graduate student seminar held in Harvard’s German Department and conducted by Prof. Racha Kirakosian. Together, this team of philologists and digital humanists has striven to make available the linguistically diverse manuscripts containing this little-known legend in an interactive and fully-searchable format that surpasses the limitations of traditional printed critical editions.</p>
 			<p>While the study of this particular legend and its manuscripts that this project enables will be in and of itself important for medievalists, Germanists, and codicologists, our team at Harvard has created this resource with an eye to establishing a set of standards for the creating digital editions from manuscripts in order to ease the way for future scholarly efforts in digitalization. Conforming to existing TEI guidelines, our team has established a set of best practices useful for the TEI tagging of textual phenomena ranging from variant spellings and punctuation to scribal corrections and editorial interpolations.</p>
@@ -96,7 +103,7 @@
 		
 
 		<!--sidebar column----------------------------------------------->	
-		<section class="sidebar-column project-sidebar-column">
+		<section class="sidebar-right">
 			
 			<div class="external-link-box no-margin-top">
 				<a href="#" target="_blank" class="external-link">View Project</a>
@@ -104,19 +111,19 @@
 			
 			<div class="connected-project-data">
 				<ul class="data-head">Timeline
-					<li class="small">2017-Present</li>
+					<li>2017-Present</li>
 				</ul>
 				<ul class="data-head">GRANTS/FUNDING
-					<li class="small">Barajas Dean's Innovation Fund for Digital Arts and Humanities</li>
+					<li>Barajas Dean's Innovation Fund for Digital Arts and Humanities</li>
 				</ul>
 				<ul class="data-head">CONNECTED PEOPLE
-					<li class="small"><a href="">Cole Crawford</a></li>
-					<li class="small">Gabriel Pizzorno</li>
-					<li class="small">Greg Crane</li>
-					<li class="small">Jeffrey Witt</li>
-					<li class="small">Lisa Fagin Davis</li>
-					<li class="small">Michael Storz</li>
-					<li class="small">Lisa Fagin Davis</li>
+					<li><a href="">Cole Crawford</a></li>
+					<li>Gabriel Pizzorno</li>
+					<li>Greg Crane</li>
+					<li>Jeffrey Witt</li>
+					<li>Lisa Fagin Davis</li>
+					<li>Michael Storz</li>
+					<li>Lisa Fagin Davis</li>
 				</ul>
 			</div>
 		

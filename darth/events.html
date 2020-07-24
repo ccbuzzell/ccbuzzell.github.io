@@ -10,8 +10,9 @@
 
   <link rel="stylesheet" href="css/style.css" media="screen">
   <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,355;0,700;1,355;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,340;0,450;0,570;0,700;1,340;1,450;1,570;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 
 
 
@@ -24,28 +25,42 @@
 
 	
 	<main>
-	<!--title----------------------------------------------->	
+	<!--title------------------------------------------------>	
 
 	<h1 class="section-title center">Upcoming Events</h1>
 
+	<!--sorting menus-dropdown------------------------------->	
+			<section class="multi-select-dropdown">
+				<!--checkbox block-->
+				<div>
+					<!--dropdown filter block-->	
+					<div class="dropdown-filter">
+						
+						<label class="filter-title" for="topic">Methods:</label>
+						<input type="checkbox" id="topic" class="filter-imput">
+    					
+    					<!--dropdown filter-content-->
+    					<div class="dropdown-filter-content filter-topics">
+    						<div>
+    							<label for="topic-one">topic one</label>
+  								<input type="checkbox" name="topic-one" value="topic-one">
+  							</div>
+  							<div>
+    							<label for="topic-one">topic one</label>
+  								<input type="checkbox" name="topic-one" value="topic-one">
+  							</div>
+    					</div>
+    					
+					<!--dropdown filter block-->
+					</div>
+				<!--checkbox block-->	
+				</div>	
+			</section>
 
 	<!--sorting menus----------------------------------------------->	
 	<section class="sorting-box-container">
 		
 		<div class="sorting-box-block">
-    		<form action="">
-  				<label for="event-type">Type:</label>
-  				<select id="event-type" name="event-type">
-  					<option value="all">All</option>	
-    				<option value="workshop">Workshops</option>
-    				<option value="symposium">Symposiums</option>
-    				<option value="lecture">Lectures</option>
-    				<option value="event">Event</option>
-  				</select>
-  				<input type="submit">
-			</form>
-		</div>
-		<div class="sorting-box-block flex-left">
     		<form action="">
   				<label for="event-method">Methods:</label>
   				<select id="event-method" name="event-method">
@@ -55,7 +70,18 @@
     				<option value="lecture">Lectures</option>
     				<option value="event">Event</option>
   				</select>
-  				<input type="submit">
+			</form>
+		</div>
+		<div class="sorting-box-block flex-left">
+    		<form action="">
+  				<label for="event-type">Event Type:</label>
+  				<select id="event-type" name="event-type">
+  					<option value="all">All</option>	
+    				<option value="workshop">Workshops</option>
+    				<option value="symposium">Symposiums</option>
+    				<option value="lecture">Lectures</option>
+    				<option value="event">Event</option>
+  				</select>
 			</form>
 		</div>
 	</section>
@@ -63,58 +89,58 @@
 
 	<!--featured events----------------------------------------------->	
 
-	<section class="thumb-container">
+	<section class="thumb-container">	
 		<div class="featured-event-block workshop">
-			<div class="event-text-block">
-				<a href="event_single.html">			
+		<a href="event_single.html">	
+			<div class="event-text-block">			
 					<h2 class="event-head">Visual Eloquence</h2>
 					<p class="event-sub">A Hands-on Workshop for Creating Effective Data Visualizations</p>
 					<p class="event-date">Saturday<br>June 06, 2020</p>
-				</a>
 			</div>
 			<div class="event-icon-block">
 				<img class="event-icon workshop" src="img/icons/workshop_icon.svg"/>
 				<img class="event-logo" src="img/logos/tableau-logo.gif"/>
 			</div>
+		</a>	
 		</div>
 
 		<div class="featured-event-block symposium">
-			<div class="event-text-block">
-				<a href="">	
+		<a href="">	
+			<div class="event-text-block">	
 					<h2 class="event-head">Digital Humanities:<br>An Afternoon Symposium</h2>
 					<p class="event-date">Saturday<br>June 06, 2020</p>
-				</a>
 			</div>
 			<div class="event-icon-block">
 				<img class="event-icon" src="img/icons/symposium_icon.svg"/>
 			</div>
+		</a>
 		</div>
 
 		<div class="featured-event-block event">
-			<div class="event-text-block">
-				<a href="">				
+		<a href="">		
+			<div class="event-text-block">			
 					<h2 class="event-head">Special Event</h2>
 					<p class="event-sub">A special event for Creating Effective Data Visualizations</p>
 					<p class="event-date">Saturday<br>June 06, 2020</p>
-				</a>
 			</div>
 			<div class="event-icon-block">
 				<img class="event-icon workshop" src="img/icons/event_icon.svg"/>
 			</div>
+		</a>	
 		</div>
 
 		<div class="featured-event-block lecture">
+			<a href="">	
 			<div class="event-text-block">
-				<a href="">	
 					<h2 class="event-head">The Future of Python Lecture</h2>
 					<p class="event-sub">Join our guest speaker for a deep dive into python, its past and its future</p>
 					<p class="event-date">Saturday<br>June 06, 2020</p>
-				</a>
 			</div>
 			<div class="event-icon-block">
 				<img class="event-icon" src="img/icons/lecture_icon.svg"/>
 				<img class="event-logo" src="img/logos/python-logo.gif"/>
 			</div>
+		</a>	
 		</div>
 	</section>
 
@@ -129,19 +155,6 @@
 		
 		<div class="sorting-box-block">
     		<form action="">
-  				<label for="past-event-type">Type:</label>
-  				<select id="past-event-type" name="past-event-type">
-  					<option value="all">All</option>	
-    				<option value="workshop">Workshops</option>
-    				<option value="symposium">Symposiums</option>
-    				<option value="lecture">Lectures</option>
-    				<option value="event">Event</option>
-  				</select>
-  				<input type="submit">
-			</form>
-		</div>
-		<div class="sorting-box-block flex-left">
-    		<form action="">
   				<label for="past-event-method">Methods:</label>
   				<select id="past-event-method" name="past-event-method">
   					<option value="all">All</option>	
@@ -150,7 +163,18 @@
     				<option value="lecture">Lectures</option>
     				<option value="event">Event</option>
   				</select>
-  				<input type="submit">
+			</form>
+		</div>
+		<div class="sorting-box-block flex-left">
+    		<form action="">
+  				<label for="past-event-type">Event Type:</label>
+  				<select id="past-event-type" name="past-event-type">
+  					<option value="all">All</option>	
+    				<option value="workshop">Workshops</option>
+    				<option value="symposium">Symposiums</option>
+    				<option value="lecture">Lectures</option>
+    				<option value="event">Event</option>
+  				</select>
 			</form>
 		</div>
 	</section>

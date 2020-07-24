@@ -10,33 +10,43 @@
 
   <link rel="stylesheet" href="css/style.css" media="screen">
   <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,355;0;500;0,700;1,355;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,340;0,450;0,570;0,700;1,340;1,450;1,570;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 
 
-
+  
 </head>
 
 
 <body class="pixels">
 	
 	
-	<!--header----------------------------------------------->	
+	<!--header------------------------------------------------>	
 	<header>
-		<div class="logo">
-			<a href="index.html"><img class="stop" src="img/logo_main.png"/></a>
-			<a href="index.html"><img class="animate" src="img/logo_animate.gif"/></a>
-		</div>
+		<!--logo----------------------------------------------->	
+		<div class="logo"><a href="index.html">
+			<div alt="Darth home" id="animate-logo" style="background-image:url('img/logo_open.gif');"></div>
+		</a></div>
+		<!--logo-animation------------------------------------->
+		<script>
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+  			if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+    		document.getElementById("animate-logo").style.backgroundImage = "url('img/logo_close.gif')";
+  			}
+		}
+		</script>
 
 		<nav>
-    		<input type="checkbox" id="button">
-    		<label for="button" onclick></label>
-			<ul class="">
-				<li><a href="events.html">Events</a></li>
+    		<input class="x-input" type="checkbox" id="nav-button">
+    		<label class="x-label" for="nav-button" onclick></label>
+			<ul id="main-nav">
+				<li class="active"><a href="events.html">Events</a></li>
 				<li><a href="news.html">News</a></li>
 				<li><a href="projects.html">Projects</a></li>
 				<li><a href="about.html">About</a></li>
-				<li class="dropdown"><a href="#">Resources</a>
+				<li class="dropdown"><a href="resources.html">Resources</a>
 					<ul class="dropdown-content">
 						<li><a href="tutorials.html">Tutorials + Workshops</a></li>
 						<li><a href="digital_tools.html">Digital Tools + Methods</a></li>
@@ -50,197 +60,218 @@
 		</nav>
 
 		<div class="search">
-			<a href="#"><img src="img/icons/search_icon.svg"/></a>			
+			<a href="search_modal.html"><img src="img/icons/search_icon.svg"/></a>	
 		</div>
-		
 		
 	</header>
 
+	<!--main section---------------------------------------------------->	
 	<main>
 
-	<!--intro section----------------------------------------------->	
+		<!--intro section----------------------------------------------->	
+		<section class="boxed-text">
+			<p>Welcome to Arts + Humanities Research Computing 
+			informally known as DARTH (Digital Arts + Humanities). 
+			We provide consultation, instruction, and technical development 
+	    	for the digital research initiatives of faculty, staff, and students at Harvard. 
+			</p>
+		</section>
 
-	<section class="boxed-text">
-		<p>Welcome to Arts + Humanities Research Computing 
-		informally known as DARTH (Digital Arts + Humanities). 
-		We provide consultation, instruction, and technical development 
-	    for the digital research initiatives of faculty, staff, and students at Harvard. 
-		</p>
-	</section>
+		<!--featured events title------------------------------------->	
+		<h1 class="section-title center">Events</h1>
 
-	<!--featured events----------------------------------------------->	
+		<!--event container-------------------------------------------->	
+		<section class="thumb-container">
 
-	<h1 class="section-title center">Events</h1>
-
-	<section class="thumb-container">
-
-		<div class="featured-event-block workshop">
-			<div class="event-text-block">
-				<a href="">				
+			<div class="featured-event-block workshop">
+			<a href="">	
+				<div class="event-text-block">			
 					<h2 class="event-head">Visual Eloquence</h2>
 					<p class="event-sub">A Hands-on Workshop for Creating Effective Data Visualizations</p>
 					<p class="event-date">Saturday<br>June 06, 2020</p>
-				</a>
+				</div>
+				<div class="event-icon-block">
+					<img class="event-icon workshop" src="img/icons/workshop_icon.svg"/>
+					<img class="event-logo" src="img/logos/tableau-logo.gif"/>
+				</div>
+			</a>
 			</div>
-			<div class="event-icon-block">
-				<img class="event-icon workshop" src="img/icons/workshop_icon.svg"/>
-				<img class="event-logo" src="img/logos/tableau-logo.gif"/>
-			</div>
-		</div>
 
-		<div class="featured-event-block symposium">
-			<div class="event-text-block">
-				<a href="">	
+			<div class="featured-event-block symposium">
+			<a href="">		
+				<div class="event-text-block">
 					<h2 class="event-head">Digital Humanities:<br>An Afternoon Symposium</h2>
 					<p class="event-date">Saturday<br>June 06, 2020</p>
-				</a>
-			</div>
-			<div class="event-icon-block">
-				<img class="event-icon" src="img/icons/symposium_icon.svg"/>
-			</div>
-		</div>
-
-	</section>
-
-	<h3 class="see-all center"><a href="events.html">see all events</a></h3>
-
-	<!--featured projects----------------------------------------------->	
-
-	<h1 class="section-title center">Projects</h1>
-
-	<section class="thumb-container">
-
-		<div class="featured-project-block"><a href="#">
-			<div class="project-title-block blue">
-				<div class="project-thumb" style="background-image:url('img/projects/project_bg_beyondwords.jpg');"></div>
-				<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_bg_beyondwords.gif');"></div>
-				<div class="project-title-container">
-					<h3 class="project-title">Beyond Words</h3>	
 				</div>
-				<div class="project-thumb-colorblock"></div>
-			</div>
-			<div class="project-description-block">
-				<p class="small">An online collection of digital editions legend of Mary Magdalene’s conversion.</p>
-			</div>
-		</a></div>
-
-		<div class="featured-project-block"><a href="#">
-			<div class="project-title-block blue">
-				<div class="project-thumb" style="background-image:url('img/projects/project_nophoto.jpg');"></div>
-				<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_nophoto.gif');"></div>
-				<div class="project-title-container">
-					<h3 class="project-title">Beyond Words</h3>	
+				<div class="event-icon-block">
+					<img class="event-icon" src="img/icons/symposium_icon.svg"/>
 				</div>
-				<div class="project-thumb-colorblock"></div>
+			</a>
 			</div>
-			<div class="project-description-block">
-				<p class="small">An online collection of digital editions legend of Mary Magdalene’s conversion.</p>
-			</div>
-		</a></div>
 
-		<div class="featured-project-block"><a href="#">
-			<div class="project-title-block blue">
-				<div class="project-thumb" style="background-image:url('img/projects/project_bg_beyondwords.jpg');"></div>
-				<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_bg_beyondwords.gif');"></div>
-				<div class="project-title-container">
-					<h3 class="project-title">Beyond Words</h3>	
-				</div>
-				<div class="project-thumb-colorblock"></div>
-			</div>
-			<div class="project-description-block">
-				<p class="small">An online collection of digital editions legend of Mary Magdalene’s conversion.</p>
-			</div>
-		</a></div>
+		</section>
 
-		<div class="featured-project-block"><a href="#">
-			<div class="project-title-block blue">
-				<div class="project-thumb" style="background-image:url('img/projects/project_nophoto.jpg');"></div>
-				<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_nophoto.gif');"></div>
-				<div class="project-title-container">
-					<h3 class="project-title">Beyond Words</h3>	
-				</div>
-				<div class="project-thumb-colorblock"></div>
-			</div>
-			<div class="project-description-block">
-				<p class="small">An online collection of digital editions legend of Mary Magdalene’s conversion.</p>
-			</div>
-		</a></div>
+		<h3 class="see-all center"><a href="events.html">see all events</a></h3>
 
-	</section>
 		
-	<h3 class="see-all center"><a href="projects.html">see all projects</a></h3>
+		<!--featured projects title----------------------------------->	
+		<h1 class="section-title center">Projects</h1>
 
+		<!--project container------------------------------------------>
+		<section class="thumb-container">
 
-	<!--featured news----------------------------------------------->	
+			<div class="featured-project-block">
+			<a href="#">
+				<div class="project-title-block blue">
+					<div class="project-thumb" style="background-image:url('img/projects/project_bg_beyondwords.jpg');"></div>
+					<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_bg_beyondwords.gif');"></div>
+					<div class="project-title-container">
+						<h3 class="project-title">Beyond Words</h3>	
+					</div>
+					<div class="project-thumb-colorblock"></div>
+				</div>
+				
+				<div class="project-description-block">
+					<p class="small">An online collection of digital editions legend of Mary Magdalene’s conversion.</p>
+				</div>
+			</a>
+			</div>
 
-	<h1 class="section-title center">News</h1>
+			<div class="featured-project-block">
+			<a href="#">
+				<div class="project-title-block blue">
+					<div class="project-thumb" style="background-image:url('img/projects/project_nophoto.jpg');"></div>
+					<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_nophoto.gif');"></div>
+					<div class="project-title-container">
+						<h3 class="project-title">Beyond Words</h3>	
+					</div>
+					<div class="project-thumb-colorblock"></div>
+				</div>
+			
+				<div class="project-description-block">
+					<p class="small">An online collection of digital editions legend of Mary Magdalene’s conversion.</p>
+				</div>
+			</a>
+			</div>
 
-	<section class="thumb-container">
+			<div class="featured-project-block">
+			<a href="#">
+				<div class="project-title-block blue">
+					<div class="project-thumb" style="background-image:url('img/projects/project_bg_beyondwords.jpg');"></div>
+					<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_bg_beyondwords.gif');"></div>
+					<div class="project-title-container">
+						<h3 class="project-title">Beyond Words</h3>	
+					</div>
+					<div class="project-thumb-colorblock"></div>
+				</div>
+				
+				<div class="project-description-block">
+					<p class="small">An online collection of digital editions legend of Mary Magdalene’s conversion.</p>
+				</div>
+			</a>
+			</div>
+
+			<div class="featured-project-block">
+			<a href="#">
+				<div class="project-title-block blue">
+					<div class="project-thumb" style="background-image:url('img/projects/project_nophoto.jpg');"></div>
+					<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_nophoto.gif');"></div>
+					<div class="project-title-container">
+						<h3 class="project-title">Beyond Words</h3>	
+					</div>
+					<div class="project-thumb-colorblock"></div>
+				</div>
+			
+				<div class="project-description-block">
+					<p class="small">An online collection of digital editions legend of Mary Magdalene’s conversion.</p>
+				</div>
+			</a>
+			</div>
+
+		<!--close project container------------------------------------------>
+		</section>
 		
-		<div class="featured-news-block award"><a href="#">
-			<div class="news-thumb-block">
-				<div class="news-thumb" style="background-image:url('img/news/news_giza.jpg');"> </div>
-				<div class="news-thumb-bitmap" style="background-image:url('img/news/news_giza.gif');"> </div>
-				<img class="news-icon" src="img/icons/award_icon.svg"/>
-				<div class="news-thumb-colorblock"> </div>
-			</div>
-			<div class="featured-news-title-block">
-				<div class="news-data">
-					<p>Author</p>
-					<p>|</p>
-					<p>03.23.20</p>
+		<h3 class="see-all center"><a href="projects.html">see all projects</a></h3>
+
+
+		<!--feaured news title------------------------------------------------>	
+		<h1 class="section-title center">News</h1>
+
+		<!-- news container--------------------------------------------------->
+		<section class="thumb-container">
+		
+			<!-- add content type class here --------------------------------->
+			<div class="featured-news-block award">
+			<a href="#">
+				<div class="news-thumb-block">
+					<div class="news-thumb" style="background-image:url('img/news/news_giza.jpg');"> </div>
+					<div class="news-thumb-bitmap" style="background-image:url('img/news/news_giza.gif');"> </div>
+					<img class="news-icon" src="img/icons/award_icon.svg"/>
+					<div class="news-thumb-colorblock"> </div>
 				</div>
-				<h4>Giza Award</h4>
-				<p>Awards given to this project are very prestigious</p>
-			</div>
-		</a></div>
-
-		<div class="featured-news-block grant"><a href="#">
-			<div class="news-thumb-block">
-				<div class="news-thumb" style="background-image:url('img/news/news_giza.jpg');"> </div>
-				<div class="news-thumb-bitmap" style="background-image:url('img/news/news_giza.gif');"> </div>
-				<img class="news-icon" src="img/icons/grant_icon.svg"/>
-				<div class="news-thumb-colorblock"> </div>
-			</div>
-			<div class="featured-news-title-block">
-				<div class="news-data">
-					<p>Author</p>
-					<p>|</p>
-					<p>03.23.20</p>
+				
+				<div class="featured-news-title-block">
+					<div class="news-data">
+						<p>Author</p>
+						<p>|</p>
+						<p>03.23.20</p>
+					</div>
+					<h4>Giza Award</h4>
+					<p>Awards given to this project are very prestigious</p>
 				</div>
-				<h4>Giza Award</h4>
-				<p>Awards given to this project are very prestigious</p>
+			</a>
 			</div>
-		</a></div>
 
-		<div class="featured-news-block blog"><a href="#">
-			<div class="news-thumb-block">
-				<div class="news-thumb" style="background-image:url('img/news/news_giza.jpg');"> </div>
-				<div class="news-thumb-bitmap" style="background-image:url('img/news/news_giza.gif');"> </div>
-				<img class="news-icon" src="img/icons/blog_icon.svg"/>
-				<div class="news-thumb-colorblock"> </div>
-			</div>
-			<div class="featured-news-title-block">
-				<div class="news-data">
-					<p>Author</p>
-					<p>|</p>
-					<p>03.23.20</p>
+			<div class="featured-news-block grant">
+			<a href="#">
+				<div class="news-thumb-block">
+					<div class="news-thumb" style="background-image:url('img/news/news_giza.jpg');"> </div>
+					<div class="news-thumb-bitmap" style="background-image:url('img/news/news_giza.gif');"> </div>
+					<img class="news-icon" src="img/icons/grant_icon.svg"/>
+					<div class="news-thumb-colorblock"> </div>
 				</div>
-				<h4>Giza Award</h4>
-				<p>Awards given to this project are very prestigious</p>
+				
+				<div class="featured-news-title-block">
+					<div class="news-data">
+						<p>Author</p>
+						<p>|</p>
+						<p>03.23.20</p>
+					</div>
+					<h4>Giza Award</h4>
+					<p>Awards given to this project are very prestigious</p>
+				</div>
+			</a>
 			</div>
-		</a></div>
 
+			<div class="featured-news-block blog"><a href="#">
+				<div class="news-thumb-block">
+					<div class="news-thumb" style="background-image:url('img/news/news_giza.jpg');"> </div>
+					<div class="news-thumb-bitmap" style="background-image:url('img/news/news_giza.gif');"> </div>
+					<img class="news-icon" src="img/icons/blog_icon.svg"/>
+					<div class="news-thumb-colorblock"> </div>
+				</div>
+			
+				<div class="featured-news-title-block">
+					<div class="news-data">
+						<p>Author</p>
+						<p>|</p>
+						<p>03.23.20</p>
+					</div>
+					<h4>Giza Award</h4>
+					<p>Awards given to this project are very prestigious</p>
+				</div>
+			</a>
+			</div>
 
-	</section>
+		<!--close news container------------------------------------------>
+		</section>
 
-	<h3 class="see-all center"><a href="news.html">see all news</a></h3>
+		<h3 class="see-all center"><a href="news.html">see all news</a></h3>
 
-	<!--container---------------------->
+	<!-- close main container--------------------------------------------->
 	</main>
 
-
-	<!--footer----------------------------------------------->	
+	<!--footer------------------------------------------------------------>	
 	<footer>
 		<div class="footer-container">
 			
@@ -268,6 +299,7 @@
 
 
 </body>
+
 
 </html>
 
