@@ -24,25 +24,90 @@
 	<!--header----------------------------------------------->	
 
 	
-	<main>
-	<!--title----------------------------------------------->	
+	
 
+
+
+	<main>
+	
+
+	<!--title----------------------------------------------->	
 	<h1 class="section-title center">News</h1>
 
 
-	<!--sorting menus----------------------------------------------->	
-	<section class="sorting-box-container">
-		<div class="sorting-box-block single-flex-left">
-    		<form action="">
-  				<label for="news-method">News Type:</label>
-  				<select id="news-method" name="news-method">
-  					<option value="all">All</option>	
-    				<option value="awards">Awards</option>
-    				<option value="grants">Grants</option>
-    				<option value="blog">Blog</option>
-    				<option value="career">Career</option>
-  				</select>
-			</form>
+	<!--sorting menus-dropdown------------------------------->	
+	<section class="multi-select-dropdown">
+		<!--dropdown filter block-->	
+		<div class="dropdown-filter">
+						
+			<input type="checkbox" id="type" class="filter-imput">
+			<label class="filter-title title-type" for="type">News Type:</label>
+
+    		<!--dropdown filter-content-->
+    		<div class="dropdown-filter-content filter-type">
+    			<div>
+    				<label for="topic-one">All Topics</label>
+  					<input type="checkbox" name="topic-one" value="topic-one">
+  				</div>
+  				<div>
+    				<label for="topic-one">topic one</label>
+  					<input type="checkbox" name="topic-one" value="topic-one">
+  				</div>
+  				<div>
+    				<label for="topic-one">topic one</label>
+  					<input type="checkbox" name="topic-one" value="topic-one">
+  				</div>
+  				<div>
+    				<label for="topic-one">topic one</label>
+  					<input type="checkbox" name="topic-one" value="topic-one">
+  				</div>
+  				<div>
+    				<label for="topic-one">topic one</label>
+  					<input type="checkbox" name="topic-one" value="topic-one">
+  				</div>
+		<!--dropdown filter block-->
+		</div>
+
+		<!--dropdown filter block-->	
+		<div class="dropdown-filter">
+						
+			<input type="checkbox" id="method" class="filter-imput">
+			<label class="filter-title title-method" for="method">Methods:</label>
+    					
+    			<!--dropdown filter-content-->
+    			<div class="dropdown-filter-content filter-method">
+    				<div>
+    					<label for="topic-one">All Topics</label>
+  						<input type="checkbox" name="topic-one" value="topic-one">
+  					</div>
+  					<div>
+    					<label for="topic-one">topic one</label>
+  						<input type="checkbox" name="topic-one" value="topic-one">
+  					</div>
+    			</div>
+    					
+		<!--dropdown filter block-->
+		</div>
+
+		<!--dropdown filter block-->	
+			<div class="dropdown-filter">
+						
+				<input type="checkbox" id="topic" class="filter-imput">
+				<label class="filter-title title-topic" for="topic">Topic:</label>
+    					
+    			<!--dropdown filter-content-->
+    			<div class="dropdown-filter-content filter-topic">
+    				<div>
+    					<label for="topic-one">All Topics</label>
+  						<input type="checkbox" name="topic-one" value="topic-one">
+  					</div>
+  					<div>
+    					<label for="topic-one">topic one</label>
+  						<input type="checkbox" name="topic-one" value="topic-one">
+  					</div>
+    			</div>
+    					
+		<!--dropdown filter block-->
 		</div>
 	</section>
 
