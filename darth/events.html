@@ -29,7 +29,7 @@
 	<!--title------------------------------------------------>	
 	<h1 class="section-title center">Upcoming Events</h1>
 
-	<!--sorting menus-dropdown------------------------------->	
+	<!--sorting menus-dropdown---current events---------------------------->	
 	<section class="multi-select-dropdown">
 		<!--dropdown filter block-->	
 		<div class="dropdown-filter">
@@ -59,50 +59,46 @@
     				<label for="topic-one">topic one</label>
   					<input type="checkbox" name="topic-one" value="topic-one">
   				</div>
-		<!--dropdown filter block-->
-		</div>
+			
+			<!--dropdown filter content-->
+			</div>
+		<!--dropdown filter block-->	
+		</div>		
+
+		<!--dropdown filter block-->	
+		<div class="dropdown-filter">
+						
+			<input type="checkbox" id="topic" class="filter-imput">
+			<label class="filter-title title-topic" for="topic">Event Topic:</label>
+
+    		<!--dropdown filter-content-->
+    		<div class="dropdown-filter-content filter-topic">
+    			<div>
+    				<label for="topic-one">All Topics</label>
+  					<input type="checkbox" name="topic-one" value="topic-one">
+  				</div>
+			<!--dropdown filter content-->
+			</div>
+		<!--dropdown filter block-->	
+		</div>	
 
 		<!--dropdown filter block-->	
 		<div class="dropdown-filter">
 						
 			<input type="checkbox" id="method" class="filter-imput">
-			<label class="filter-title title-method" for="method">Methods:</label>
-    					
-    			<!--dropdown filter-content-->
-    			<div class="dropdown-filter-content filter-method">
-    				<div>
-    					<label for="topic-one">All Topics</label>
-  						<input type="checkbox" name="topic-one" value="topic-one">
-  					</div>
-  					<div>
-    					<label for="topic-one">topic one</label>
-  						<input type="checkbox" name="topic-one" value="topic-one">
-  					</div>
-    			</div>
-    					
-		<!--dropdown filter block-->
+			<label class="filter-title title-method" for="method">Event Method:</label>
+
+    		<!--dropdown filter-content-->
+    		<div class="dropdown-filter-content filter-method">
+    			<div>
+    				<label for="topic-one">All Topics</label>
+  					<input type="checkbox" name="topic-one" value="topic-one">
+  				</div>
+			<!--dropdown filter content-->
+			</div>
+		<!--dropdown filter block-->	
 		</div>
 
-		<!--dropdown filter block-->	
-			<div class="dropdown-filter">
-						
-				<input type="checkbox" id="topic" class="filter-imput">
-				<label class="filter-title title-topic" for="topic">Topic:</label>
-    					
-    			<!--dropdown filter-content-->
-    			<div class="dropdown-filter-content filter-topic">
-    				<div>
-    					<label for="topic-one">All Topics</label>
-  						<input type="checkbox" name="topic-one" value="topic-one">
-  					</div>
-  					<div>
-    					<label for="topic-one">topic one</label>
-  						<input type="checkbox" name="topic-one" value="topic-one">
-  					</div>
-    			</div>
-    					
-		<!--dropdown filter block-->
-		</div>
 	</section>
 
 
@@ -165,37 +161,40 @@
 
 	<h3 class="see-all center"><a href="events.html">load more</a></h3>
 
-	<!-- title----------------------------------------------->	
+	
 
+
+
+
+	<!-- title----------------------------------------------->	
 	<h1 class="section-title center">Past Events</h1>
 
-	<!--sorting menus----------------------------------------------->	
-	<section class="sorting-box-container">
+	<!--sorting menus-dropdown---past events---------------------------->	
+	<section class="multi-select-dropdown">
+		<!--dropdown filter block-->	
+		<div class="dropdown-filter">
+						
+			<input type="checkbox" id="past-type" class="filter-imput">
+			<label class="filter-title title-past-type" for="past-type">Past Event Type:</label>
+
+    		<!--dropdown filter-content-->
+    		<div class="dropdown-filter-content filter-past-type">
+    			<div>
+    				<label for="topic-one">All Topics</label>
+  					<input type="checkbox" name="topic-one" value="topic-one">
+  				</div>
+  				<div>
+    				<label for="topic-one">topic one</label>
+  					<input type="checkbox" name="topic-one" value="topic-one">
+  				</div>
+			
+			<!--dropdown filter content-->
+			</div>
+		<!--dropdown filter block-->	
+		</div>		
+
 		
-		<div class="sorting-box-block">
-    		<form action="">
-  				<label for="past-event-method">Methods:</label>
-  				<select id="past-event-method" name="past-event-method">
-  					<option value="all">All</option>	
-    				<option value="workshop">Workshops</option>
-    				<option value="symposium">Symposiums</option>
-    				<option value="lecture">Lectures</option>
-    				<option value="event">Event</option>
-  				</select>
-			</form>
-		</div>
-		<div class="sorting-box-block flex-left">
-    		<form action="">
-  				<label for="past-event-type">Event Type:</label>
-  				<select id="past-event-type" name="past-event-type">
-  					<option value="all">All</option>	
-    				<option value="workshop">Workshops</option>
-    				<option value="symposium">Symposiums</option>
-    				<option value="lecture">Lectures</option>
-    				<option value="event">Event</option>
-  				</select>
-			</form>
-		</div>
+
 	</section>
 
 	<!--past events----------------------------------------------->	
