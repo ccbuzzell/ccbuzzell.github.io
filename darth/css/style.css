@@ -528,7 +528,6 @@ img.event-logo{
 
 
 /* Project Styles Thumb------Past Event Thumb------------------------------------------------- */
-
 .featured-project-block, .past-event-thumb-block{
 	padding: 0 1em 1.2em 1em;
 	margin:1em -1px 1em 0;
@@ -558,8 +557,8 @@ img.event-logo{
 
 .project-title-container, .project-icon-container{
 	position: absolute;
-	top:18%;
-	left:18%;
+	top:19%;
+	left:16%;
 	width: 64%;
 	height: 64%;
 	background-color: white;
@@ -686,12 +685,17 @@ img.event-logo{
 .wide-column p{
 	line-height: 1.7em;
 }
-.wide-column ul li a{
+
+.data-head li a{
 	border-bottom: 1px solid black;
 }
 
-.wide-column ul li a:hover{
+.data-head li a:hover{
 	border-bottom: 1px solid var(--crimson);
+}
+
+.data-head li a:hover{
+	color: var(--crimson);
 }
 
 
@@ -700,6 +704,13 @@ img.event-logo{
 	width: 100%;
 	margin:1em 0;
 }
+
+
+/* padding on single pages-- see about page */
+.indent-subheads{
+	padding-left: 0.9em;
+}
+
 /* Carousel Styles --------------------------------------------------------------------------------------- */
 .main-carousel
 .carousel-cell {
@@ -734,50 +745,7 @@ img.event-logo{
 }
 
 
-/* Single Project Styles-----------------------------------------------------------------------------------*/
-.project-header {
-  	background-repeat: no-repeat;
-  	background-attachment: fixed;
-  	background-size: auto;
-  	background-position: top center;
-  	position: absolute;
-  	z-index: -1;
-  	height: 24em;
-  	width: 100%;
-}
 
-.blue-colorblock {
-	height: 100%;
-	width: 100%;
-	background-color: var(--blue);
-	mix-blend-mode: color;
-}
-
-.project-pg-container{
-	padding-top: 12em;
-}
-
-
-.in-the-media a{
-	color:var(--blue);
-	padding-bottom: 0.04em;
-	border-bottom: none;
-}
-
-.in-the-media a:hover{
-	color:var(--blue);
-	border-bottom: solid 3px var(--blue);
-}
-
-.apply-project {
-	justify-content:center;
-	margin: 1em;
-}
-
-.apply-project h2{
-	padding: 0 1em 0 1em;
-	line-height: 1.1em;
-}
 
 /* Connected info-----------------------------------------------------------------------------------------*/
 
@@ -850,7 +818,12 @@ img.event-logo{
 }
 
 
-/* Bio Hierachy */
+/* Bio Hierachy for About and Groups --------------------------------- */
+
+/* Large ---- */
+.lrg-block {
+	margin:2em 0 4em;
+}
 
 .connected-info-img-lrg {
 	width:20%;
@@ -867,18 +840,82 @@ img.event-logo{
 	margin:0 0 0 1em;
 }
 
-.lrg-block {
-	margin:2em 0 4em;
+
+
+/* Medium ---- */
+
+.med-block {
+	margin:2em 0 4em -1px;
+	width: 50%;
 }
 
+.connected-info-img-med {
+	width:25%;
+	margin:0 0.5em 0 0;
+}
+
+.connected-info-img-med img, .connected-info-text-med h2{
+	margin-top:0;
+	padding-top:0;
+}
+
+.connected-info-text-med {
+	width:75%;
+	margin:0 0 0 0.5em;
+}
+
+
+/* Small ---- */
 .small-block {
 	margin-top:2em;
 	margin-bottom:0em;
 }
 
 
+/* Single Project Styles-----------------------------------------------------------------------------------*/
+.project-header {
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: auto;
+  	background-position: top center;
+  	position: absolute;
+  	z-index: -1;
+  	height: 24em;
+  	width: 100%;
+}
+
+.blue-colorblock {
+	height: 100%;
+	width: 100%;
+	background-color: var(--blue);
+	mix-blend-mode: color;
+}
+
+.project-pg-container{
+	padding-top: 12em;
+}
 
 
+.in-the-media a{
+	color:var(--blue);
+	padding-bottom: 0.04em;
+	border-bottom: none;
+}
+
+.in-the-media a:hover{
+	color:var(--blue);
+	border-bottom: solid 3px var(--blue);
+}
+
+.apply-project {
+	justify-content:center;
+	margin: 1em;
+}
+
+.apply-project h2{
+	padding: 0 1em 0 1em;
+	line-height: 1.1em;
+}
 
 
 /* Hover Styles ------------------------------------------------------------------------------ */
@@ -1102,24 +1139,28 @@ img.event-logo{
 
 /* All Multi-select Open and Close ---------------------------------------------------------------*/
 
-#type[type=checkbox]:checked ~ .filter-type,
-#topic[type=checkbox]:checked ~ .filter-topic,
-#method[type=checkbox]:checked~ .filter-method,
-#group[type=checkbox]:checked ~ .filter-group{
-    display:block;
-}
-
 #type[type=checkbox]:checked ~ .title-type:after,
 #topic[type=checkbox]:checked ~ .title-topic:after,
 #method[type=checkbox]:checked~ .title-method:after,
-#group[type=checkbox]:checked ~ .title-group:after{
+#group[type=checkbox]:checked ~ .title-group:after,
+#past-type[type=checkbox]:checked ~ .title-past-type:after{
     transform: rotateY(0deg) rotate(180deg);
 }
 
-.multi-select-dropdown #topic[type=checkbox]:checked ~ .filter-topic,
+#type[type=checkbox]:checked ~ .filter-type,
+#topic[type=checkbox]:checked ~ .filter-topic,
+#method[type=checkbox]:checked~ .filter-method,
+#group[type=checkbox]:checked ~ .filter-group,
+#past-type[type=checkbox]:checked ~ .filter-past-type{
+    display:block;
+}
+
 .multi-select-dropdown #type[type=checkbox]:checked ~ .filter-type,
+.multi-select-dropdown #topic[type=checkbox]:checked ~ .filter-topic,
 .multi-select-dropdown #method[type=checkbox]:checked~ .filter-method,
-.multi-select-dropdown #group[type=checkbox]:checked ~ .filter-group{
+.multi-select-dropdown #group[type=checkbox]:checked ~ .filter-group,
+.multi-select-dropdown #past-type[type=checkbox]:checked ~ .filter-past-type
+{
     display:flex;
 }
 
@@ -1127,7 +1168,6 @@ img.event-logo{
 
 
 /* Forms --------------------------------------------------------------------------------------- */
-
 .form-group {
 	padding: 1.5em 0 0; 
 }
@@ -1157,7 +1197,6 @@ img.event-logo{
 }
 
 /* Buttons ------------------------------------------------------------------------------ */
-
 .external-link-box a{
 	background-color: var(--crimson);
 	text-align: center;
@@ -1307,8 +1346,6 @@ img.event-logo{
 
 
 	/* mobile Navigation ------------------------------------------------------------------------------ */
-
-
 	header .search {
 	display: none;
 	}
@@ -1368,20 +1405,20 @@ img.event-logo{
 	}
 
 	header .x-label {
-      position:absolute;
-      top: 1em;
-      right: 1em;
-      display:block;
-      width:3em;
-      height:3em;
+    position:absolute;
+    top: 1em;
+    right: 1em;
+    display:block;
+    width:3em;
+    height:3em;
     }
     
   	header .x-label:after {
-      position: absolute;
-      content:"\2573";
-      font-size: 2.5em;
-      transform: rotateY(0deg) rotate(45deg);
-      transition: transform 0.2s;
+    position: absolute;
+    content:"\2573";
+    font-size: 2.5em;
+    transform: rotateY(0deg) rotate(45deg);
+    transition: transform 0.2s;
     }
 
  	header .x-input[type=checkbox]:checked ~ label:after {
@@ -1405,21 +1442,21 @@ img.event-logo{
 	}
 
  	.mobile-search-container{
- 		display: flex;
- 		justify-content: center;
- 		padding: 1em 0;
+ 	display: flex;
+ 	justify-content: center;
+ 	padding: 1em 0;
  	}
 
  	.mobile-search-container .form-control{
- 		width: 70%;
- 		margin-right: 1em;
+ 	width: 70%;
+ 	margin-right: 1em;
  	}
 
  	.mobile-search-container img{
- 		width:100%;
+ 	width:100%;
  	}
 
-
+ 	/* Footer ------------------------------------------------------------------------------ */
 	footer nav li, footer nav li a{
 	font-family: 'Work Sans', sans-serif;
 	font-size: 1em;
@@ -1446,8 +1483,6 @@ img.event-logo{
 	}
 
 	/* Event Thumb Styles ------------------------------------------------------------------------ */
-
-
 	.featured-event-block a{
 	padding: 0 1em 1.8em 1em;
 	}
@@ -1480,13 +1515,39 @@ img.event-logo{
 	}
 
 	.boxed-text p{
-	padding:1.3em 0.8em 1.4em 1.2em;
-	font-size: 1.9em;
+	padding:1.2em 0.8em 1.3em 1.1em;
+	font-size: 1.8em;
 	line-height: 1.55em;
 	letter-spacing: 0.015em;
 	}
 
+	/* Single Page ------------------------------------------------------------------------ */
+	/* Bio Hierachy */
 
+	.connected-info-img-lrg{
+	margin:0 0 0 0;
+	}
+
+	.med-block {
+    margin: 2em 0 4em -1px;
+    width: 50%;
+	}
+
+	.connected-info-img-med {
+	width:20%;
+	}
+
+	.connected-info-text-med {
+	width:80%;
+	margin:0 0 0 1em;
+	}
+
+	/* padding on single pages-- see about page */
+	.indent-subheads{
+	padding-left: 0.8em;
+	}
+	
+	/* Padding for connected info blocks/titles */
 	.connected-info-block, 
 	.connected-list-block, 
 	.connected-info-sidebar h3, 
@@ -1494,17 +1555,36 @@ img.event-logo{
     padding: 0em 0.7em 0.8em 0.8em;
 	}
 
-
 	.in-the-media a {
     font-size: 0.75em;
 	}
 
+	/* Single Project Sorting box------------------------------------------------------------------------ */
+	.project-sidebar-left {
+	width:100%;
+	margin-bottom: 2em;
+	}
+
+	.checkbox-box-block {
+    width: 100%;
+    position: static;
+	}
+
+	.project-sidebar-left #topic[type=checkbox]:checked ~ .filter-topic,
+	.project-sidebar-left #type[type=checkbox]:checked ~ .filter-type,
+	.project-sidebar-left #method[type=checkbox]:checked~ .filter-method,
+	.project-sidebar-left #group[type=checkbox]:checked ~ .filter-group{
+    display:flex;
+}
+
+
+	.project-sidebar-left .dropdown-filter-content div{
+	padding-right: 1em;
+	}
 
 }
 
 @media only screen and (max-width: 765px){
-
-	/* Body Width + Image ------------------------------------------------------------------------------ */
 
 
 	/* Footer ------------------------------------------------------------------------------ */
@@ -1630,6 +1710,29 @@ img.event-logo{
 	width: 20%;
 	}
 
+	.connected-info-img-med {
+	margin:0 0 0 0;
+	}
+
+	.med-block {
+    margin: 2em 0 4em -1px;
+    width: 100%;
+	}
+
+	.med-block {
+	margin:2em 0 4em 0px;
+	width: 100%;
+	}
+
+	.connected-info-img-med {
+	width:20%;
+	}
+
+	.connected-info-text-med {
+	width:80%;
+	margin:0 0 0 1em;
+	}
+
 	/* Pad edges ---------------------------------------*/
 	.sidebar-left,
 	.sidebar-right,
@@ -1682,7 +1785,6 @@ img.event-logo{
 
 	/* Event Thumb Styles ------------------------------------------------------------------------ */
 
-
 	.featured-event-block a{
 	padding: 0 1em 1.8em 1em;
 	}
@@ -1707,6 +1809,8 @@ img.event-logo{
 	.search-container .form-control {
     width: 70%;
 	}
+
+	
 
 
 }
