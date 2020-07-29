@@ -712,19 +712,17 @@ img.event-logo{
 }
 
 /* Carousel Styles --------------------------------------------------------------------------------------- */
-.main-carousel
+.main-carousel {
+ 	margin:1em 0;
+}
+
 .carousel-cell {
  	width: 100%; /* full width */
 }
 
-.fullwidth-carousel{
-	height: 50vw; /* height of carousel */
-	max-height: 580px; /* height of carousel */
-}
-
-.columnleft-carousel{
-	width:100%;
-	height: 32vw;
+.main-carousel img {
+ 	margin:0;
+ 	width: 100%;
 }
 
 .flickity-button {
@@ -766,6 +764,8 @@ img.event-logo{
 
 .single-icon-block img{
 	margin:0;
+	max-width: 130px;
+	float: right;
 }
 
 /* blocks with text-only */
@@ -855,7 +855,7 @@ img.event-logo{
 }
 
 .connected-info-img-med img, .connected-info-text-med h2{
-	margin-top:0;
+	margin-top:-0.25em;
 	padding-top:0;
 }
 
@@ -1534,12 +1534,12 @@ img.event-logo{
 	}
 
 	.connected-info-img-med {
-	width:20%;
+	width:27%;
 	}
 
 	.connected-info-text-med {
-	width:80%;
-	margin:0 0 0 1em;
+	width:75%;
+	margin:0 0 0 0.25em;
 	}
 
 	/* padding on single pages-- see about page */
@@ -1558,6 +1558,13 @@ img.event-logo{
 	.in-the-media a {
     font-size: 0.75em;
 	}
+	/* Single Event sidebar---------------------------------*/
+	.sidebar-left .news-data{
+		display: block;
+	}
+
+	.rule { display: none; }
+
 
 	/* Single Project Sorting box------------------------------------------------------------------------ */
 	.project-sidebar-left {
@@ -1577,10 +1584,14 @@ img.event-logo{
     display:flex;
 }
 
-
 	.project-sidebar-left .dropdown-filter-content div{
 	padding-right: 1em;
 	}
+
+	.project-wide-column-right {
+    width: 100%;
+	}
+
 
 }
 
@@ -1751,6 +1762,13 @@ img.event-logo{
 	margin: 1em 0 2em;	
 	}
 
+	/* Single Event sidebar---------------------------------*/
+	.sidebar-left .news-data{
+		display: flex;
+	}
+
+	.rule { display: block; }
+
 	/* Special Text Styles ------------------------------------------------------------------------------ */
 
 /* on home */
@@ -1764,7 +1782,7 @@ img.event-logo{
 	.columnleft-carousel{
 	width:100%;
 	height: 50vw;
-}
+	}
 }
 
 @media only screen and (max-width: 600px){
