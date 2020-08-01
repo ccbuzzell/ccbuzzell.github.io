@@ -1,93 +1,86 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="author" content="">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harvard University Arts & Humanities Research Computing</title>
 
-  <title>Harvard University Arts & Humanities Research Computing</title>
-
-  <link rel="stylesheet" href="css/style.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,340;0,450;0,570;0,700;1,340;1,450;1,570;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-
-
-
-</head>
+    <link rel="stylesheet" href="flickity-docs/flickity.css" media="screen">
+    <script src="flickity-docs/flickity.pkgd.js"></script>
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,340;0,450;0,570;0,700;1,340;1,450;1,570;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  </head>
 
 
-<body class="pixels">
-	
-	<!--header----------------------------------------------->	
-	
+
+  <!--add pixels to background -------------------------------------------------------------> 
+  <body class="pixels">
+  
+    <!--header--includes-logo-nav-search----------------------------------------------------> 
 
 
-	<main>
-  <!--title-----------------------------------------------> 
-  <h1 class="section-title center">Contact</h1>
 
 
-	<!--single-pg-container----------------------------------------------->	
-	 <article class="single-pg-container pad-top">
+    <!--main-section-----------------------------------------------------------------------> 
+    <main>
 
-    
+      <!--featured-events-title-------------------------------------------------------------> 
+      <h1 class="section-title center">Contact</h1>
 
 
-		<!--Main column----------------------------------------------->	
-		<section class="wide-column mobile-noborder">
-			  <p>Questions? Comments? Consultations? Send us a message!</p>
-			  <form id="contact-form" method="post" action="contact.php" role="form">
-          <div class="form-group">
-            <label for="form_name">Name *</label>
-            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name *" required="required"
+	     <!--single-pg-container-------------------------------------------------------------->	
+      <article class="single-pg-container pad-top">
+
+		    <!--Main column--------------------------------------------------------------------->	
+		    <section class="wide-column">
+          <p>Questions? Comments? Consultations? Send us a message!</p>
+			  
+          <form id="contact-form" method="post" action="contact.php" role="form">
+            <div class="form-group">
+              <label for="form_name">Name *</label>
+              <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name *" required="required"
                   data-error="Name is required.">
-            <div class="help-block with-errors"></div>
-          </div>
+              <div class="help-block with-errors"></div>
+           </div>
                 
-          <div class="form-group">
-            <label for="form_email">Email *</label>
-            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required"
+            <div class="form-group">
+             <label for="form_email">Email *</label>
+              <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required"
                   data-error="Valid email is required.">
-            <div class="help-block with-errors"></div>
-          </div>
+              <div class="help-block with-errors"></div>
+            </div>
                            
-          <div class="form-group">
+            <div class="form-group">
               <label for="form_message">Message *</label>
               <textarea id="form_message" name="message" class="form-control" placeholder="Your message *" rows="6" required="required"
                   data-error="Please, leave us a message."></textarea>
-          <div class="help-block with-errors"></div>
-
-
-          <div class="form-group captcha"></div>
+              <div class="help-block with-errors"></div>
+            </div>
+          
+            <div class="form-group captcha"></div>
                 
-          <input type="submit" class="submit-btn" value="Send message">
-        </form>
+            <input type="submit" class="submit-btn" value="Send message">
+        
+          </form>
+
+        <!--end-Main column---------------------------------------------------------------->      
+		    </section>
+
+	   <!--end-single-pg-container------------------------------------------------------------>
+	   </article>
+
+    <!--end-main-container------------------------------------------------------------------->
+    </main>
 
 
-		</section>
-	
-
-	<!--single-pg-container---------------------->
-	</article>
-
-	
+    <!--footer-------------------------------------------------------------------------------> 
 
 
 
-	<!--container---------------------->
-	</main>
-
-
-
-	<!--footer----------------------------------------------->	
-
-	
-
-
-</body>
-
+  </body>
 </html>
-

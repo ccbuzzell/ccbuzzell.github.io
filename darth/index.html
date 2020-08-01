@@ -1,286 +1,327 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
+		<meta name="author" content="">
+  		<meta name="description" content="">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="author" content="">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  		<title>Harvard University Arts & Humanities Research Computing</title>
 
-  <title>Harvard University Arts & Humanities Research Computing</title>
-
-  <link rel="stylesheet" href="flickity-docs/flickity.css" media="screen">
-  <script src="flickity-docs/flickity.pkgd.js"></script>
-  <link rel="stylesheet" href="css/style.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,340;0,450;0,570;0,700;1,340;1,450;1,570;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-
-
-
-  
-</head>
+ 		<link rel="stylesheet" href="flickity-docs/flickity.css" media="screen">
+  		<script src="flickity-docs/flickity.pkgd.js"></script>
+  		<link rel="stylesheet" href="css/style.css" media="screen">
+  		<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+  		<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,340;0,450;0,570;0,700;1,340;1,450;1,570;1,700&display=swap" rel="stylesheet">
+  		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+  		<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	</head>
 
 
-<body class="pixels">
+	<!--add pixels to background ------------------------------------------------------------->	
+	<body class="pixels">
 	
 	
-	<!--header------------------------------------------------>	
-	<header>
-		<!--logo----------------------------------------------->	
-		<div class="logo"><a href="index.html">
-			<div alt="Darth home" id="animate-logo" style="background-image:url('img/logo_open.gif');"></div>
-		</a></div>
-		<!--logo-animation------------------------------------->
-		<script>
-		window.onscroll = function() {scrollFunction()};
-		function scrollFunction() {
-  			if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
-    		document.getElementById("animate-logo").style.backgroundImage = "url('img/logo_close.gif')";
-  			}
-		}
-		</script>
-
-		<nav>
-    		<input class="x-input" type="checkbox" id="nav-button">
-    		<label class="x-label" for="nav-button" onclick></label>
-			<ul id="main-nav">
-				<li class="active"><a href="events.html">Events</a></li>
-				<li><a href="news.html">News</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li><a href="about.html">About</a></li>
-				<li class="dropdown"><a href="resources.html">Resources</a>
-					<ul class="dropdown-content">
-						<li><a href="resources_single.html">Tutorials + Workshops</a></li>
-						<li><a href="resources_single.html">Digital Tools + Methods</a></li>
-						<li><a href="resources_single.html">Funding + Grants</a></li>
-						<li><a href="groups_single.html">Groups</a></li>
-					</ul>
-				</li>
-				<li><a href="contact.html">Contact</a></li>
-				<li class="mobile">
-					<div class="mobile-search-container">
-						<input class="form-control" type="text" placeholder="Search...">
-						<button type="submit">
-							<img src="img/icons/search_icon-crimson.svg"/>		
-						</button>
-					</div>
-				</li>
-			</ul>	
-		</nav>
-
-		<div class="search">
-			<a href="search_modal.html"><img src="img/icons/search_icon.svg"/></a>	
-		</div>
-		
-	</header>
-
-	<!--main section---------------------------------------------------->	
-	<main>
-
-		<!--intro section----------------------------------------------->	
-		<section class="boxed-text">
-			<p>Welcome to Arts + Humanities Research Computing 
-			informally known as DARTH (Digital Arts + Humanities). 
-			We provide consultation, instruction, and technical development 
-	    	for the digital research initiatives of faculty, staff, and students at Harvard. 
-			</p>
-		</section>
-
-		<!--featured events title------------------------------------->	
-		<h1 class="section-title center">Events</h1>
-
-		<!--event container-------------------------------------------->	
-		<section class="thumb-container">
-
-			<div class="featured-event-block workshop">
-			<a href="">	
-				<div class="event-text-block">			
-					<h2 class="event-head">Visual Eloquence</h2>
-					<p class="event-sub">A Hands-on Workshop for Creating Effective Data Visualizations</p>
-					<p class="event-date">Saturday<br>June 06, 2020</p>
-				</div>
-				<div class="event-icon-block">
-					<img class="event-icon workshop" src="img/icons/workshop_icon.svg"/>
-					<img class="event-logo" src="img/logos/tableau-logo.gif"/>
-				</div>
-			</a>
-			</div>
-
-			<div class="featured-event-block symposium">
-			<a href="">		
-				<div class="event-text-block">
-					<h2 class="event-head">Digital Humanities:<br>An Afternoon Symposium</h2>
-					<p class="event-date">Saturday<br>June 06, 2020</p>
-				</div>
-				<div class="event-icon-block">
-					<img class="event-icon" src="img/icons/symposium_icon.svg"/>
-				</div>
-			</a>
-			</div>
-
-		</section>
-
-		<h3 class="see-all center"><a href="events.html">see all events</a></h3>
-
-		
-		<!--featured projects title----------------------------------->	
-		<h1 class="section-title center">Projects</h1>
-
-		<!--project container------------------------------------------>
-		<section class="thumb-container">
-
-			<div class="featured-project-block">
-			<a href="#">
-				<div class="project-title-block blue">
-					<div class="project-thumb" style="background-image:url('img/projects/project_bg_beyondwords.jpg');"></div>
-					<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_bg_beyondwords.gif');"></div>
-					<div class="project-title-container">
-						<h3 class="project-title">Beyond Words</h3>	
-					</div>
-					<div class="project-thumb-colorblock"></div>
-				</div>
-				
-				<div class="project-description-block">
-					<p class="small">An online collection of digital editions legend of Mary Magdalene’s conversion.</p>
-				</div>
-			</a>
-			</div>
-
-			<div class="featured-project-block">
-			<a href="#">
-				<div class="project-title-block blue">
-					<div class="project-thumb" style="background-image:url('img/projects/project_nophoto.jpg');"></div>
-					<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_nophoto.gif');"></div>
-					<div class="project-title-container">
-						<h3 class="project-title">Beyond Words</h3>	
-					</div>
-					<div class="project-thumb-colorblock"></div>
-				</div>
+		<!--header--includes-logo-nav-search-------------------------------------------------->	
+		<header>
 			
-				<div class="project-description-block">
-					<p class="small">An online collection of digital editions conversion.</p>
-				</div>
+			<!--logo-------------------------------------------------------------------------->	
+			<div class="logo">
+			<a href="index.html">
+				<div alt="Darth home" id="animate-logo" style="background-image:url('img/logo_open.gif');"></div>
 			</a>
 			</div>
+			<!--logo-animation-javascript----------------------------------------------------->
+			<script>
+				window.onscroll = function() {scrollFunction()};
+				function scrollFunction() {
+  				if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+    			document.getElementById("animate-logo").style.backgroundImage = "url('img/logo_close.gif')";
+  					}
+				}
+			</script>
 
-			<div class="featured-project-block">
-			<a href="#">
-				<div class="project-title-block blue">
-					<div class="project-thumb" style="background-image:url('img/projects/project_bg_beyondwords.jpg');"></div>
-					<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_bg_beyondwords.gif');"></div>
-					<div class="project-title-container">
-						<h3 class="project-title">Beyond Words</h3>	
-					</div>
-					<div class="project-thumb-colorblock"></div>
-				</div>
-				
-				<div class="project-description-block">
-					<p class="small">An online collection of digital editions legend of Mary Magdalene’s con version. An online collection of digital editions Mary conversion.</p>
-				</div>
-			</a>
+			<!--nav--------------------------------------------------------------------------->	
+			<nav>
+				<!--checkbox-x-for-mobile ---------------------------------------------------->	
+    			<input class="x-input" type="checkbox" id="nav-button">
+    			<label class="x-label" for="nav-button" onclick></label>
+				<!--main-nav--ul-------------------------------------------------------------->
+				<ul id="main-nav">
+					<!--example-of-active style----------------------------------------------->	
+					<li class="active"><a href="events.html">Events</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="about.html">About</a></li>
+					<li class="dropdown"><a href="resources.html">Resources</a>
+						<ul class="dropdown-content">
+							<li><a href="resources_single.html">Tutorials + Workshops</a></li>
+							<li><a href="resources_single.html">Digital Tools + Methods</a></li>
+							<li><a href="resources_single.html">Funding + Grants</a></li>
+							<li><a href="groups_single.html">Groups</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact</a></li>
+					<!--search-bar-in-nav-on-mobile------------------------------------------->
+					<li class="mobile">
+						<div class="mobile-search-container">
+							<input class="form-control" type="text" placeholder="Search...">
+							<button type="submit">
+								<img src="img/icons/search_icon-crimson.svg"/>		
+							</button>
+						</div>
+					</li>
+				</ul>	
+			</nav>
+			<!--search-icon-for-search-modal-------------------------------------------------->
+			<div class="search">
+				<a href="search_modal.html"><img src="img/icons/search_icon.svg"/></a>	
 			</div>
-
-			<div class="featured-project-block">
-			<a href="#">
-				<div class="project-title-block blue">
-					<div class="project-thumb" style="background-image:url('img/projects/project_nophoto.jpg');"></div>
-					<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_nophoto.gif');"></div>
-					<div class="project-title-container">
-						<h3 class="project-title">Beyond Words</h3>	
-					</div>
-					<div class="project-thumb-colorblock"></div>
-				</div>
-			
-				<div class="project-description-block">
-					<p class="small">An online collection of digital editions legend of Mary Magdalene’s conversion.</p>
-				</div>
-			</a>
-			</div>
-
-		<!--close project container------------------------------------------>
-		</section>
 		
-		<h3 class="see-all center"><a href="projects.html">see all projects</a></h3>
+		</header>
 
 
-		<!--feaured news title------------------------------------------------>	
-		<h1 class="section-title center">News</h1>
 
-		<!-- news container--------------------------------------------------->
-		<section class="thumb-container">
+		<!--main-section---------------------------------------------------------------------->	
+		<main>
+
+			<!--intro-section----------------------------------------------------------------->	
+			<section class="boxed-text">
+				<p>Welcome to Arts + Humanities Research Computing 
+				informally known as DARTH (Digital Arts + Humanities). 
+				We provide consultation, instruction, and technical development 
+	    		for the digital research initiatives of faculty, staff, and students at Harvard. 
+				</p>
+			</section>
+
+
+
+			<!--featured-events-title--------------------------------------------------------->	
+			<h1 class="section-title center">Events</h1>
+
+			<!--event-container--------------------------------------------------------------->	
+			<section class="thumb-container">
+
+				<!--event-block--ADD-event-type-to-change-color------------------------------->
+				<div class="featured-event-block workshop">
+				<a href="event_single.html">	
+					<div class="event-item-container">
+						<div class="event-text-block">			
+							<h2 class="event-head">Visual Eloquence</h2>
+							<p class="event-sub">A Hands-on Workshop for Creating Effective Data Visualizations</p>
+							<p class="event-date">Saturday<br>June 06, 2020</p>
+						</div>
+						<div class="event-icon-block">
+							<img class="event-icon workshop" src="img/icons/workshop_icon.svg"/>
+							<!--optional-event-related-logo----------------------------------->
+							<img class="event-logo" src="img/logos/tableau-logo.gif"/>
+						</div>
+					</div>
+				</a>
+				</div>
+
+				<!--event-block--ADD-event type-to-change-color------------------------------->
+				<div class="featured-event-block symposium">
+				<a href="event_single.html">	
+					<div class="event-item-container">	
+						<div class="event-text-block">
+							<h2 class="event-head">Digital Humanities:<br>An Afternoon Symposium</h2>
+							<p class="event-date">Saturday<br>June 06, 2020</p>
+						</div>
+						<div class="event-icon-block">
+							<img class="event-icon" src="img/icons/symposium_icon.svg"/>
+						</div>
+					</div>	
+				</a>
+				</div>
+			<!--end--event-container---------------------------------------------------------->	
+			</section>
+			<!--see-all-events-button--------------------------------------------------------->	
+			<h3 class="see-all center"><a href="events.html">see all events</a></h3>
+
 		
-			<!-- add content type class here --------------------------------->
-			<div class="featured-news-block award">
-			<a href="#">
-				<div class="news-thumb-block">
-					<div class="news-thumb" style="background-image:url('img/news/news_giza.jpg');"> </div>
-					<div class="news-thumb-bitmap" style="background-image:url('img/news/news_giza.gif');"> </div>
-					<img class="news-icon" src="img/icons/award_icon.svg"/>
-					<div class="news-thumb-colorblock"> </div>
+
+			<!--featured-projects-title------------------------------------------------------->
+			<h1 class="section-title center">Projects</h1>
+
+			<!--project container------------------------------------------------------------->
+			<section class="thumb-container">
+
+				<!--project-block--ADD-blue-to-change-color----------------------------------->
+				<div class="featured-project-block">
+				<a href="#">
+					<!--project-photo-and-title----------------------------------------------->
+					<div class="project-title-block blue">
+						<div class="project-thumb" style="background-image:url('img/projects/project_bg_beyondwords.jpg');"></div>
+						<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_bg_beyondwords.gif');"></div>
+						<div class="project-title-container">
+							<h3 class="project-title">Beyond Words</h3>	
+						</div>
+						<!--project-hover-color----------------------------------------------->
+						<div class="project-thumb-colorblock"></div>
+					</div>
+					<!--project-description-about-15-words------------------------------------>
+					<div class="project-description-block">
+						<p class="small">An online collection of digital editions of the legend of Mary Magdalene’s conversion.</p>
+					</div>
+				</a>
 				</div>
+
+				<!--project-block--ADD-blue-to-change-color----------------------------------->
+				<div class="featured-project-block">
+				<a href="#">
+					<!--project-photo-and-title----------------------------------------------->
+					<div class="project-title-block blue">
+						<div class="project-thumb" style="background-image:url('img/projects/project_nophoto.jpg');"></div>
+						<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_nophoto.gif');"></div>
+						<div class="project-title-container">
+							<h3 class="project-title">Beyond Words</h3>	
+						</div>
+						<!--project-hover-color----------------------------------------------->
+						<div class="project-thumb-colorblock"></div>
+					</div>
+					<!--project-description-about-15-words------------------------------------>
+					<div class="project-description-block">
+						<p class="small">An online collection of digital editions of the legend of Mary Magdalene’s conversion.</p>
+					</div>
+				</a>
+				</div>
+
+				<!--project-block--ADD-blue-to-change-color----------------------------------->
+				<div class="featured-project-block">
+				<a href="#">
+					<!--project-photo-and-title----------------------------------------------->
+					<div class="project-title-block blue">
+						<div class="project-thumb" style="background-image:url('img/projects/project_bg_beyondwords.jpg');"></div>
+						<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_bg_beyondwords.gif');"></div>
+						<div class="project-title-container">
+							<h3 class="project-title">Beyond Words</h3>	
+						</div>
+						<!--project-hover-color----------------------------------------------->
+						<div class="project-thumb-colorblock"></div>
+					</div>
+					<!--project-description-about-15-words------------------------------------>
+					<div class="project-description-block">
+						<p class="small">An online collection of digital editions of the legend of Mary Magdalene’s conversion.</p>
+					</div>
+				</a>
+				</div>
+
+				<!--project-block--ADD-blue-to-change-color----------------------------------->
+				<div class="featured-project-block">
+				<a href="#">
+					<!--project-photo-and-title----------------------------------------------->
+					<div class="project-title-block blue">
+						<div class="project-thumb" style="background-image:url('img/projects/project_nophoto.jpg');"></div>
+						<div class="project-thumb-bitmap" style="background-image:url('img/projects/project_nophoto.gif');"></div>
+						<div class="project-title-container">
+							<h3 class="project-title">Beyond Words</h3>	
+						</div>
+						<!--project-hover-color----------------------------------------------->
+						<div class="project-thumb-colorblock"></div>
+					</div>
+					<!--project-description-about-15-words------------------------------------>
+					<div class="project-description-block">
+						<p class="small">An online collection of digital editions of the legend of Mary Magdalene’s conversion.</p>
+					</div>
+				</a>
+				</div>
+			<!--end-project-container--------------------------------------------------------->
+			</section>
+			<!--see-all-projects-button------------------------------------------------------->	
+			<h3 class="see-all center"><a href="projects.html">see all projects</a></h3>
+
+
+
+			<!--featured-projects-title------------------------------------------------------->	
+			<h1 class="section-title center">News</h1>
+
+			<!--news-container---------------------------------------------------------------->
+			<section class="thumb-container">
 				
-				<div class="featured-news-title-block">
-					<div class="news-data">
-						<p>Author</p>
-						<p>|</p>
-						<p>03.23.20</p>
+				<!--news-block--ADD-news-type-to-change-color -------------------------------->
+				<div class="featured-news-block award">
+				<a href="#">
+					<!--news-photo-and icon--------------------------------------------------->
+					<div class="news-thumb-block">
+						<div class="news-thumb" style="background-image:url('img/news/news_giza.jpg');"> </div>
+						<div class="news-thumb-bitmap" style="background-image:url('img/news/news_giza.gif');"> </div>
+						<!--add-news-icon----------------------------------------------------->
+						<img class="news-icon" src="img/icons/award_icon.svg"/>
+						<!--news-hover-color-------------------------------------------------->
+						<div class="news-thumb-colorblock"> </div>
 					</div>
-					<h4>Giza Award</h4>
-					<p>Awards given to this project are very prestigious. Awards given to this project are very prestigious.</p>
-				</div>
-			</a>
-			</div>
-
-			<div class="featured-news-block grant">
-			<a href="#">
-				<div class="news-thumb-block">
-					<div class="news-thumb" style="background-image:url('img/news/news_giza.jpg');"> </div>
-					<div class="news-thumb-bitmap" style="background-image:url('img/news/news_giza.gif');"> </div>
-					<img class="news-icon" src="img/icons/grant_icon.svg"/>
-					<div class="news-thumb-colorblock"> </div>
-				</div>
-				
-				<div class="featured-news-title-block">
-					<div class="news-data">
-						<p>AuthorSuperLongName X. Longnamington</p>
-						<p>|</p>
-						<p>03.23.20</p>
+					<!--news-description-about-15-words--------------------------------------->
+					<div class="featured-news-title-block">
+						<div class="news-data">
+							<p>Author</p>
+							<p>|</p>
+							<p>03.23.20</p>
+						</div>
+						<h4>Giza Award</h4>
+						<p>Awards given to this project are very prestigious. Awards given to this project are very prestigious.</p>
 					</div>
-					<h4>Giza Award</h4>
-					<p>Awards given to this project are very prestigious</p>
+				</a>
 				</div>
-			</a>
-			</div>
 
-			<div class="featured-news-block blog"><a href="#">
-				<div class="news-thumb-block">
-					<div class="news-thumb" style="background-image:url('img/news/news_giza.jpg');"> </div>
-					<div class="news-thumb-bitmap" style="background-image:url('img/news/news_giza.gif');"> </div>
-					<img class="news-icon" src="img/icons/blog_icon.svg"/>
-					<div class="news-thumb-colorblock"> </div>
-				</div>
-			
-				<div class="featured-news-title-block">
-					<div class="news-data">
-						<p>Author</p>
-						<p>|</p>
-						<p>03.23.20</p>
+				<!--news-block--ADD-news-type-to-change-color -------------------------------->
+				<div class="featured-news-block grant">
+				<a href="#">
+					<!--news-photo-and icon--------------------------------------------------->
+					<div class="news-thumb-block">
+						<div class="news-thumb" style="background-image:url('img/news/news_giza.jpg');"> </div>
+						<div class="news-thumb-bitmap" style="background-image:url('img/news/news_giza.gif');"> </div>
+						<!--add-news-icon----------------------------------------------------->
+						<img class="news-icon" src="img/icons/grant_icon.svg"/>
+						<!--news-hover-color-------------------------------------------------->
+						<div class="news-thumb-colorblock"> </div>
 					</div>
-					<h4>Giza Award</h4>
-					<p>Awards given to this project are very prestigious</p>
+					<!--news-description-about-15-words--------------------------------------->
+					<div class="featured-news-title-block">
+						<div class="news-data">
+							<p>Author</p>
+							<p>|</p>
+							<p>03.23.20</p>
+						</div>
+						<h4>Giza Grant</h4>
+						<p>Awards given to this project are very prestigious. Awards given to this.</p>
+					</div>
+				</a>
 				</div>
-			</a>
-			</div>
 
-		<!--close news container------------------------------------------>
-		</section>
+				<!--news-block--ADD-news-type-to-change-color -------------------------------->
+				<div class="featured-news-block blog">
+				<a href="#">
+					<!--news-photo-and icon--------------------------------------------------->
+					<div class="news-thumb-block">
+						<div class="news-thumb" style="background-image:url('img/news/news_giza.jpg');"> </div>
+						<div class="news-thumb-bitmap" style="background-image:url('img/news/news_giza.gif');"> </div>
+						<!--add-news-icon----------------------------------------------------->
+						<img class="news-icon" src="img/icons/blog_icon.svg"/>
+						<!--news-hover-color-------------------------------------------------->
+						<div class="news-thumb-colorblock"> </div>
+					</div>
+					<!--news-description-about-15-words--------------------------------------->
+					<div class="featured-news-title-block">
+						<div class="news-data">
+							<p>Author</p>
+							<p>|</p>
+							<p>03.23.20</p>
+						</div>
+						<h4>Giza Award</h4>
+						<p>Awards given to this project are very prestigious. Awards given to this project are very prestigious.</p>
+					</div>
+				</a>
+				</div>
+			<!--end-news-container------------------------------------------------------------>
+			</section>
+			<!--see-all-news-button----------------------------------------------------------->	
+			<h3 class="see-all center"><a href="news.html">see all news</a></h3>
 
-		<h3 class="see-all center"><a href="news.html">see all news</a></h3>
 
-		<!--tweets------------------------------------------>
-		<section class="center">
-			
+
+			<!--tweets-container-------------------------------------------------------------->
+			<section class="center">
+				<!--twitter-title------------------------------------------------------------->
 				<h1><a href="https://twitter.com/darthharvard" target="_blank">Follow DARTH on Twitter</a></h1>
 			
 				<div class="med-block connected-info-block center-margin">
@@ -291,40 +332,36 @@
 					</div>
 				</div>
 			
-		</section>
+			</section>
 
-	<!-- close main container--------------------------------------------->
-	</main>
+		<!--end-main-container-------------------------------------------------------------------->
+		</main>
 
-	<!--footer------------------------------------------------------------>	
-	<footer>
-		<div class="footer-container">
+		<!--footer-------------------------------------------------------------------------------->	
+		<footer>
+			<div class="footer-container">
+				<hr>
+				<img class="footer-shield" src="img/harvard_shield.png">
 			
-			<hr>
-			<img class="footer-shield" src="img/harvard_shield.png">
-			<nav class="footer-nav">
-				
-				<ul class="horizontal-nav">
-					<li><a href="events.html">Events</a></li>
-					<li><a href="news.html">News</a></li>
-					<li><a href="projects.html">Projects</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="resources.html">Resources</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-			<div class="footer-icon-block">
-				<a href="https://twitter.com/darthharvard" target="_blank"><img src="img/icons/twitter_icon.svg"></a>	
-				<a href="https://github.com/artshumrc" target="_blank"><img src="img/icons/git_icon.svg">
-			</div>	
-		</div>
-
-	</footer>
+				<nav class="footer-nav">
+					<ul class="horizontal-nav">
+						<li><a href="events.html">Events</a></li>
+						<li><a href="news.html">News</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="resources.html">Resources</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="footer-icon-block">
+					<a href="https://twitter.com/darthharvard" target="_blank"><img src="img/icons/twitter_icon.svg"></a>	
+					<a href="https://github.com/artshumrc" target="_blank"><img src="img/icons/git_icon.svg">
+				</div>	
+			</div>
+		</footer>
 
 
 
-</body>
-
-
+	</body>
 </html>
 

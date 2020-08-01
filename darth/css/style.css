@@ -1,5 +1,5 @@
 /* Darth css
----------------------------------------------- */
+---------------------------------------------------------------------------------------------- */
 
 
 
@@ -21,7 +21,6 @@ ul, li {
 	list-style-type: none;
 }
 
-
 body {
 	font-feature-settings: "liga", "kern";
 }
@@ -34,7 +33,6 @@ body {
   font-style:   normal;
   font-stretch: normal;
 }
-
 
 
 /* Body Width + Image ------------------------------------------------------------------------ */
@@ -70,7 +68,7 @@ header, main, .footer-container {
 h1, h2, h4, h1 a, h2 a, h4 a {
 	font-family: 'Canela Web';
 	font-weight:  100;
-  	font-style:   normal;
+  	font-style: normal;
   	font-stretch: normal;
 }
 
@@ -148,15 +146,6 @@ ul li a:hover{
 	border-bottom: 1px solid var(--crimson);
 }
 
-.caption {
-	font-size: 1em;
-	line-height: 1.4em;
-	margin:0.5em 0 1.5em;
-	font-style: italic;
-}
-
-
-
 
 /* Header ------------------------------------------------------------------------------------ */
 header { 
@@ -167,10 +156,6 @@ header {
 	padding: 1em 0 2.5em;
 }
 
-header .search {
-	width: 47px;
-	margin: 7px 0 0 0;
-}
 
 /* Logo and Logo animation ------------------------------------------------------------------- */
 header .logo {
@@ -186,7 +171,8 @@ header .logo {
   	background-size: 100%;
 }
 
-/* Navigation --------------------------------------------------------------==---------------- */
+/* Navigation -------------------------------------------------------------------------------- */
+/* Hide search bar in nav on desktop */
 .mobile {
 	display: none;
 }
@@ -220,6 +206,12 @@ nav ul li a:hover {
 	border-bottom: 3px solid var(--crimson);
 }
 
+/* active hover style */
+nav ul li.active a{
+	border-bottom: 3px solid var(--crimson);
+}
+
+/* nav dropdown styles */
 .dropdown{
   position: relative;
 }
@@ -228,7 +220,7 @@ nav ul li a:hover {
   letter-spacing: 0em;
   display: none;
   position: absolute;
-  width:204%;
+  width:19.1em;
   padding:0.65em 0.5em 0.8em; 
   left:-0.5em;
   top: 3.65em;
@@ -245,6 +237,7 @@ nav ul li a:hover {
   display: block;
 }
 
+/* checkbox navigation control hidden on desktop */
 header .x-label {
 	display:none;
 	cursor: pointer;
@@ -258,9 +251,12 @@ header .x-input[type=checkbox]{
   opacity: 0;
 }
 
-nav ul li.active a{
-	border-bottom: 3px solid var(--crimson);
+/* search icon in header */
+header .search {
+	width: 47px;
+	margin: 7px 0 0 0;
 }
+
 
 /* Search Modal ------------------------------------------------------------------------------ */
 .search-overlay{
@@ -348,7 +344,7 @@ nav ul li.active a{
     }
 
 
-/* Footer ---------------------------------------------------======--------------------------- */
+/* Footer ------------------------------------------------------------------------------------- */
 
 footer {
 	padding: 8em 0 2em 0;
@@ -368,7 +364,6 @@ footer {
 	margin-bottom: -16px;
 }
 
-/* Footer width styled with container above -*/
 .footer-nav ul{
 	font-size: 0.9em;
 	border: none;
@@ -379,7 +374,7 @@ footer {
 .footer-nav  ul li{
 	padding:0.8em 1.4em; 
 }
-
+/* Git and Twitter Icons */
 .footer-icon-block{
 	display: flex;
 	justify-content: center;
@@ -392,12 +387,12 @@ footer {
 
 
 /* Titles + links ---------------------------------------------------------------------------- */
-
+/* Main Page Titles */
 .section-title {
 	text-transform: uppercase;
 	letter-spacing: 0.08em;
 }
-
+/* H3 see all categories link */
 .see-all {
 	margin: 1.3em 0 ;
 }
@@ -408,7 +403,7 @@ footer {
 
 
 /* Flex/Thumbnail Containers------------------------------------------------------------------- */
-
+/* Main Containers for flex content */
 .thumb-container, .project-pg-thumb-container a {
 	display: flex;
 	flex-wrap: wrap;
@@ -423,21 +418,22 @@ footer {
 }
 
 
-
-
-/* News Thumb Styles -------------------------------------------------------------------------- */
+/* NEWS Thumb Styles -------------------------------------------------------------------------- */
+/* NEWS padding and Rules and Width*/
 .featured-news-block{
 	padding: 0 1.2em 0 1.2em;
-	margin:1em -1px 2em 0;
+	margin:1em -1px 1em 0;
 	border-left: solid 1px black;
 	border-right: solid 1px black;
 	width: 33.3%;
 }
 
+/* NEWS blocks all the same height */
 .featured-news-block a{
 	height: 100%;
 }
 
+/* overlay thumnail images on top of each other */
 .news-thumb-block{
 	position: relative;	
 }
@@ -449,6 +445,7 @@ footer {
   	background-size: cover;
 }
 
+/* position icon */
 .news-icon{
 	position: absolute;
 	top:8px;
@@ -487,19 +484,21 @@ footer {
 }
 
 
-/* Event Thumb Styles ------------------------------------------------------------------------ */
+/* EVENT Thumb Styles ------------------------------------------------------------------------ */
+/* EVENT padding and Rules and Width*/
 .featured-event-block{
 	width: 50%;
 	display: flex;
 	margin:1em -1px 1em 0;
 	border-left: solid 1px black;
 	border-right: solid 1px black;
+	padding: 0 1.1em 1.8em 1em;
 }
 
-.featured-event-block a{
+/* EVENT flex container */
+.event-item-container{
 	display: flex;
-	width: 100%;
-	padding: 0 1.1em 1.8em 1em;
+	width: 100%;	
 }
 
 .event-text-block{
@@ -531,19 +530,22 @@ img.event-logo{
 }
 
 
-/* Project Styles Thumb------Past Event Thumb------------------------------------------------- */
+/* PROJECT Styles Thumb------PAST EVENT Thumb------------------------------------------------- */
+/* PROJECT padding and Rules and Width*/
 .featured-project-block, .past-event-thumb-block{
-	padding: 0 1em 1.2em 1em;
+	padding: 0 1em 0em 1em;
 	margin:1em -1px 1em 0;
 	border-left: solid 1px black;
 	border-right: solid 1px black;
 	width: 25%;
 }
 
+/* PROJECT blocks all the same height */
 .featured-project-block a, .past-event-thumb-block a{
 	height: 100%;
 }
 
+/* overlay thumnail images on top of each other */
 .project-title-block, .past-event-thumb-img-block, .project-icon-block{
 	position: relative;
 }
@@ -555,10 +557,7 @@ img.event-logo{
   	background-size: cover;
 }
 
-.connected-info-block .project-thumb, .connected-info-block .project-thumb-bitmap{
-	filter: drop-shadow(0.35em 0.35em 0px var(--blue));
-}
-
+/* center project title and icon */
 .project-title-container, .project-icon-container{
 	position: absolute;
 	top:18%;
@@ -573,6 +572,11 @@ img.event-logo{
 	text-align: center;
 }
 
+/* add dropshadow to project icon */
+.connected-info-block .project-thumb, .connected-info-block .project-thumb-bitmap{
+	filter: drop-shadow(0.35em 0.35em 0px var(--blue));
+}
+
 .project-icon-container{
 	border: none;
 }
@@ -585,10 +589,12 @@ img.event-logo{
 	padding: 0.5em;
 }
 
+/* add space below thumbnail */
 .project-description-block, .past-event-thumb-description-block{
 	padding: 0.8em 0 0 0;
 }
 
+/* adjust icon width on main PROJECT Page */
 .project-pg-project-block{
 	border: none;
 	padding:0;
@@ -596,23 +602,28 @@ img.event-logo{
 	width:26%;
 }
 
+/* adjust text width on main PROJECT Page */
 .project-pg-description-block{
 	width: 74%;
 	padding:0 0 1.5em 1.5em;
 }
 
+/* adjust keywords on PROJECT page */
 .key {
 	display: inline-block;
 }
 
+
+/* PAST EVENT Thumb--------------------------------------------------------------------------- */
+/* adjust keywords on PROJECT page */
 .past-event-type{
-	font-size: 0.9em;
+	font-size: 0.95em;
 	text-transform: uppercase;
 	font-family: 'Source Code Pro', monospace;
 }
 
 .past-event-thumb-description-block{
-	font-size: 0.8em;
+	font-size: 0.85em;
 }
 
 .past-event-thumb-title{
@@ -622,67 +633,74 @@ img.event-logo{
 }
 
 
-
-
-
-/* Single Pages Main text block and sidebar -------------------------------------------------- */
-
+/* SINGLE PAGES Main text block and sidebar -------------------------------------------------- */
+/* Main Section for SINGLE PAGES*/
 .single-pg-container{
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 0 2em 0;
 }
 
+/* Sidebar on left*/
 .sidebar-left {
 	width:33.33%;
 	padding: 2em 1.1em 0em 1em;
 	margin: 0 0 2em 0;
 }
 
+/* Sidebar on left PROJECT PAGE only*/
 .project-sidebar-left {
 	width:20%;
 	padding: 0;
 	margin: 0 0 2em 0;
 }
 
+/* Sidebar on left*/
 .sidebar-right {
 	width:33.33%;
 	padding: 0.6em 0em 0em 2em;
 	margin: 0 0 2em 0;
 }
 
+/* Full Width Column ALL SINGLE PAGES USE WIDE COLUMN for bottom margin*/
 .wide-column {
 	width:100%;
 	margin: 0 0 2em 0;
 }
 
-.wide-column-right {
-	width:66.33%;
-	border-left: solid 1px black;
-	padding: 1.2em 0 0 2em;
-	margin: 0 0 2em 0;
+/* Add leading to all wide column paragraphs*/
+.wide-column p{
+	line-height: 1.7em;
 }
 
-.project-wide-column-right {
-	width:80%;
-	border-bottom: solid 1px black;
-	padding: 0 0 0 0.25em;
-	margin: 0 0 2em 0;
-}
-
-.wide-column-left {
-	width:66.33%;
-	border-right: solid 1px black;
-	padding: 0em 2em 0 0em;
-	margin: 0 0 2em 0;
-}
-
+/* Add Space on title in Full Width Column*/
 .wide-column-title-block{
 	padding: 0 0 2em 0;
 }
 
-/* Single Pages Main links --------------------------------------------------------------------*/
+/* Wide Column on Right RESOURCES - GROUPS PAGES*/
+.wide-column-right {
+	width:66.33%;
+	border-left: solid 1px black;
+	padding: 1.2em 0 0 2em;
+}
 
+/* Wide Column on Right PROJECT PAGES*/
+.project-wide-column-right {
+	width:80%;
+	border-bottom: solid 1px black;
+	padding: 0 0 0 0.25em;
+}
+
+/* Wide Column on Left NEWS - EVENTS PAGES*/
+.wide-column-left {
+	width:66.33%;
+	border-right: solid 1px black;
+	padding: 0em 2em 0 0em;
+}
+
+/* SINGLE Main links -------------------------------------------------------------------*/
+/* fat underline */
 .wide-column a{
 	border-bottom: 3px solid var(--crimson);
 }
@@ -691,48 +709,96 @@ img.event-logo{
 	color: var(--crimson);
 }
 
-.wide-column p{
-	line-height: 1.7em;
-}
-
+/* slim underline for lists */
 .data-head li a{
 	border-bottom: 1px solid black;
 }
 
 .data-head li a:hover{
+	color: var(--crimson);
 	border-bottom: 1px solid var(--crimson);
 }
 
-.data-head li a:hover{
-	color: var(--crimson);
+
+/* Single PROJECT PAGE Styles----------------------------------------------------------------*/
+.project-header {
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: auto;
+  	background-position: top center;
+  	position: absolute;
+  	z-index: -1;
+  	height: 24em;
+  	width: 100%;
+}
+
+.blue-colorblock {
+	height: 100%;
+	width: 100%;
+	background-color: var(--blue);
+	mix-blend-mode: color;
+}
+
+/* ADD space above title */
+.project-pg-container{
+	padding-top: 12em;
+}
+
+.in-the-media a{
+	color:var(--blue);
+	padding-bottom: 0.04em;
+	border-bottom: none;
+}
+
+.in-the-media a:hover{
+	color:var(--blue);
+	border-bottom: solid 3px var(--blue);
+}
+
+.apply-project {
+	justify-content:center;
+	margin: 1em 0 3em 0;
+}
+
+.apply-project h2{
+	padding: 0 1em 0 1em;
+	line-height: 1.1em;
 }
 
 
-/* Single Pages image padding ----*/
+
+/* SINGLE PAGES width and padding -----------------------------------------------------*/
 .single-pg-container img, .single-pg-video, .in-the-media{
 	width: 100%;
 	margin:1em 0;
 }
 
-
-
-/* Carousel Styles --------------------------------------------------------------------------------------- */
-.main-carousel {
- 	margin:1em 0;
+.single-pg-video, .main-carousel {
+	margin:2em 0;
 }
 
+.caption {
+	font-size: 1em;
+	line-height: 1.4em;
+	margin:0.5em 0 1.5em 0.5em;
+	font-style: italic;
+}
+
+/* Carousel Styles ------------------------------------------------------------------ */
 .carousel-cell {
- 	width: 100%; /* full width */
+ 	width: 100%; 
 }
 
-.main-carousel img {
+.carousel-cell img {
  	margin:0;
  	width: 100%;
 }
 
+/* button styles */
 .flickity-button {
   background: var(--lightgrey);
 }
+
 .flickity-button:hover {
   background: var(--crimson);
 }
@@ -742,45 +808,51 @@ img.event-logo{
   height: 30px;
   border-radius: 0px;
 }
-/* icon color */
+
 .flickity-button-icon {
   fill: black;
 }
 
-
-
-
-/* Connected info-----------------------------------------------------------------------------------------*/
-
-/* adjust header padding */
-.connected-info-sidebar h4, .connected-info-wide h4 {
-	padding: 0 0 .25em 0;
+.flickity-page-dots{
+	display: none;
 }
 
-.thumb-container h3 {
-	padding-top:0;
-}
 
-/* blocks with icons */
+/* CONNECTED INFO --------------------------------------------------------------------*/
+/* container for blocks text and icons */
 .single-side-block{
 	display: flex;
 	flex-wrap: wrap;
 }
 
+/* text block on left */
+.single-text-block{
+	width: 75%;
+	padding:0 1em 0 0;
+}
+
+/* icon block on right */
 .single-icon-block{
 	width: 25%;
 }
 
+/* icon size */
 .single-icon-block img{
 	margin:0;
 	max-width: 130px;
 	float: right;
 }
 
-/* blocks with text-only */
-.single-text-block{
-	width: 75%;
-	padding:0 1em 0 0;
+
+
+
+.connected-block-category {
+	padding-top:0;
+}
+
+/* adjust header padding */
+.connected-info-sidebar h4, .connected-info-wide h4 {
+	padding: 0 0 .25em 0;
 }
 
 /* connected info section widths */
@@ -885,50 +957,6 @@ img.event-logo{
 }
 
 
-/* Single Project Styles-----------------------------------------------------------------------------------*/
-.project-header {
-  	background-repeat: no-repeat;
-  	background-attachment: fixed;
-  	background-size: auto;
-  	background-position: top center;
-  	position: absolute;
-  	z-index: -1;
-  	height: 24em;
-  	width: 100%;
-}
-
-.blue-colorblock {
-	height: 100%;
-	width: 100%;
-	background-color: var(--blue);
-	mix-blend-mode: color;
-}
-
-.project-pg-container{
-	padding-top: 12em;
-}
-
-
-.in-the-media a{
-	color:var(--blue);
-	padding-bottom: 0.04em;
-	border-bottom: none;
-}
-
-.in-the-media a:hover{
-	color:var(--blue);
-	border-bottom: solid 3px var(--blue);
-}
-
-.apply-project {
-	justify-content:center;
-	margin: 1em 0 3em 0;
-}
-
-.apply-project h2{
-	padding: 0 1em 0 1em;
-	line-height: 1.1em;
-}
 
 
 /* Hover Styles ------------------------------------------------------------------------------ */
@@ -1002,8 +1030,7 @@ img.event-logo{
 
 
 
-/* Sorting Boxes ------------------------------------------------------------------------------ */
-
+/* Sorting Boxes-Radio-boxes------------------------------------------------------------------------- */
 .sorting-box-container{
 	display: flex;
 	flex-wrap: wrap;
@@ -1012,20 +1039,22 @@ img.event-logo{
 	width: 100%;
 }
 
+/* Radio Box title */
 .sorting-box-container h5{
 	border: none;
 	font-weight: var(--font-medium);
 	text-transform: capitalize;
 	letter-spacing: 0;
 	padding-right:1em;
-	padding: 0 1em 0 0;
+	padding: 0.5em 1em 0 0;
 	font-size: 1em;
 }
 
-.radio-box-block, .checkbox-box-block{
+.radio-box-block{
 	display: flex;	
 }
 
+/* unchecked button */
 .sorting-box-container input{
 	background-color: var(--lightgrey);
 	padding: 0.4em 0.8em;
@@ -1036,13 +1065,6 @@ img.event-logo{
 	padding: 0.35em 0.8em;
 	border-radius: 0;
 }
-
-
-/* Radio Boxes ------------*/
-.radio-box-block h5 {
-	padding-top: 0.5em 
-}
-
 
 .radio-box-block .radio-title{
   display: block;
@@ -1062,6 +1084,7 @@ img.event-logo{
   position: absolute;
 }
 
+/* checked button */
 .checkmark{
   background-color: var(--blue);
   display: none;
@@ -1089,8 +1112,23 @@ img.event-logo{
 }
 
 
-/* Multi-select dropdown Project Page-------------------------------------------------------------*/
-.checkbox-box-block{
+/* Multi-select dropdown Event + News + Project-------------------------------------------------------*/
+/* multi-select block */
+.multi-select-dropdown{
+	margin:2em 0 ;
+}
+
+.multi-select-dropdown .dropdown-filter-content{
+	background-color: white;
+	flex-wrap: wrap;
+}
+
+.multi-select-dropdown .dropdown-filter-content div{
+	padding-right: 1em;
+}
+
+/* Multi-select skinny column Project Page on desktop*/
+.filter-skinny-column{
 	width: 86%;
 	position: sticky;
 	top:2em;
@@ -1105,7 +1143,8 @@ img.event-logo{
 .dropdown-filter .filter-title{
 	border-top: 1px solid black;
 	display: block;
-	padding: 0.6em 0 ;
+	padding: 0.6em 0;
+	cursor: pointer;
 }
 
 .filter-title:after{
@@ -1122,7 +1161,6 @@ img.event-logo{
 	padding: 0 0 1em 0;
 }
 
-
 .dropdown-filter-content div{
 	padding:0.25em 0 ;
 	font-weight:  var(--font-light);
@@ -1132,25 +1170,11 @@ img.event-logo{
 	padding:0.25em 0 0;
 }
 
-
-
-/* Multi-select dropdown Event + News ------------------------------------------------------------*/
-.multi-select-dropdown{
-	margin:2em 0 ;
-}
-
-.multi-select-dropdown .dropdown-filter-content{
-	background-color: white;
-	flex-wrap: wrap;
-}
-
-.multi-select-dropdown .dropdown-filter-content div{
-	padding-right: 1em;
-
+.dropdown-filter-content input{
+	cursor: pointer;
 }
 
 /* All Multi-select Open and Close ---------------------------------------------------------------*/
-
 #type[type=checkbox]:checked ~ .title-type:after,
 #topic[type=checkbox]:checked ~ .title-topic:after,
 #method[type=checkbox]:checked~ .title-method:after,
@@ -1175,8 +1199,6 @@ img.event-logo{
 {
     display:flex;
 }
-
-
 
 
 /* Forms --------------------------------------------------------------------------------------- */
