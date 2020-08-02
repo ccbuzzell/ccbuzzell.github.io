@@ -15,6 +15,7 @@
 a {
 	text-decoration: none;
 	color: black;
+	cursor: pointer;
 }
 
 ul, li {
@@ -317,7 +318,7 @@ header .search {
   opacity: 1;
 }
 
- .search-label {
+.search-label {
  	cursor: pointer;
 	user-select:none;
     position:absolute;
@@ -326,25 +327,25 @@ header .search {
     display:block;
     width:3em;
     height:3em;
-   }
+}
     
- .search-label:after {
+.search-label:after {
   	  z-index:5000 ;
       position: absolute;
       content:"\2573";
       font-size: 2.5em;
       transform: rotateY(0deg) rotate(0deg);
       transition: transform 0.2s;
-    }
+}
 
- .search-input[type=checkbox]:checked ~ .search-label:after {
+.search-input[type=checkbox]:checked ~ .search-label:after {
     content:"\2573";
     transform: rotateY(0deg) rotate(45deg); 
     transition: transform 0.2s;
-    }
+}
 
 
-/* Footer ------------------------------------------------------------------------------------- */
+/* Footer ------------------------------------------------------------------------------------ */
 
 footer {
 	padding: 8em 0 2em 0;
@@ -402,7 +403,7 @@ footer {
 }
 
 
-/* Flex/Thumbnail Containers------------------------------------------------------------------- */
+/* Flex/Thumbnail Containers------------------------------------------------------------------ */
 /* Main Containers for flex content */
 .thumb-container, .project-pg-thumb-container a {
 	display: flex;
@@ -488,7 +489,6 @@ footer {
 /* EVENT padding and Rules and Width*/
 .featured-event-block{
 	width: 50%;
-	display: flex;
 	margin:1em -1px 1em 0;
 	border-left: solid 1px black;
 	border-right: solid 1px black;
@@ -689,7 +689,8 @@ img.event-logo{
 .project-wide-column-right {
 	width:80%;
 	border-bottom: solid 1px black;
-	padding: 0 0 0 0.25em;
+	padding: 0 0 1.8em 0;
+	margin-bottom:2.3em;
 }
 
 /* Wide Column on Left NEWS - EVENTS PAGES*/
@@ -699,7 +700,7 @@ img.event-logo{
 	padding: 0em 2em 0 0em;
 }
 
-/* SINGLE Main links -------------------------------------------------------------------*/
+/* SINGLE Main links --------------------------------------------------------------------------*/
 /* fat underline */
 .wide-column a{
 	border-bottom: 3px solid var(--crimson);
@@ -720,7 +721,7 @@ img.event-logo{
 }
 
 
-/* Single PROJECT PAGE Styles----------------------------------------------------------------*/
+/* Single PROJECT PAGE Styles------------------------------------------------------------------*/
 .project-header {
   	background-repeat: no-repeat;
   	background-attachment: fixed;
@@ -766,15 +767,18 @@ img.event-logo{
 }
 
 
-
-/* SINGLE PAGES width and padding -----------------------------------------------------*/
+/* SINGLE PAGES width and padding -------------------------------------------------------------*/
 .single-pg-container img, .single-pg-video, .in-the-media{
 	width: 100%;
 	margin:1em 0;
 }
 
-.single-pg-video, .main-carousel {
+.single-pg-video{
 	margin:2em 0;
+}
+
+.main-carousel {
+	margin:2em 0 0.1em;
 }
 
 .caption {
@@ -784,7 +788,11 @@ img.event-logo{
 	font-style: italic;
 }
 
-/* Carousel Styles ------------------------------------------------------------------ */
+/* Carousel Styles --------------------------------------------------------------------------- */
+.main-carousel {
+	width: 100%;
+}
+
 .carousel-cell {
  	width: 100%; 
 }
@@ -818,7 +826,7 @@ img.event-logo{
 }
 
 
-/* CONNECTED INFO --------------------------------------------------------------------*/
+/* CONNECTED INFO -----------------------------------------------------------------------------*/
 /* container for blocks text and icons */
 .single-side-block{
 	display: flex;
@@ -844,17 +852,6 @@ img.event-logo{
 }
 
 
-
-
-.connected-block-category {
-	padding-top:0;
-}
-
-/* adjust header padding */
-.connected-info-sidebar h4, .connected-info-wide h4 {
-	padding: 0 0 .25em 0;
-}
-
 /* connected info section widths */
 .connected-info-sidebar {
 	width:33.33%;
@@ -870,6 +867,19 @@ img.event-logo{
 	width: 100%;
 	display: flex;
 }
+
+
+/* h3 connected ifo title */
+.connected-block-category {
+	padding-top:0;
+}
+
+/* adjust header padding */
+.connected-info-sidebar h4, .connected-info-wide h4 {
+	padding: 0 0 .25em 0;
+}
+
+
 
 /* add borders*/
 .connected-info-block{
@@ -903,8 +913,7 @@ img.event-logo{
 }
 
 
-/* Bio Hierachy for About and Groups --------------------------------- */
-
+/* Bio Hierachy for About and Groups --------------------------------------------------------- */
 /* Large ---- */
 .lrg-block {
 	margin:2em 0 2em;
@@ -920,12 +929,14 @@ img.event-logo{
 	padding-top:0;
 }
 
+.connected-info-text-lrg h2{
+	margin-top:-0.25em;
+}
+
 .connected-info-text-lrg {
 	width:80%;
 	margin:0 0 0 1em;
 }
-
-
 
 /* Medium ---- */
 
@@ -949,7 +960,6 @@ img.event-logo{
 	margin:0 0 0 0.5em;
 }
 
-
 /* Small ---- */
 .small-block {
 	margin:2em 0 0em -1px;
@@ -957,11 +967,7 @@ img.event-logo{
 }
 
 
-
-
 /* Hover Styles ------------------------------------------------------------------------------ */
-
-
 .project-thumb-bitmap, .news-thumb-bitmap, .past-event-thumb-bitmap{
 	display: none;
 }
@@ -1007,11 +1013,7 @@ img.event-logo{
 }
 
 
-
-
-
-/* Special Text Styles ------------------------------------------------------------------------------ */
-
+/* Special Text Styles ----------------------------------------------------------------------- */
 /* on home */
 .boxed-text {
 	width: 98.5%;
@@ -1029,8 +1031,7 @@ img.event-logo{
 }
 
 
-
-/* Sorting Boxes-Radio-boxes------------------------------------------------------------------------- */
+/* Sorting Boxes-Radio-boxes------------------------------------------------------------------ */
 .sorting-box-container{
 	display: flex;
 	flex-wrap: wrap;
@@ -1112,7 +1113,7 @@ img.event-logo{
 }
 
 
-/* Multi-select dropdown Event + News + Project-------------------------------------------------------*/
+/* Multi-select dropdown Event + News + Project------------------------------------------------*/
 /* multi-select block */
 .multi-select-dropdown{
 	margin:2em 0 ;
@@ -1174,7 +1175,7 @@ img.event-logo{
 	cursor: pointer;
 }
 
-/* All Multi-select Open and Close ---------------------------------------------------------------*/
+/* All Multi-select Open and Close ------------------------------------------------------------*/
 #type[type=checkbox]:checked ~ .title-type:after,
 #topic[type=checkbox]:checked ~ .title-topic:after,
 #method[type=checkbox]:checked~ .title-method:after,
@@ -1201,7 +1202,7 @@ img.event-logo{
 }
 
 
-/* Forms --------------------------------------------------------------------------------------- */
+/* Forms ------------------------------------------------------------------------------------- */
 .form-group {
 	padding: 1.5em 0 0; 
 }
@@ -1230,7 +1231,7 @@ img.event-logo{
 	font-weight: var(--font-light);
 }
 
-/* Buttons ------------------------------------------------------------------------------ */
+/* Buttons ----------------------------------------------------------------------------------- */
 .external-link-box a{
 	background-color: var(--crimson);
 	text-align: center;
@@ -1253,7 +1254,7 @@ img.event-logo{
 }
 
 
-/* Category Text Colors ------------------------ */
+/* Category Text Colors ---------------------------------------------------------------------- */
 
 .blue a:hover,
 .workshop .event-date,
@@ -1286,7 +1287,7 @@ img.event-logo{
 	color: var(--darkgrey);
 }
 
-/* Category Background Colors------------------------ */
+/* Category Background Colors----------------------------------------------------------------- */
 
 .workshop .past-event-thumb-colorblock, 
 .workshop .past-event-thumb-multiply,
@@ -1311,7 +1312,6 @@ img.event-logo{
 	background-color: var(--crimson);
 }
 
-
 /* Category Border Color------------------------ */
 .project-pg-thumb-container:hover .project-pg-description-block{
 }
@@ -1321,8 +1321,7 @@ img.event-logo{
 }
 
 
-
-/* alignments ------------------------------------------------------------------------------ */
+/* alignments -------------------------------------------------------------------------------- */
 .center {
 	text-align: center;
 }
@@ -1361,21 +1360,16 @@ img.event-logo{
 }
 
 
-/* Media Q ------------------------------------------------------------------------------ */
-
-@media only screen and (max-width: 1000px){
-
-
-	
-	/* mobile Header ------------------------------------------------------------------------------ */
+/* MEDIA QUERIES------------------------------------------------------------------------------ */
+/* MOBILE MENU and Spacing Tweaks*/
+@media only screen and (max-width: 1000px){	
+	/* mobile Header ------------------------------------------------------------------------- */
 	header { 
 	display:block;
 	width: 100%;
 	}
 
-	
-	/* Logo and Logo animation ------------------------------------------------------------------- */
-
+	/* Logo and Logo animation --------------------------------------------------------------- */
 	header .logo {
 	width: 100%;
 	height: 8em;
@@ -1383,18 +1377,16 @@ img.event-logo{
 	}
 
 	#animate-logo { 
-		margin:0 auto;
+	margin:0 auto;
 	}
 
-
-	/* mobile Navigation ------------------------------------------------------------------------------ */
+	/* mobile Navigation --------------------------------------------------------------------- */
 	header .search {
 	display: none;
 	}
 
 	header nav #main-nav {
     margin-left: 0em;
-
 	}
 
 	nav ul {
@@ -1425,6 +1417,7 @@ img.event-logo{
 	text-transform:capitalize;
 	}
 
+	/*Open Dropdowns*/
 	.dropdown{
   	position: block;
 	}
@@ -1441,11 +1434,12 @@ img.event-logo{
 	border-bottom: none; 
 	}
 
-   /* hide open menu until clicked ----*/ 
+   /* hide open menu until clicked */ 
 	header nav #main-nav {
 	display: none;
 	}
 
+	/* position checkbox */
 	header .x-label {
     position:absolute;
     top: 1em;
@@ -1454,7 +1448,7 @@ img.event-logo{
     width:3em;
     height:3em;
     }
-    
+
   	header .x-label:after {
     position: absolute;
     content:"\2573";
@@ -1483,6 +1477,7 @@ img.event-logo{
 	border-right: 1px solid black;
 	}
 
+	/* search bar in menu*/
  	.mobile-search-container{
  	display: flex;
  	justify-content: center;
@@ -1498,14 +1493,13 @@ img.event-logo{
  	width:100%;
  	}
 
- 	/* Footer ------------------------------------------------------------------------------ */
+ 	/* Footer -------------------------------------------------------------------------------- */
 	footer nav li, footer nav li a{
 	font-family: 'Work Sans', sans-serif;
 	font-size: 1em;
 	border-bottom: none;
 	letter-spacing: 0.02em;
 	}
-
 	
 	.footer-shield {
     top: -2.5em;
@@ -1513,22 +1507,18 @@ img.event-logo{
 	}
 
 
-	/* News Thumb Styles ------------------------------------------------------------------------ */
+	/* News Thumb Styles --------------------------------------------------------------------- */
 	.featured-news-title-block p{
-		font-size: 1em;
-		line-height: 1.4em;
+	font-size: 1em;
+	line-height: 1.4em;
 	}
 
 	.featured-news-title-block .news-data{
-		font-size: 0.75em;
-		margin: 0.3em 0;
+	font-size: 0.75em;
+	margin: 0.3em 0;
 	}
 
-	/* Event Thumb Styles ------------------------------------------------------------------------ */
-	.featured-event-block a{
-	padding: 0 1em 1.8em 1em;
-	}
-
+	/* Event Thumb Styles -------------------------------------------------------------------- */
 	.event-text-block{
 	width: 80%;
 	}
@@ -1548,9 +1538,7 @@ img.event-logo{
 	line-height: 1.15em;
 	}
 
-
-	/* Intro text ------------------------------------------------------------------------ */
-
+	/* Intro text ---------------------------------------------------------------------------- */
 	.boxed-text {
 	width: 100%;
 	margin: 0 0 2.5em;	
@@ -1563,9 +1551,8 @@ img.event-logo{
 	letter-spacing: 0.015em;
 	}
 
-	/* Single Page ------------------------------------------------------------------------ */
+	/* Single Page --------------------------------------------------------------------------- */
 	/* Bio Hierachy */
-
 	.connected-info-img-lrg{
 	margin:0 0 0 0;
 	}
@@ -1579,34 +1566,33 @@ img.event-logo{
 	margin:0 0 0 0.25em;
 	}
 
-	/* padding on single pages-- see about page */
-	.indent-subheads{
-	padding-left: 0.8em;
-	}
-	
 	/* Padding for connected info blocks/titles */
 	.connected-info-block, 
-	.connected-list-block, 
-	.connected-info-sidebar h3, 
-	.connected-info-wide h3 {
+	.connected-list-block{
     padding: 0em 0.7em 0.8em 0.8em;
 	}
 
 	.in-the-media h2 {
     font-size: 2em;
 	}
-	/* Single Event sidebar---------------------------------*/
+
+	/* Single Event sidebar--------------------------------------------------------------------*/
 	.sidebar-left .news-data{
-		display: block;
+	display: block;
 	}
 
-	.rule { display: none; }
+	/* Hide pipe on Author Block*/
+	.rule { display: none;}
 
-
-	/* Single Project Sorting box------------------------------------------------------------------------ */
+	/* Single Project Sorting box------------------------------------------------------------- */
 	.project-sidebar-left {
 	width:100%;
 	margin-bottom: 2em;
+	}
+
+	.filter-skinny-column {
+    width: 100%;
+    position: block;
 	}
 
 	.checkbox-box-block {
@@ -1619,7 +1605,7 @@ img.event-logo{
 	.project-sidebar-left #method[type=checkbox]:checked~ .filter-method,
 	.project-sidebar-left #group[type=checkbox]:checked ~ .filter-group{
     display:flex;
-}
+	}
 
 	.project-sidebar-left .dropdown-filter-content div{
 	padding-right: 1em;
@@ -1629,213 +1615,18 @@ img.event-logo{
     width: 100%;
 	}
 
-
 }
+
 
 @media only screen and (max-width: 765px){
+	/*SINGLE COLUMN MOBILE*/
+	.search-container .form-control {
+    width: 70%;
+	}
 
-
-	/* Footer ------------------------------------------------------------------------------ */
-	
+	/* Footer -------------------------------------------------------------------------------- */
 	.footer-nav ul li{
 	display: block;
-	}
-
-	footer nav li, footer nav li a{
-	font-size: 1.1em;
-	}
-
-
-	/* Event Thumb Styles ------------------------------------------ */
-
-	.featured-event-block{
-	width: 100%;
-	}
-
-	/* Project Thumb Styles --------------------------------------- */
-
-	.featured-project-block, .past-event-thumb-block{
-	width: 50%;
-	}
-
-	.project-pg-project-block, .project-pg-thumb-container{
-	width: 100%;
-	}
-
-	.project-pg-project-block{
-	padding: 1.5em 0 0 0;
-	width: 100%;
-	}
-
-	.project-pg-description-block{
-	padding: 2em 0 1.5em 0;
-	width: 100%;
-	}
-
-	.project-wide-column-right .project-title-container{
-		font-size: 2em;
-	}
-
-	/* News Thumb Styles --------------------------------------- */
-
-	.featured-news-block{
-	width: 100%;
-	}
-
-	/* Project Thumb Styles --------------------------------------- */
-	.project-pg-description-block p{
-		font-size: 1.1em;
-		line-height: 1.5em;
-	}
-
-	.project-pg-description-block .data-head{
-		font-size: 0.9em;
-		line-height: 1.5em;
-	}
-
-	/* Sorting Boxes ---------------------------------------*/
-	.sorting-box-block, .radio-box-block, .checkbox-box-block{
-	width: 100%;
-	justify-content: center;
-	}
-
-
-	/* alignments ------------*/
-
-	.flex-left {
-	justify-content: center;
-	}
-
-	/* Single Pages ---------------------------------------*/
-	.sidebar-left, .sidebar-right, .wide-column, .connected-info-sidebar, .connected-info-wide, .project-wide-column, .project-sidebar-left, .connected-list-block {
-	width:100%;
-	padding: 0;
-	}
-
-	.wide-column {
-	border-left: none;
-	border-right: none;
-	}
-
-	.mobile-noborder{
-		border: none;
-	}
-
-	.wide-column-left {
-	border-top: none;
-	}
-
-	.connected-info-container{
-	display: block;
-	border-top: solid 1px black;
-	padding-top:1em;
-	padding-bottom: 2em;
-
-	}
-
-	.connected-info-block{
-	border-left: none;
-	border-right: none;
-	border-top: solid 1px black;
-	padding-top:1em;
-	}
-
-	.connected-list-block{
-	width: 100%;
-	border-right:none;
-
-	}
-
-	.project-pg-title {
-	font-size:2.5em;
-	}
-
-	.project-header {
-  	background-size: 140%;
-  	height: 14em;
-	}
-
-	.project-pg-container {
-    padding-top: 2em;
-	}
-
-	.single-text-block{
-	width: 80%;
-	}
-
-	.single-icon-block{
-	width: 20%;
-	}
-
-	/* Bio Hierarchy ---------------------------------------*/
-	.connected-info-img-med, .connected-info-img-lrg {
-	margin:0 0 0 0;
-	}
-
-	.med-block, .lrg-block {
-    margin: 2em 0 0em 0;
-    width: 100%;
-	}
-
-	.connected-info-img-med, .connected-info-img-lrg {
-	width:50%;
-	}
-
-	.connected-info-text-med, .connected-info-text-lrg {
-	width:100%;
-	margin:0 0 0 0;
-	}
-
-	/* Pad edges ---------------------------------------*/
-	.sidebar-left,
-	.sidebar-right,
-	.project-wide-column,
-	.connected-info-sidebar h3, 
-	.connected-info-wide h3, 
-	.connected-info-block,
-	.project-wide-column-right {
-	padding-left:0em;
-	padding-right:0em;	
-	}
-
-	/* Pad top ---------------------------------------*/
-	.sidebar-left,
-	.sidebar-right{
-	margin: 1em 0 2em;	
-	}
-
-	/* Single Event sidebar---------------------------------*/
-	.sidebar-left .news-data{
-		display: flex;
-	}
-
-	.rule { display: block; }
-
-	/* Special Text Styles ------------------------------------------------------------------------------ */
-
-/* on home */
-	.boxed-text p{
-	padding:1em 1em 1em 1em;
-	font-size: 1.8em;
-	line-height: 1.6em;
-	}	
-
-
-	.columnleft-carousel{
-	width:100%;
-	height: 50vw;
-	}
-}
-
-@media only screen and (max-width: 600px){
-
-/* Special Text Styles ------------------------------------------------------------------------------ */
-
-/* on home */
-	.boxed-text p{
-	padding:0.75em 1em 1em 1em;
-	font-size: 1.25em;
-	line-height: 1.6em;
 	}
 
 	.footer-shield {
@@ -1844,10 +1635,13 @@ img.event-logo{
     margin-bottom: -16px;
 	}
 
-	/* Event Thumb Styles ------------------------------------------------------------------------ */
+	footer nav li, footer nav li a{
+	font-size: 1.1em;
+	}
 
-	.featured-event-block a{
-	padding: 0 1em 1.8em 1em;
+	/* Event Thumb Styles -------------------------------------------------------------------- */
+	.featured-event-block{
+	width: 100%;
 	}
 
 	.event-text-block{
@@ -1867,12 +1661,100 @@ img.event-logo{
 	font-size: 2.1em;
 	}
 
-	.search-container .form-control {
-    width: 70%;
+	/* Project Thumb Styles ------------------------------------------------------------------ */
+	.featured-project-block, .past-event-thumb-block{
+	width: 50%;
+	}
+
+	.project-pg-project-block, .project-pg-thumb-container{
+	width: 100%;
+	}
+
+	.project-pg-project-block{
+	padding: 1.5em 0 0 0;
+	width: 100%;
+	}
+
+	.project-pg-description-block{
+	padding: 2em 0 1.5em 0;
+	width: 100%;
+	}
+
+	.project-wide-column-right .project-title-container{
+	font-size: 2em;
+	}
+
+	/* News Thumb Styles --------------------------------------------------------------------- */
+	.featured-news-block{
+	width: 100%;
+	}
+
+	/* Project Thumb Styles ------------------------------------------------------------------ */
+	.project-pg-description-block p{
+	font-size: 1.1em;
+	line-height: 1.5em;
+	}
+
+	.project-pg-description-block .data-head{
+	font-size: 0.9em;
+	line-height: 1.5em;
+	}
+
+	/* Sorting Boxes --------------------------------------------------------------------------*/
+	.sorting-box-block, .radio-box-block, .checkbox-box-block{
+	width: 100%;
+	justify-content: center;
 	}
 
 	.radio-box-block{
-		justify-content: left;
+	justify-content: left;
+	}
+
+	/* alignments -----------------------------------------------------------------------------*/
+	.flex-left {
+	justify-content: center;
+	}
+
+	/* Single Pages ---------------------------------------------------------------------------*/
+	.sidebar-left, .sidebar-right, .wide-column, .connected-info-sidebar, .connected-info-wide, .project-wide-column, .project-sidebar-left, .connected-list-block {
+	width:100%;
+	padding: 0;
+	}
+
+	.wide-column {
+	border-left: none;
+	border-right: none;
+	}
+
+	.mobile-noborder{
+	border: none;
+	}
+
+	.wide-column-left {
+	border-top: none;
+	}
+
+	.connected-info-container{
+	display: block;
+	border-top: solid 1px black;
+	padding-top:1em;
+	padding-bottom: 2em;
+	}
+
+	.connected-info-block{
+	border-left: none;
+	border-right: none;
+	border-top: solid 1px black;
+	padding-top:1em;
+	}
+
+	.connected-list-block{
+	width: 100%;
+	border-right:none;
+	}
+
+	.project-pg-title {
+	font-size:2.5em;
 	}
 
 	.project-header {
@@ -1880,11 +1762,92 @@ img.event-logo{
     height: 13em;
 	}
 
+	.project-pg-container {
+    padding-top: 2em;
+	}
+
+	.single-text-block{
+	width: 80%;
+	}
+
+	.single-icon-block{
+	width: 20%;
+	}
+
 	.in-the-media h2 {
     font-size: 1.5em;
 	}
 
+	.apply-project {
+    justify-content: left;
+    margin: 1em 0 3em 0;
+	}
+
+	.apply-project h2 {
+	font-size: 2.2em;
+	width: 100%;
+	text-align: left;
+    padding: 0 0 0.25em 0;
+	}
+
+	/* Bio Hierarchy --------------------------------------------------------------------------*/
+	.connected-info-img-med, .connected-info-img-lrg {
+	margin:0 0 0 0;
+	}
+
+	.med-block, .lrg-block {
+    margin: 2em 0 0em 0;
+    width: 100%;
+	}
+
+	.connected-info-img-med, .connected-info-img-lrg {
+	width:50%;
+	}
+
+	.connected-info-text-med, .connected-info-text-lrg {
+	width:100%;
+	margin:0 0 0 0;
+	}
+
+	/* Pad edges ------------------------------------------------------------------------------*/
+	.sidebar-left,
+	.sidebar-right,
+	.project-wide-column,
+	.connected-info-block,
+	.project-wide-column-right {
+	padding-left:0em;
+	padding-right:0em;	
+	}
+
+	/* Pad top --------------------------------------------------------------------------------*/
+	.sidebar-left,
+	.sidebar-right{
+	margin: 1em 0 2em;	
+	}
+
+	/* Single Event sidebar--------------------------------------------------------------------*/
+	.sidebar-left .news-data{
+	display: flex;
+	}
+
+	/* Add Author pipe back*/
+	.rule { display: block;}
+
+	/* Special Text Styles ------------------------------------------------------------------- */
+	/* on home */
+	.boxed-text p{
+	padding:0.75em 1em 1em 1em;
+	font-size: 1.25em;
+	line-height: 1.6em;
+	}	
+
+	.columnleft-carousel{
+	width:100%;
+	height: 50vw;
+	}
 }
+
+
 
 
 
