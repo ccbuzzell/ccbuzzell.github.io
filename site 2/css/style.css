@@ -1,0 +1,437 @@
+/*! cc css */
+
+/* Document
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 100;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* Header
+   ========================================================================== */
+
+nav {
+  display: flex;
+  padding-top: 1.5vw;
+  height:14vw;
+  align-items: center;
+  width: 100%;
+}
+
+nav a {
+  border: none;
+}
+
+.logo {
+  text-align: center;
+  width: 90%;
+  padding-left:10%;
+}
+
+.logo a{
+  border: none;
+}
+
+.nav-item {
+  width: 10%;
+  align-self: center;
+}
+
+#icon-hamburger, #icon-mail {
+  height: 4.4vw;
+  margin: 0 0 0em;
+}
+
+#icon-arrow {
+  height: 15vw;
+}
+
+.nav-page{
+  text-align: center;
+}
+
+.nav-page ul {
+  padding:2vw 0 0;
+}
+
+.nav-page h4 {
+  text-align: left;
+  padding:0 6vw 2vw;
+}
+
+/* Footer
+   ========================================================================== */
+
+footer {
+  display: flex;
+  height: 10vw;
+  padding: 1em 2em;
+  font-size: 1.4vw;
+  background-color: white;
+}
+
+.foot-hold {
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+}
+
+footer h4 {
+  flex-grow: 1;
+}
+
+footer img {
+  width: 11%;
+}
+
+/* ----------bursts------------- */
+
+.burst-container {
+  position: absolute;
+  width: 12vw;
+  top:10vw;
+  right:4vw;
+  z-index: 1000;
+  opacity:0;
+}
+
+.art {
+  animation-name: spin;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); opacity: 0; }
+  45% { transform: rotate(0deg); opacity: 0; }
+  60% { transform: rotate(360deg); opacity: 1;}
+  71% { opacity: 0; }
+  100% { transform: rotate(360deg); opacity: 0;}
+}
+
+
+/* Main
+   ========================================================================== */
+
+  p {
+    font-size: 1.7vw;  
+  }
+
+  h1{
+    font-size: 9vw;
+    letter-spacing: 0.03em;
+  }
+
+  h2 {
+    font-size: 7vw;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 3.5vw;
+    letter-spacing: 0.01em;
+  }
+
+  h4 {
+    font-size: 2.4vw;
+    line-height: 3.5vw;
+    letter-spacing: -0.01em;
+  }
+
+  a {
+    color:black;
+  }
+
+li {
+   font-size: 5vw;
+   line-height: 9vw;
+}
+
+/* Flickity
+   ========================================================================== */
+.slider-container {
+  text-align: center;
+}
+
+ .big-title {
+    text-align: center;
+    position: relative;
+    top: 0;
+    padding-top: 2vw;
+    margin-bottom: -6.1vw;
+    z-index: 888;
+  }
+
+  .lrg-slider {
+    height: 63.5vw ; /* height of carousel */
+    min-height: 63.5vw ; /* height of carousel */
+  }
+
+  .carousel-cell-big {
+  width: 100%; /* full width */
+  margin: 0%;
+  height: 100%;
+  counter-increment: carousel-cell;
+  }
+
+  .carousel-cell-big img,  .carousel-cell-med img {
+  width: 100%;
+  }
+
+  .img-high {
+    width: 100%;
+  }
+
+   .med-slider {
+  height: 35vw ; /* height of carousel */
+  }
+
+  .med-title {
+    padding: 2vw 0 1.5vw;
+    text-align: center;
+  }
+
+  .carousel-cell-med {
+  width: 50%;
+  padding:0.5vw;
+  height: 100%;
+  }
+
+  .carousel-cell-small {
+  width: 38%;
+  padding:0.3vw;
+  height: 100%;
+  }
+
+  .slider-container p{
+    text-align: center;
+    padding: 2vw 0 0 0;
+  }
+
+  .slider-container p a{
+    text-decoration: underline;
+  }
+
+
+.arrow-block{
+    padding-top: 10vw;
+  }
+
+.arrow-block img{
+  width: 5.5vw;
+  }
+
+.med-slider .arrow-block{
+    padding-top: 0vw;
+  }
+
+  .med-slider .arrow-block img{
+    max-width: 8em;
+  }
+
+
+
+/* carousel buttons
+   ========================================================================== */
+
+/* position dots up a bit */
+.flickity-page-dots {
+  display: none;
+}
+
+
+.flickity-button:focus {
+  background: transparent;
+}
+
+/* no circle */
+.flickity-button {
+  background: white;
+  border: 0.3vw solid black;
+}
+/* big previous & next buttons */
+.flickity-prev-next-button {
+  width: 4.5vw;
+  height: 4.5vw;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: black;
+}
+
+.lrg-slider .flickity-button {
+  background: transparent;
+  border: none;
+}
+
+.flickity-prev-next-button {
+    top: 42%;
+  }
+
+
+
+
+
+
+
+/* Item/Nav Pages
+   ========================================================================== */
+ .container {
+    width: 100%;
+   }
+ 
+
+.item-page {
+  background-color: black;
+  color:white;
+  margin-bottom: 10vw;
+  z-index: 1;
+}
+
+.margin-top{
+  margin-top:5vw;
+}
+
+.item-container {
+  padding:1vw 6.5vw 2vw 7vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.nav-bottom .left,  .nav-bottom .right{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.nav-bottom {
+  justify-content: space-between;
+}
+
+.nav-bottom a{
+  color:white;
+  border:none;
+}
+
+.nav-bottom .left img, .nav-bottom .right img{
+    height: 4.4vw;
+    width: 4vw;
+
+  }
+
+
+ .item-page p {
+    letter-spacing: 0em;
+    font-size: 2.5vw;
+    line-height: 3.5vw;
+    padding-bottom: 2vw;
+  }
+
+
+  .item-page h2 {
+    font-size: 4.25vw;
+    line-height: 5.9vw;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 60%;
+  }
+
+.item-page img{
+  width: 100%;
+}
+
+.img-container {
+  padding-left: 6vw;
+  padding-right: 3vw;
+  margin: 1vw 0 2vw;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-item{
+  padding:0 3vw 4vw 0;
+  width: 50%;
+}
+
+.img-item-big{
+  padding:0 3vw 4vw 0;
+  width: 100% !important;
+}
+
+.img-item-bottom{
+  padding:0 3vw 3vw 0;
+  width: 100% !important;
+}
+
+
+
+
+/* Backgrounds
+   ========================================================================== */
+
+.red {
+  background-color: red;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.black{
+  background-color: black;
+}
+
+.white{
+ background-color: white;
+}
+
+.white-txt{
+ color: white;
+}
+
+.white-txt a{
+ color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  footer {
+  display: block;
+  font-size: 3vw;
+  text-align: center;
+}
+
+footer h4 {
+  padding-bottom: 0.5em;
+}
+
+footer img {
+  width: 20%;
+  padding: 0.25em;
+}
+
+
+}
+
