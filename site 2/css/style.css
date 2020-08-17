@@ -66,6 +66,7 @@ nav a {
 .container {
   background-color: white;
   margin-bottom: 12vw; 
+  width:100%;
 }
 
 /* Flickity
@@ -97,6 +98,19 @@ nav a {
   width: 100%;
   height: 55vw;
 }
+
+.img-websites {
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  height: 55vw;
+  padding:0 6vw;
+}
+
+.img-websites img{
+  width: 50%;
+  padding: 3vw;
+}
  
 .med-title {
   padding: 2vw 0 1.5vw;
@@ -119,10 +133,11 @@ nav a {
 
 .img-med {
   width: 100%;
+  height: 28vw;
 }
 
 .small-slider {
-  height: 28vw ; /* height of carousel */
+  height: 29vw ; /* height of carousel */
 }
 
 .carousel-cell-small {
@@ -148,6 +163,9 @@ nav a {
   padding-bottom: 2vw;
 }
 
+.small-slider-ticker p{
+  padding: 1vw 0 0 0;
+}
 
 
 /* Footer
@@ -259,8 +277,9 @@ li {
   }
 
   .med-slider .arrow-block img{
-    max-width: 8em;
+    max-width: 8vw;
   }
+
 
 
 
@@ -309,21 +328,13 @@ li {
 
 /* Item/Nav Pages
    ========================================================================== */
- .container {
-    width: 100%;
-   }
- 
+
 
 .item-page {
   background-color: black;
   color:white;
-  margin-bottom: 10vw;
-  z-index: 1;
 }
 
-.margin-top{
-  margin-top:5vw;
-}
 
 .item-container {
   padding:1vw 6.5vw 2vw 7vw;
@@ -402,6 +413,18 @@ li {
   width: 100% !important;
 }
 
+.gif-container {
+  width: 100%;
+  margin: 0 auto;
+  padding:4vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gif-container img{
+  width:33.3%;
+  padding:0.33vw;
+}
 
 
 
@@ -413,7 +436,7 @@ li {
 }
 
 .grey {
-  background-color: #222;
+  background-color: #666;
 }
 
 .black{
@@ -433,7 +456,10 @@ li {
 }
 
 
-
+.center {
+  text-align: center;
+  margin:0 auto;
+}
 
 
 
