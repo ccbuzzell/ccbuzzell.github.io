@@ -10,9 +10,9 @@
   font-weight: 100;
   }
 
-  a {
-    text-decoration: none;
-    cursor: pointer;
+a {
+  text-decoration: none;
+  cursor: pointer;
   }
 
 /* Header
@@ -20,7 +20,7 @@
 
 nav {
   display: flex;
-  padding-top: 1.5vw;
+  padding: 1.5vw 3vw 0 ;
   height:14vw;
   align-items: center;
   width: 100%;
@@ -33,7 +33,7 @@ nav a {
 .logo {
   text-align: center;
   width: 90%;
-  padding-left:10%;
+  padding-left: 1%;
 }
 
 .logo a{
@@ -47,11 +47,7 @@ nav a {
 
 #icon-hamburger, #icon-mail {
   height: 4.4vw;
-  margin: 0 0 0em;
-}
-
-#icon-arrow {
-  height: 15vw;
+  margin: 0 10% ;
 }
 
 .nav-page{
@@ -66,6 +62,93 @@ nav a {
   text-align: left;
   padding:0 6vw 2vw;
 }
+
+.container {
+  background-color: white;
+  margin-bottom: 12vw; 
+}
+
+/* Flickity
+   ========================================================================== */
+.slider-container {
+  text-align: center;
+}
+
+.big-title {
+  text-align: center;
+  position: relative;
+  top: 0;
+  padding-top: 2vw;
+  margin-bottom: -6.1vw;
+  z-index: 888;
+}
+
+.lrg-slider {
+  height: 62vw ; /* height of carousel */
+}
+
+.carousel-cell-lrg {
+  width: 100%; /* full width */
+  margin: 0%;
+  counter-increment: carousel-cell;
+}
+
+.img-lrg {
+  width: 100%;
+  height: 55vw;
+}
+ 
+.med-title {
+  padding: 2vw 0 1.5vw;
+  text-align: center;
+}
+
+.med-slider {
+  height: 34.5vw ; /* height of carousel */
+}
+
+.carousel-cell-med {
+  width: 50%;
+  padding:1vw;
+}
+
+.carousel-cell-med-web {
+  width: 42%;
+  padding:1.5vw;
+}
+
+.img-med {
+  width: 100%;
+}
+
+.small-slider {
+  height: 28vw ; /* height of carousel */
+}
+
+.carousel-cell-small {
+  width: 38%;
+  padding:0.3vw;
+  height: 100%;
+}
+
+.slider-container p{
+  text-align: center;
+  padding: 1.5vw 0 0 0;
+}
+
+.slider-container p a{
+  border-bottom:1px solid ;
+}
+
+.slider-container h2 a {
+  border-bottom:1px solid ;
+}
+
+.small-slider-ticker {
+  padding-bottom: 2vw;
+}
+
+
 
 /* Footer
    ========================================================================== */
@@ -97,23 +180,22 @@ footer img {
 .burst-container {
   position: absolute;
   width: 12vw;
-  top:10vw;
-  right:4vw;
+  top:0.5vw;
+  right:1.5vw;
   z-index: 1000;
   opacity:0;
-}
-
-.art {
   animation-name: spin;
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
 
 
+
+
 @keyframes spin {
   0% { transform: rotate(0deg); opacity: 0; }
-  45% { transform: rotate(0deg); opacity: 0; }
-  60% { transform: rotate(360deg); opacity: 1;}
+  10% { transform: rotate(0deg); opacity: 0; }
+  20% { transform: rotate(360deg); opacity: 1;}
   71% { opacity: 0; }
   100% { transform: rotate(360deg); opacity: 0;}
 }
@@ -157,70 +239,11 @@ li {
    line-height: 9vw;
 }
 
-/* Flickity
-   ========================================================================== */
-.slider-container {
-  text-align: center;
-}
 
- .big-title {
-    text-align: center;
-    position: relative;
-    top: 0;
-    padding-top: 2vw;
-    margin-bottom: -6.1vw;
-    z-index: 888;
-  }
 
-  .lrg-slider {
-    height: 63.5vw ; /* height of carousel */
-    min-height: 63.5vw ; /* height of carousel */
-  }
 
-  .carousel-cell-big {
-  width: 100%; /* full width */
-  margin: 0%;
-  height: 100%;
-  counter-increment: carousel-cell;
-  }
 
-  .carousel-cell-big img,  .carousel-cell-med img {
-  width: 100%;
-  }
 
-  .img-high {
-    width: 100%;
-  }
-
-   .med-slider {
-  height: 35vw ; /* height of carousel */
-  }
-
-  .med-title {
-    padding: 2vw 0 1.5vw;
-    text-align: center;
-  }
-
-  .carousel-cell-med {
-  width: 50%;
-  padding:0.5vw;
-  height: 100%;
-  }
-
-  .carousel-cell-small {
-  width: 38%;
-  padding:0.3vw;
-  height: 100%;
-  }
-
-  .slider-container p{
-    text-align: center;
-    padding: 2vw 0 0 0;
-  }
-
-  .slider-container p a{
-    text-decoration: underline;
-  }
 
 
 .arrow-block{
@@ -327,7 +350,11 @@ li {
 .nav-bottom .left img, .nav-bottom .right img{
     height: 4.4vw;
     width: 4vw;
+  }
 
+  .nav-bottom .center img{
+    height: 6vw;
+    padding-bottom: 1vw;
   }
 
 
@@ -385,8 +412,8 @@ li {
   background-color: red;
 }
 
-.pink {
-  background-color: pink;
+.grey {
+  background-color: #222;
 }
 
 .black{
