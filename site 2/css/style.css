@@ -10,20 +10,34 @@
   font-weight: 100;
   }
 
+  html, body {
+    height: 98%;
+  }
+
 a {
   text-decoration: none;
   cursor: pointer;
   }
 
+  img {
+    width: 100%;
+  }
+
 /* Header
    ========================================================================== */
 
+
+
 nav {
   display: flex;
-  padding: 1.5vw 3vw 0 ;
   height:14vw;
   align-items: center;
   width: 100%;
+  position: fixed;
+  top:0;
+  left:0%;
+  z-index: -1000;
+  padding: 0 5%;
 }
 
 nav a {
@@ -33,7 +47,6 @@ nav a {
 .logo {
   text-align: center;
   width: 90%;
-  padding-left: 1%;
 }
 
 .logo a{
@@ -50,42 +63,62 @@ nav a {
   margin: 0 10% ;
 }
 
-.nav-page{
-  text-align: center;
-}
-
-.nav-page ul {
-  padding:2vw 0 0;
-}
-
-.nav-page h4 {
-  text-align: left;
-  padding:0 6vw 2vw;
-}
-
 .container {
   background-color: white;
-  margin-bottom: 12vw; 
   width:100%;
+  margin-top: 13.5vw;
+  margin-bottom: 12vw;
+}
+
+/* Footer
+   ========================================================================== */
+
+footer {
+  display: flex;
+  height: 11vw;
+  padding: 1em 2em 1.7em;
+  font-size: 1.4vw;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+}
+
+footer h4 {
+  flex-grow: 1;
+}
+
+footer img {
+  width: 11%;
+}
+
+.no-hold {
+  position: static;
 }
 
 /* Flickity
    ========================================================================== */
 .slider-container {
   text-align: center;
+  position: relative;
 }
 
 .big-title {
   text-align: center;
-  position: relative;
-  top: 0;
-  padding-top: 2vw;
-  margin-bottom: -6.1vw;
+  position: absolute;
+  width: 100%;
+  top: 0vw;
+  margin-top: 1.6vw;
   z-index: 888;
 }
 
 .lrg-slider {
   height: 62vw ; /* height of carousel */
+  height: 55vw ; /* height of carousel */
+}
+
+.pg-slider {
+  height: 50vw ; /* height of carousel */
 }
 
 .carousel-cell-lrg {
@@ -113,12 +146,12 @@ nav a {
 }
  
 .med-title {
-  padding: 2vw 0 1.5vw;
+  padding: 1.5vw 0 0.6vw;
   text-align: center;
 }
 
 .med-slider {
-  height: 34.5vw ; /* height of carousel */
+  height: 32vw ; /* height of carousel */
 }
 
 .carousel-cell-med {
@@ -137,22 +170,13 @@ nav a {
 }
 
 .small-slider {
-  height: 29vw ; /* height of carousel */
+  height: 30.5vw ; /* height of carousel */
 }
 
 .carousel-cell-small {
   width: 38%;
+  height: 28vw;
   padding:0.3vw;
-  height: 100%;
-}
-
-.slider-container p{
-  text-align: center;
-  padding: 1.5vw 0 0 0;
-}
-
-.slider-container p a{
-  border-bottom:1px solid ;
 }
 
 .slider-container h2 a {
@@ -160,55 +184,36 @@ nav a {
 }
 
 .small-slider-ticker {
-  padding-bottom: 2vw;
+  height: 4.5vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .small-slider-ticker p{
-  padding: 1vw 0 0 0;
+  font-size: 2vw;
+  position: absolute;
+  width: 200vw;
+  margin-left:-50vw; 
+  text-align: center;
 }
 
 
-/* Footer
-   ========================================================================== */
 
-footer {
-  display: flex;
-  height: 10vw;
-  padding: 1em 2em;
-  font-size: 1.4vw;
-  background-color: white;
-}
-
-.foot-hold {
-  position: fixed;
-  bottom: 0;
-  z-index: -1;
-}
-
-footer h4 {
-  flex-grow: 1;
-}
-
-footer img {
-  width: 11%;
-}
 
 /* ----------bursts------------- */
 
 .burst-container {
   position: absolute;
   width: 12vw;
-  top:0.5vw;
-  right:1.5vw;
+  top:1vw;
+  right:1.6vw;
   z-index: 1000;
   opacity:0;
   animation-name: spin;
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
-
-
-
 
 @keyframes spin {
   0% { transform: rotate(0deg); opacity: 0; }
@@ -223,7 +228,7 @@ footer img {
    ========================================================================== */
 
   p {
-    font-size: 1.7vw;  
+    font-size: 2em;  
   }
 
   h1{
@@ -232,13 +237,13 @@ footer img {
   }
 
   h2 {
-    font-size: 7vw;
+    font-size: 4em;
     letter-spacing: 0.03em;
     text-align: center;
   }
 
   h3 {
-    font-size: 3.5vw;
+    font-size: 3em;
     letter-spacing: 0.01em;
   }
 
@@ -252,32 +257,71 @@ footer img {
     color:black;
   }
 
-li {
-   font-size: 5vw;
-   line-height: 9vw;
+
+.small {
+  font-size:1.25em;
+}
+
+.pg-title {
+padding-top: 2vw;
+width:100%;
+text-align: center;
+}
+
+.web-pg-title {
+padding-top: 0vw;
+padding-bottom: 5vw;
+width:100%;
+text-align: center;
+}
+
+.gif-pg-title {
+padding-top: 1.2vw;
+padding-bottom: 3vw;
+width:100%;
+text-align: center;
+}
+
+
+/* nav page
+   ========================================================================== */
+.nav-container {
+  text-align: center;
+  width:100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: blue;
+  padding: 10vw 0 0 0;
+  margin-bottom: 0;
+}
+
+ul li{
+  font-size: 6vw;
+  line-height: 12vw;
+  list-style: none;
 }
 
 
 
 
-
-
-
+/* arrows for view more
+   ========================================================================== */
 
 .arrow-block{
-    padding-top: 10vw;
+    padding-top: 8vw;
   }
 
 .arrow-block img{
-  width: 5.5vw;
+  width: 7.5vw;
   }
 
-.med-slider .arrow-block{
+.med-slider .arrow-block, .small-slider .arrow-block{
     padding-top: 0vw;
   }
 
-  .med-slider .arrow-block img{
-    max-width: 8vw;
+.med-slider .arrow-block img, .small-slider .arrow-block img{
+    max-width: 5.5vw;
   }
 
 
@@ -317,7 +361,7 @@ li {
 }
 
 .flickity-prev-next-button {
-    top: 42%;
+    top: 50%;
   }
 
 
@@ -326,97 +370,118 @@ li {
 
 
 
-/* Item/Nav Pages
+/* Item Pages
    ========================================================================== */
-
-
 .item-page {
   background-color: black;
   color:white;
 }
 
-
 .item-container {
-  padding:1vw 6.5vw 2vw 7vw;
+  padding:2vw 0;
   display: flex;
   flex-wrap: wrap;
 }
 
+.description-container {
+  padding:2vw 6.5vw;
+  background-color: black;
+  color:white;
+  margin-bottom: 12vw;
+}
+
+.description-container img{
+  border: 1px solid black;
+}
+
+.margin-top {
+  margin-top: 3vw;
+}
+
+ .item-page p {
+    letter-spacing: 0em;
+    line-height: 1.4em;
+    padding-bottom: 2vw;
+  }
+
+.item-page h2 {
+    letter-spacing: 0em;
+    text-align: left;
+    line-height: 1em;
+    padding-bottom: 3vw;
+    width: 80%;
+  }
+
+
+.thumb-container{
+  width: 50%;
+}
+
+.wide {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.column-left {
+  float: left;
+  width:50%;
+  height: 100%;
+  overflow: scroll;
+}
+
+.column-right {
+  float: right;
+  width:50%;
+  height: 100%;
+  overflow: scroll;
+}
+
+.item-page .thumb-title{
+  font-size: 3vw;
+  padding: 1vw 0 3vw; 
+  width: 100%;
+  text-align: center;
+}
+
+.nav-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin:3vw -3vw 0 ;
+}
 
 .nav-bottom .left,  .nav-bottom .right{
   display: flex;
   flex-wrap: wrap;
-  
+  max-width: 40%;
 }
 
-.nav-bottom {
-  justify-content: space-between;
+.nav-bottom h3{
+  font-size: 3vw;
 }
 
 .nav-bottom a{
   color:white;
-  border:none;
+  border:none; 
 }
 
-.nav-bottom .left img, .nav-bottom .right img{
-    height: 4.4vw;
-    width: 4vw;
-  }
-
-  .nav-bottom .center img{
-    height: 6vw;
-    padding-bottom: 1vw;
+.nav-bottom-icon img, .nav-bottom img{
+    width: 5vw;
   }
 
 
- .item-page p {
-    letter-spacing: 0em;
-    font-size: 2.5vw;
-    line-height: 3.5vw;
-    padding-bottom: 2vw;
-  }
 
-
-  .item-page h2 {
-    font-size: 4.25vw;
-    line-height: 5.9vw;
-    letter-spacing: 0em;
-    text-align: left;
-    width: 60%;
-  }
-
-.item-page img{
-  width: 100%;
-}
-
-.img-container {
-  padding-left: 6vw;
-  padding-right: 3vw;
-  margin: 1vw 0 2vw;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.img-item{
-  padding:0 3vw 4vw 0;
-  width: 50%;
-}
-
-.img-item-big{
-  padding:0 3vw 4vw 0;
-  width: 100% !important;
-}
-
-.img-item-bottom{
-  padding:0 3vw 3vw 0;
-  width: 100% !important;
-}
+  /* Gif pg
+   ========================================================================== */
 
 .gif-container {
   width: 100%;
   margin: 0 auto;
-  padding:4vw;
+  padding:2vw 6.5vw;
   display: flex;
   flex-wrap: wrap;
 }
@@ -427,6 +492,8 @@ li {
   padding:0.33vw;
 }
 
+  /* PVD terror pg
+   ========================================================================== */
 
 
 /* Backgrounds
@@ -438,6 +505,10 @@ li {
 
 .grey {
   background-color: #666;
+}
+
+.blue {
+  background-color: blue;
 }
 
 .black{
@@ -456,7 +527,6 @@ li {
  color: white;
 }
 
-
 .center {
   text-align: center;
   margin:0 auto;
@@ -470,21 +540,8 @@ li {
 
 
 
-@media only screen and (max-width: 600px) {
-  footer {
-  display: block;
-  font-size: 3vw;
-  text-align: center;
-}
+@media only screen and (max-width: 765px) {
 
-footer h4 {
-  padding-bottom: 0.5em;
-}
-
-footer img {
-  width: 20%;
-  padding: 0.25em;
-}
 
 
 }
