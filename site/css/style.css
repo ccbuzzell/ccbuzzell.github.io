@@ -834,13 +834,9 @@ ul li{
   margin:0 2vw 2.5vw;
 }
 
-.vid-button:active {
-  border:none;
-}
-
-
-.vid-button a:active {
-  border: .3vw solid green;
+  .ui-state-focus, .ui-accordion-header-active, .ui-state-active, .ui-state-hover {
+  border: none;
+  background-color: purple;
 }
 
 
