@@ -558,7 +558,7 @@ li:hover{
 .nav-bottom .left,  .nav-bottom .right{
   display: flex;
   flex-wrap: wrap;
-  width: 40%;
+  width: 45%;
 }
 
 .nav-bottom .right{
@@ -566,11 +566,12 @@ li:hover{
 }
 
 .nav-bottom .center{
-  width: 20%;
+  width: 10%;
 }
 
 .nav-bottom h3{
   font-size: 3vw;
+  line-height: 3vw;
 }
 
 .nav-bottom a{
@@ -871,7 +872,7 @@ padding-top: 4vw;
   width:85%;
   margin: 0 auto;
   margin-left:7.5%;
-  padding-top:4%;
+  padding-top:2%;
 }
 
 .inset-vid-lrg{
@@ -937,20 +938,9 @@ ul li{
 }
 
 
-.nav-bottom .left,  .nav-bottom .right{
-  display: flex;
-  flex-wrap: wrap;
-  width: 40%;
-}
-
-.nav-bottom h3{
-  font-size: 3vw;
-}
 
 
-.nav-bottom-icon img, .nav-bottom img{
-    width: 5vw;
-  }
+
 
 
 
