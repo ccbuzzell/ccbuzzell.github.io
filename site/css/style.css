@@ -373,7 +373,7 @@ text-align: center;
 .nav-container {
   padding: 0.2vw 0 10vw 0;
   background-color: white;
-  margin-bottom: 5vw;
+  margin-bottom: 3vw;
 }
 
 ul li{
@@ -602,10 +602,6 @@ li:hover{
   letter-spacing: 0;
 }
 
-.vid-button:active {
-  border:none;
-}
-
 .vid-button a {
   border: .2vw solid white;
   padding: 1vw 2vw;
@@ -619,8 +615,8 @@ li:hover{
   width: 100%;
   background-color: black;
   height: 56.25vw;
-  
 }
+
 .haunt-double {
 position: relative;
 max-width: 100vw;
@@ -775,9 +771,11 @@ h5 {
   }
 
    .inset-cap {
-    padding-top:0%;
+    padding-top:2%;
     padding-left:0%;
     font-size:2.25vw;
+    line-height: 3vw;
+
   }
 
    .bio-type{
@@ -852,10 +850,16 @@ padding-top: 4vw;
 
 .inset-vid{
   width:85%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .inset-vid-lrg{
   width:85%;
+}
+
+.accordion-placement{
+  text-align: center;
 }
 
 
@@ -891,20 +895,25 @@ ul li{
   margin:0 2vw 2.5vw;
 }
 
-  .ui-state-focus, .ui-accordion-header-active, .ui-state-active, .ui-state-hover {
-  border: none;
-  background-color: purple;
+.ui-state-focus, .ui-accordion-header-active, .ui-state-active, .ui-state-hover {
+  border: 0px solid black !important;
+}
+
+.vid-button {
+  font-size: 4vw;
+  margin:9vw 0;
+  letter-spacing: 0;
 }
 
 
 .nav-bottom .left,  .nav-bottom .right{
   display: flex;
   flex-wrap: wrap;
-  width: 45%;
+  width: 40%;
 }
 
 .nav-bottom h3{
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
 
