@@ -2,7 +2,7 @@ $(document).ready(function () {
     
    $( function() {
     	$( "#accordion" ).accordion({
-      		active: false,
+      		active: 0,
       		collapsible: true,
       		activate: function( event, ui ) {
         		if(!$.isEmptyObject(ui.newHeader.offset())) {
