@@ -1,88 +1,240 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" class="export">
 <head>
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta charset="utf-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Cara Buzzell</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <meta charset="utf-8">
+  <meta name="description" content="Touch, responsive, flickable carousels">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Cara Buzzell</title>
+
+    <link rel="stylesheet" href="css/flickity.css" media="screen">
+    <link rel="stylesheet" href="css/style.css" media="screen">
+    <link rel="stylesheet" href="css/aos.css" media="screen">
     <script src="http://code.jquery.com/jquery-1.12.3.js"></script>
-    <script type='text/javascript' src='js/script.js'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
 </head>
-
 <body>
-        <header>
-            <div class="logo">
-                <h1 id="logo"><a href="index.html">CARA BUZZELL</a></h1>
+
+
+<header>
+
+    <div class="nav-item"><a href="nav.html"> <img id="icon-hamburger" src="img/icons/icons-hamburger.svg"></a></div>
+    <h1 class="logo"><a href="index.html">CARA BUZZELL</a></h1>
+    <div class="nav-item"><a href="contact.html"> <img id="icon-mail" src="img/icons/icons-mail.svg"></a></div>
+
+</header> 
+
+
+<div class="container-wrap">
+<div class="container">
+
+  <!--BOOKS-->
+    <div class="slider-container">
+      <div class="lrg-title"><h3><a href="books.html">BOOKS + CATALOGS</a></h3></div>
+  
+      <div class="carousel lrg-slider" data-flickity='{ "wrapAround": true}'>
+        <div class="carousel-cell-lrg">
+            <img class="img-lrg" src="img/books/keeper_01.jpg">
+            <img class="burst-container" src="img/icons/burst.svg">
+          </div>
+          <div class="carousel-cell-lrg">
+              <img class="img-lrg" src="img/books/pretend_01.jpg"> 
+          </div>
+          <div class="carousel-cell-lrg">
+            <img class="img-lrg" src="img/books/smfa_01.jpg"> 
+            <img class="burst-container" src="img/icons/burst.svg">
+          </div>
+          <div class="carousel-cell-lrg">
+            <img class="img-lrg" src="img/books/body_01.jpg"> 
+          </div>
+          <div class="carousel-cell-lrg">
+            <img class="img-lrg" src="img/books/haunt_00.jpg"> 
+          </div>
+          <div class="carousel-cell-lrg">
+            <img class="img-lrg" src="img/books/computer_01.jpg"> 
+          </div>
+          
+          <div class="carousel-cell-lrg">
+            <img class="img-lrg" src="img/books/cambridge_01.jpg"> 
+            <img class="burst-container" src="img/icons/burst.svg">
+          </div>
+          <div class="carousel-cell-lrg">
+              <div class="arrow-block">
+                <img src="img/icons/arrow-up.svg">
+              </div>
+              <div class="see-all-block">
+                <h2><a href="books.html">VIEW ALL</a></h2>
+              </div>
+          </div>
+      </div>
+
+    </div>
+
+
+    
+
+	 <!--MOTION-->
+    <div class="slider-container" data-aos="fade-up">
+      <div class="med-title"><h3><a href="motion.html">MOTION</a></h3></div>
+  
+      <div class="carousel med-slider" data-flickity='{ "wrapAround": true}'>
+
+        
+        <div class="carousel-cell-med">
+          <img class="burst-container" src="img/icons/burst.svg">
+          <img class="block" src="img/block.png">
+          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/512075979?autopause=false&background=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        </div>
+
+        <div class="carousel-cell-med">
+          <img class="block" src="img/block.png">
+          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/272130474?autopause=false&background=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        </div>
+
+         <div class="carousel-cell-med">
+          <img src="img/video/sports.gif">
+        </div>
+
+        <div class="carousel-cell-med">
+          <div class="arrow-block">
+            <img src="img/icons/arrow-up.svg">
+          </div>
+          <div class="see-all-block">
+            <h2 class=""><a href="motion.html">VIEW ALL</a></h2>
+          </div>
+        </div>
+
+         <div class="carousel-cell-med">
+          <img src="img/video/OOL_detail.gif">
+        </div>
+
+
+       </div>
+    </div>
+
+
+    <!--ILLOS-->
+    <div class="slider-container black" data-aos="fade-up">
+      <div class="med-title white-txt"><h3><a href="illustration.html">ILLUSTRATION</a></h3></div>
+      <div class="carousel small-slider" data-flickity='{ "wrapAround": true}'>
+        
+          <img class="carousel-cell-small" src="img/gif/BloodWine.gif">
+          <img class="carousel-cell-small" src="img/gif/volcano.gif">
+          
+          <div class="carousel-cell-small">
+            <div class="arrow-block">
+              <img src="img/icons/arrow-up-white.svg">
             </div>
-            <nav>
-                <a href="#"><img id="work" src="imgs/work.svg"></a>
-                <a href="contact.html"><img id="mail" src="imgs/mail.svg"></a>
-            </nav>
-                <ul id="nav-page" class="nav-off">
-                <a href="#"><div id="close">X</div></a>
-                </ul>
-        </header>
-        <section class="item-info">
-           <a href="index.html"> <h1 class="page-name page-name-index">Selected Work</h1></a>
-        </section>  
-            
-            <section class="container">
+            <div class="see-all-block">
+              <h2 class="white-txt"><a href="illustration.html">VIEW ALL</a></h2>
+            </div>
+          </div>
+          
+          <img class="carousel-cell-small" src="img/gif/greenman.gif">
 
 
-                 <a href="books.html"><article class="item">
-                    <a href="books.html"><img class="burst-container art" src="imgs/burst.svg">
-                    <div id="books">
-                    <img src="imgs/SHE_Cards_flip.gif">
-                    </div>
-                    <p class="title">Books + Catalogs</p></a>
-                </article>
-                <a href="searchhistory.html"><article class="item"> 
-                    <img class="burst-container art" src="imgs/burst.svg">
-                    <img src="imgs/vanitas_01.gif">
-                    <p class="title">Gifs</p> </a>
-                </article>
-                <a href="haunt.html"><article class="item">
-                    <img class="burst-container art" src="imgs/burst.svg">
-                    <img src="imgs/JOL.gif">
-                    <p class="title">Haunt</p></a>
-                </article>
+      </div>
+    </div>
 
-                <a href="motion.html"><article class="item">
-                    <img class="burst-container art" src="imgs/burst.svg">
-                    <img src="imgs/vid1.gif">
-                    <p class="title">Motion + Video</p></a>
-                 </article>                
-                
-                <a href="identity.html"><article class="item">
-                    <img class="burst-container art" src="imgs/burst.svg">
-                    <div id="identity">
-                    <img src="imgs/Quality_01.jpg">
-                    </div>
-                    <p class="title">Identity + Web</p></a>
-                </article>
-
-                <a href="shop.html"><article class="item"> 
-                    <img class="burst-container art" src="imgs/burst.svg">
-                    <div class="shop">
-                        
-                         <img src="imgs/KB_01.jpg">
-                    </div>
-                    <p class="title">Copy Shop</p> </a>
-                </article>
-                
-            
+  
 
 
 
-            </section>
+
+      <!--BRANDING + WEB-->
+    <div class="double-slider-container" data-aos="fade-up">
+    <div class="slider-container slide-double">
+      <div class="lrg-title"><h3><a href="branding.html">BRANDING</a></h3></div>
+      <div class="carousel double-slider" data-flickity='{ "wrapAround": true}'>
+          <div class="carousel-cell-lrg">
+              <img class ="img-home-double" src="img/brand/btg_01.jpg"> 
+              <img class="burst-container" src="img/icons/burst.svg">
+          </div>
+          <div class="carousel-cell-lrg">
+              <div class="arrow-block">
+                <img src="img/icons/arrow-up.svg">
+              </div>
+              <div class="see-all-block">
+                <h2><a href="brand-web.html">VIEW ALL</a></h2>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="slider-container slide-double">
+      <div class="lrg-title white-txt black-text-mobile"><h3><a href="web.html">WEBSITES</a></h3></div>
+      <div class="carousel double-slider black" data-flickity='{ "wrapAround": true}'>
+          <div class="carousel-cell-lrg black">
+              <img class ="img-home-double" src="img/brand/izweb_01.jpg"> 
+          </div>
+          <div class="carousel-cell-lrg black">
+              <div class="arrow-block">
+                <img src="img/icons/arrow-up-white.svg">
+              </div>
+              <div class="see-all-block">
+                <h2 class="white-txt"><a href="brand-web.html">VIEW ALL</a></h2>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
 
 
 
 
 
+    
+
+
+    <!--HAUNT-->
+    <div class="slider-container black" data-aos="fade-up">
+      <div class="lrg-title terror-title"><h3 class="red-txt"><a href="haunt.html">PVD TERROR HOUSE</a></h3></div>
+  
+      <div class="carousel lrg-slider" data-flickity='{ "wrapAround": true}'>
+        
+          <div class="carousel-cell-lrg ">
+            <img class="img-lrg" src="img/haunt/tax_01.gif"> 
+          </div>
+
+          <div class="carousel-cell-lrg black">
+            <img class="block" src="img/block.png">
+          <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/284046952?autopause=false&background=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+        </div>
+
+
+
+
+          <div class="carousel-cell-lrg black">
+              <div class="arrow-block">
+                <img src="img/icons/arrow-up-red.svg">
+              </div>
+              <div class="see-all-block">
+                <h2 class="red-txt"><a href="haunt.html">VIEW ALL</a></h2>
+              </div>
+          </div>
+      
+
+      </div>
+
+    </div>
+
+    
+
+  <!--container-->
+</div>
+<!--container-wrap-->
+</div>
+
+<footer >
+      <h4>carabuzzell@gmail.com</h4>
+      <h4>Based in Providence and NYC</h4>
+      <div class="footer-logos">
+      <img src="img/icons/nyc.gif">
+      <img src="img/icons/ri-flag.gif">
+      <img src="img/icons/warm.gif">
+    </div>
+</footer>
 
 
 
@@ -91,30 +243,33 @@
 
 
 
-            <h2 class="insta"> 
-    			<a href="https://www.instagram.com/ccbuzzell/" target="_blank" >!NSTAGRAM!</a>
-  			</h2>
-  			<h2 class="twitter"> 
-    			<a href="https://twitter.com/PVDterror" target="_blank" >?TW!TTER?</a>
-  			</h2>
-            
 
-            <footer>
-                <p> carabuzzell@gmail.com</p>
-                <p> &copy; Cara Buzzell 
-                    <script type="text/javascript">
-                        document.write(new Date().getFullYear());
-                    </script>
-                </p>
-                
-            </footer>
 
-            
-                    
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/flickity.js"></script>
+<script type='text/javascript' src='js/script.js'></script>
+<script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine',
+      });
+    </script>
 
 
 
 </body>
-
 </html>
