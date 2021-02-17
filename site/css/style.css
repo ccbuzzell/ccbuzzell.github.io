@@ -141,7 +141,6 @@ footer.no-hold .footer-logos {
   text-align: center;
 }
 
-
 .carousel-cell-lrg {
   width: 100%; /* full width */
   margin: 0%;
@@ -156,8 +155,8 @@ footer.no-hold .footer-logos {
 .carousel-cell-small {
   width: 32%;
   padding:0.5vw;
+  height: 24vw;
 }
-
 
 .lrg-slider {
   height: 56.25vw; /* height of carousel */
@@ -180,6 +179,11 @@ footer.no-hold .footer-logos {
 .img-lrg {
   width: 100%;
   height: 56.25vw;
+}
+
+.img-home-double{
+  width: 100%;
+  height: 50vw;
 }
 
 .carousel-flex{
@@ -256,6 +260,13 @@ footer.no-hold .footer-logos {
   height: 55vw;
   margin: 0 auto;
   padding-top:2.5%;
+}
+
+.block {
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 9000;
 }
 
 
@@ -486,7 +497,9 @@ li:hover{
     max-width: 4.75vw;
   }
 
-
+.double-slider-container .arrow-block{
+    padding-top: 5.8vw;
+  }
 
 
 /* carousel buttons
@@ -839,6 +852,7 @@ padding-top: 4vw;
 .carousel-cell-small {
   width: 33%;
   padding:2vw;
+  height: 26vw;
 }
 
 
