@@ -3,10 +3,10 @@
 /* Document
    ========================================================================== */
 @font-face {
-font-family: "CustomFont";
-src: url("https://carabuzzell.com/css/fonts/untitled-sans-web-regular.eot");
-src: url("https://carabuzzell.com/css/fonts/untitled-sans-web-regular.woff") format("woff");
-src: url("https://carabuzzell.com/css/fonts/untitled-sans-web-regular.woff2") format("woff2")
+font-family: "untitled-sans-web-light";
+src: url("fonts/untitled-sans-web-light.eot");
+src: url("fonts/untitled-sans-web-light.woff") format("woff");
+src: url("fonts/untitled-sans-web-light.woff2") format("woff2")
 
 }
 
@@ -14,8 +14,8 @@ src: url("https://carabuzzell.com/css/fonts/untitled-sans-web-regular.woff2") fo
   box-sizing: border-box;
   margin:0;
   padding:0;
-  font-family: 'untitled-sans-web-regular', sans-serif;
-  font-weight: normal !important;
+  font-family: 'untitled-sans-web-light', 'Inter', sans-serif;
+  font-weight: 100 !important;
   font-style: normal ;
   }
 
@@ -339,7 +339,7 @@ footer.no-hold .footer-logos {
   }
 
    h3 a:hover{
-    border-bottom: 0.1vw solid;
+    border-bottom: 0.2vw solid;
   }
 
   h4 {
@@ -382,6 +382,7 @@ footer.no-hold .footer-logos {
     font-size: 6vw;
     letter-spacing: 0em;
     padding:0 4vw 5vw;
+    letter-spacing: -0.02em;
   }
 
 
