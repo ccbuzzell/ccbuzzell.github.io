@@ -1415,6 +1415,17 @@ h1.index-title {
 
 /* menu button ----------------------------------------------------------------------------- */
 
+.nav-container{
+  flex-wrap: wrap;
+  padding: 0em 0em;
+}
+
+.logo-container {
+  position: absolute;
+  top:14px;
+  left:25px;
+}
+
 .menu {
   clear: both;
   height: 0;
