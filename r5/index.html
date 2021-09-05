@@ -7,9 +7,12 @@
 
   		<title>Electronic Readings of The Qur’an</title>
 
-  		<link rel="stylesheet" href="css/style.css" media="screen">
-  		<link rel="stylesheet" href="css/aos.css" media="screen">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="css/style.css" media="screen">
+      <link rel="stylesheet" href="css/aos.css" media="screen">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+      <script src="sss/sss.min.js"></script>
+      <link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+      <script>jQuery(function($) {$('.slider').sss();});</script>
 	</head>
 
 
@@ -18,11 +21,11 @@
 <!--Nav Section-------------------------------------------------------------------------------------------------------------> 
     <!--logo----------->
      <div class="nav-container" id="navbar">
-        <div class="logo-container logo-container-index">
+        <div class="logo-container">
           <a class="flex-container" href="index.html">
             <h1 class="logo">E</h1>
             <div>
-              <p class="subtitle-small index-logo-v">v</p>
+              <p id="varient-logo-small" class="subtitle-small" dir="rtl" lang="ar">ب سم</p>
               <hr>
             </div>
             <h1 class="logo">Q</h1>
@@ -147,6 +150,7 @@
         easing: 'ease-in-out-sine',
       });
     </script>
+
 	</body>
 </html>
 
