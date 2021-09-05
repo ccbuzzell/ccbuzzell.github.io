@@ -1412,6 +1412,139 @@ h1.index-title {
 /* MEDIA QUERIES------------------------------------------------------------------------------ */
 @media only screen and (max-width: 1000px){	
 
+
+/* menu button ----------------------------------------------------------------------------- */
+
+.menu {
+  clear: both;
+  height: 0;
+  transition: height .3s ease-out;
+  border:none;
+  border-radius: 0px;
+  padding: 0;
+  margin:0;
+  overflow: scroll;
+  text-align: center;
+  padding-top: 30px;
+}
+
+nav {
+  width: 100%;
+}
+
+/* menu icon */
+
+nav .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 30px 25px;
+  position: relative;
+  user-select: none;
+}
+
+nav .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 3px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 30px;
+}
+
+nav .menu-icon .navicon:before,
+nav .menu-icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+nav .menu-icon .navicon:before {
+  top: 9px;
+}
+
+nav .menu-icon .navicon:after {
+  top: -9px;
+}
+
+/* menu x icon */
+
+nav .menu-btn {
+  display: none;
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+nav .menu-btn:checked ~ .menu {
+  height: 100vh;
+}
+
+.category-name {
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  cursor: default;
+  padding: 1em 0 0.5em;
+  width: 100%;
+  margin:0;
+  color: var(--orange);
+}
+
+.page-link{
+  color:white;
+  padding: 0.3em; 
+  max-width: 86%;
+  overflow:hidden;
+  height:auto;
+  border: 2px solid white;
+  border-radius: 50px;
+  background-color: black;
+  margin:2% 8%;
+  font-size: 1em;
+ }
+
+ .page-link a{
+  color:white;
+  padding:10px 30px;
+ }
+
+.dropdown {
+  padding-top: 0.1em;
+  position:static;
+}
+
+.page-link-mobile a{
+color: var(--orange);
+}
+
+
+.menu > .category-name:hover .page-link  {
+  height: auto;
+  overflow:scroll;
+}
+
+
+/* Widths-----------------*/
+
+
 .main.ency-container{
   max-width: 99vw;
 }
@@ -1690,141 +1823,6 @@ font-size: 2.5vw
   line-height: 20px;
   min-width: 60px;
 }
-
-
-
-
-
-
-
-/* menu button ----------------------------------------------------------------------------- */
-
-.menu {
-  clear: both;
-  height: 0;
-  transition: height .3s ease-out;
-  border:none;
-  border-radius: 0px;
-  padding: 0;
-  margin:0;
-  overflow: scroll;
-  text-align: center;
-  padding-top: 30px;
-}
-
-nav {
-  width: 100%;
-}
-
-/* menu icon */
-
-nav .menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 30px 25px;
-  position: relative;
-  user-select: none;
-}
-
-nav .menu-icon .navicon {
-  background: #fff;
-  display: block;
-  height: 3px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 30px;
-}
-
-nav .menu-icon .navicon:before,
-nav .menu-icon .navicon:after {
-  background: #fff;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-
-nav .menu-icon .navicon:before {
-  top: 9px;
-}
-
-nav .menu-icon .navicon:after {
-  top: -9px;
-}
-
-/* menu x icon */
-
-nav .menu-btn {
-  display: none;
-}
-
-nav .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
-}
-
-nav .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
-}
-
-nav .menu-btn:checked ~ .menu-icon .navicon:after {
-  transform: rotate(45deg);
-}
-
-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-  top: 0;
-}
-
-nav .menu-btn:checked ~ .menu {
-  height: 100vh;
-}
-
-.category-name {
-  font-size: 1em;
-  letter-spacing: 0.05em;
-  cursor: default;
-  padding: 1em 0 0.5em;
-  width: 100%;
-  margin:0;
-  color: var(--orange);
-}
-
-.page-link{
-  color:white;
-  padding: 0.3em; 
-  max-width: 86%;
-  overflow:hidden;
-  height:auto;
-  border: 2px solid white;
-  border-radius: 50px;
-  background-color: black;
-  margin:2% 8%;
-  font-size: 1em;
- }
-
- .page-link a{
-  color:white;
-  padding:10px 30px;
- }
-
-.dropdown {
-  padding-top: 0.1em;
-  position:static;
-}
-
-.page-link-mobile a{
-color: var(--orange);
-}
-
-
-.menu > .category-name:hover .page-link  {
-  height: auto;
-  overflow:scroll;
-}
-
 
 
 
