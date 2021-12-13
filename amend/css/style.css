@@ -59,15 +59,19 @@ h1, h2, h3, h4, h5{
 	letter-spacing: 0.03em;
 }
 
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+	text-decoration: underline;
+}
+
 p {
-	font-size: 1.25em;
+	font-size: 1.15em;
 	font-weight:var(--font-light);
-	line-height: 1.4em;
+	line-height: 1.5em;
 	padding-bottom: 1em;
 }
 
 h1 {
-	font-size: 2.9em;
+	font-size: 3.1em;
 	line-height: 1.15em;
 	padding: 0.1em 0 1em;
 	-ms-hyphens: auto;
@@ -86,7 +90,6 @@ h2 {
 }
 
 
-
 h3 {
 	font-size: 1.5em;
 	padding: 0.7em 0 0.5em;
@@ -96,46 +99,59 @@ p a {
 	border-bottom: 1px solid black;
 }
 
+
+
 /* SITE WIDTH --- */
-.site-container, .slider-container {
+.site-container, .slider-container, footer {
 	margin: 0 auto;
 	width: 100%;
-	padding: 0 45px 0 45px;
+	padding: 0 7vw;
 	display: flex;
+	max-width: 1600px;
 }
 
-.slider-container{
-	height: 40vw;
-	overflow: hidden;
+main, aside {
+	margin-top:8em;
 }
 
 main, .main-carousel {
-	width: 72%;
-	margin-top:8em;
-
+	width: 70%;
 }
 
-main.lrg-logo-main {
-	margin-top:0em;
+main.full-width{
+	width: 100%;
+	border-right: 1px solid black;
 }
-
-
 
 main section, .carousel-cell {
-	border-top: 1px solid black;	
-	padding:1.5em 3.5em 3em 0;
-	padding-left: 5vw;
-	margin-top:-1px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;	
+	padding:1.5em 3.5em 3em ;
 }
 
-aside, .project-img {
-	width: 28%;
+aside{
+	border-top: 1px solid black;
+}
+
+
+aside, .project-img{
+	width: 30%;
 	border-left: 1px solid black;
 	border-right: 1px solid black;
+	margin-bottom: -1px;
+}
+
+.project-img {
+	background-image: url("baby-amendment.png"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 aside section {
 	padding:1.5em 1.5em 0 1.25em;
+	border-bottom: solid 1px black;
 }
 
 aside section.no-pad {
@@ -144,24 +160,37 @@ aside section.no-pad {
 	margin-left: -1px;
 }
 
+aside section.no-pad img {
+	padding:0 1px ;
+
+}
+
 aside section p{
 	font-size: 0.9em;
 	line-height: 1.5em;
 }
 
+
 /* THUMB WIDTHS --- */
+.bottom-nav{
+	text-align: center;
+	border-top: solid 1px black;
+	padding: 2em 0;
+}
+
 .thumb-container {
 	display: flex;
 	justify-content: space-around;
+	padding: 1em 0;
 }
 
 .thumb-button{
 	padding:1em;
-	margin-right: 2em;
+	margin-bottom: 2em;
 	text-align: center;
 	border:1px black solid;
 	background-color: var(--beige);
-    box-shadow: 2px 2px 0 var(--beige), 3px 3px 0 black, 5px 5px 0 var(--beige), 6px 6px 0 black;
+  box-shadow: 2px 2px 0 var(--beige), 3px 3px 0 black, 5px 5px 0 var(--beige), 6px 6px 0 black;
 }
 
 .thumb-button:hover{
@@ -169,11 +198,10 @@ aside section p{
 	cursor: pointer;
 }
 
-/* BOTTOM NAV --- */
-.bottom-nav{
-	text-align: center;
-	border-top: solid 1px black;
-}
+
+
+
+
 
 
 /* LOGO --- */
@@ -181,8 +209,7 @@ aside section p{
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: center;
-	position: absolute;
-	padding-left: 5vw;
+	background-color: var(--beige);
 }
 
 .logo-container, .icon-checkbox{
@@ -195,7 +222,7 @@ aside section p{
 	font-weight:  100;
 	font-size: 2.25em;
 	letter-spacing: 0.03em;
-	padding: 0.08em 0.25em 0 ;
+	padding: 0.08em 0.25em;
 }
 
 .icon-checkbox{
@@ -230,28 +257,42 @@ aside section p{
 	transform: scale(0.7);
 }
 
-.logo-large{
-	margin: 2em 0;
-	width: 26em;
+
+.tagline {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	padding-top: 14px;
 }
 
-
 /* MAIN NAVIGATION ---*/
+.mobile-icon{
+	display: none;
+}
+
 nav {
-  width:100vh;    
-  height:45px;
-  position:fixed;
-  -webkit-transform-origin: left top;
-  -webkit-transform:rotate(-90deg) translateX(-100%);
-  border-bottom: 1px solid black;
-  padding-right:30px;
-  background-color: var(--orange);
+  display: flex;
+  height:50px;
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 7vw;
+  justify-content: space-between;
+  border-bottom: solid 1px black;
+}
+
+.main-nav {
   font-weight:var(--font-bold);
+  height:50px;
+  padding: 0 20px;
+  background-color: var(--orange);
+  border: solid 1px black;
+
 }
 
 .main-nav li {    
-  margin-left:20px;
-  float:right;
+  margin:1px 10px;
+  display: inline-block;
   height:100%;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -263,7 +304,7 @@ nav {
 }
 
 /* Underline styles */
-nav a {
+nav .main-nav a {
   display: block;
   position: relative;
   padding: 0.2em 0;
@@ -271,7 +312,7 @@ nav a {
 }
 
 /* Write on */
-nav a::after{
+nav .main-nav a::after{
   content: '';
   position: absolute;
   bottom: 0;
@@ -285,8 +326,8 @@ nav a::after{
   transform: translate3d(-100%, 0, 0);
 }
 
-nav a:hover::after,
-nav a:focus::after {
+nav .main-nav a:hover::after,
+nav .main-nav a:focus::after {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
@@ -295,10 +336,6 @@ nav a:focus::after {
 /* IMGS ---*/
 img {
 	width: 100%;
-}
-
-.multiply{
-	mix-blend-mode: multiply;
 }
 
 
@@ -353,16 +390,12 @@ img {
 
 /* Carousel Styles --------------------------------------------------------------------------- */
 .main-carousel{
-	margin-top:14em;
-}
-
-.main-carousel, .carousel-cell {
-	height: 50vw;
-	overflow: hidden;
+	margin-top:12em;
 }
 
 .carousel-cell {
 	width: 100%;
+	padding: 40px 60px;
 }
 
 /* button styles */
@@ -384,7 +417,7 @@ img {
 }
 
 .flickity-prev-next-button{
-	top: 30% !important;
+	top: 50% !important;
 }
 
 .flickity-prev-next-button.previous {
@@ -395,19 +428,36 @@ img {
     right: 5px !important;
 }
 
-
 .main-carousel .quote{
 	margin-top:0.5vw;
 	font-family: 'Editorial';
 	font-weight:  100;
-	font-size: 2.5vw;	
+	font-size: 2.3vw;	
 }
-
 
 .main-carousel .attribution{
 	text-transform: uppercase;
 	font-size: 0.9em;
 }
+
+
+
+/* EMBED VIDEO ---*/
+
+.video-container { 
+	position: relative; 
+	padding-bottom: 56.25%; 
+	padding-top: 30px; 
+	height: 0; o
+	verflow: hidden; 
+}
+
+.video-container iframe, .video-container object, .video-container embed { 
+	position: absolute; 
+	top: 0; left: 0; 
+	width: 100%; height: 100%; 
+}
+
 
 
 
@@ -443,41 +493,127 @@ img {
 	background-color: var(--orange);
 }
 
+/* PROJECT ---*/
+
+.logo-large{
+	margin: 2em 0 0 3.5em;
+	width: 26em;
+	position: absolute;
+}
+
+.lrg-logo-main {
+	margin-top: 0;
+}
+
 
 /* INDEX ---*/
+.site-container-index{
+	display: block;
+	padding: 0 5vw;
+}
+
 h1#index-h1 {
-	font-size: 10vw;
+	font-size: 9vw;
 	line-height: 1em;
-	padding:1em 0 ;
 	text-align: left;
 	hyphens: manual;
 }
 
-.insert-img{
-	width: 10vw;
-	display: inline-block;
+.logo-index{
+	margin: 3em 0 1em;
+	width: 60%;
+}
+
+.index-attribution{
+	background-color: var(--blue);
+	border-top: solid 1px black;
+	height: 50px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 12px 0 0 5vw ;
+	font-size: 0.8em;
 }
 
 
 /* Footer ------------------------------------------------------------------------------------ */
 
 footer {
-	text-align: center;
 	border-top:1px solid black;
 	font-size: 0.6em;
 	text-transform: uppercase;
-	padding: 1em;
+	padding-top: 3em ;
 }
 
 
 
 /* MEDIA QUERIES------------------------------------------------------------------------------ */
-/* MOBILE MENU and Spacing Tweaks*/
-@media only screen and (max-width: 800px){	
-	/* mobile Header ------------------------------------------------------------------------- */
-body{
-background-color:red;
+@media only screen and (max-width: 900px){	
+
+/* NAV ---*/
+.mobile-icon{
+	display: block;
+	background-color: var(--orange);
 }
+
+.main-nav{
+	display: none;
+}
+
+
+/* INDEX ---*/
+.logo-index{
+width: 90%;
+}
+
+h1#index-h1 {
+	font-size: 12vw;
+	line-height: 1.1em;
+}
+
+.index-attribution{
+	font-size: 0.7em;
+}
+
+/* SITE WIDTH --- */
+.site-container, .slider-container, footer {
+	margin: 0 auto;
+	padding: 0 1.5vw;
+	flex-wrap: wrap;
+}
+
+main, .main-carousel {
+	width: 100%;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+main section, .carousel-cell {
+	padding:1.5em 2em 3em ;
+}
+
+aside, .project-img{
+	width: 100%;
+}
+
+aside {
+	margin-top: 1em;
+}
+
+
+/* THUMB WIDTHS --- */
+.thumb-container {
+	flex-wrap: wrap;
+}
+
+.thumb-button{
+	width: 90%;
+}
+
+
+
 
 }
 
