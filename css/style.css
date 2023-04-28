@@ -366,7 +366,8 @@ font-size: 2vw;}
 
 .credits-box{
   width: 100%;
-  height:100%;
+  height:50px;
+   padding:30% 0;
   display: flex;
   align-items: center;
 }
