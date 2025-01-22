@@ -40,12 +40,26 @@
         </section>
         
         <section data-aos="fade-up" class="form-section"> 
-            <h3 class="section-subhead">Enter for a Chance to Win</h2>
-            <form action="" method="">
-                <input type="text" id="name" name="name" placeholder="name" required>
-                <input type="email" id="email" name="email" placeholder="email" required>
+            <h3 class="section-subhead-1">Enter for a Chance to Win</h2>
+            <form action="" method="" id="registerForm">
+                <input type="text" id="name" name="name" placeholder="NAME" required>
+                <input type="email" id="email" name="email" placeholder="EMAIL" required>
                 <input type="submit" value="SUBMIT">
             </form>
+        </section>
+
+        <section id="ThankYouPopup" data-aos="fade-in">
+            <div class="popup-container">
+                <button onclick="closePopup()" class="popup-x"></button>
+                <div class="logo-container">
+                    <img src="imgs/BOTP-LOGO.png">
+                </div>
+
+                <h4 class="section-header">Thanks for Entering</h4>
+                <p class="section-subhead-2">Winners will be announced during the battle of the paddles livestream at:
+                <p class="section-subhead-2">7pm ET / 4pm PST on February 6</p>
+                <p class="section-subhead-1">Entrants must be tuned into The Battle of the Paddles Livestream to see if they Won and to claim any prize.</p>
+            <div>
         </section>
 
     </main>
@@ -71,6 +85,7 @@
     <!--SCRIPTS--> 
     <script src="js/aos.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/popup.js"></script>
 
     <!--AOS--> 
     <script>
